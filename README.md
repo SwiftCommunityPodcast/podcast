@@ -33,4 +33,4 @@ Here are some suggestions on how to get started with contributing:
 - Improve our README by opening a pull request.
 - Share this project on Twitter!
 - Follow us on Twitter [@theswiftpodcast](https://twitter.com/theswiftpodcast)
-- Subscribe to the show on Apple Podcasts
+- Subscribe to the show [on Overcast](https://overcast.fm/p1065244-3zhoR6), or by adding the RSS feed `https://swiftcommunitypodcast.org/?format=rss` to your podcast player of choice.
