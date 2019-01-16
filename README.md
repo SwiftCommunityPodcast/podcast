@@ -28,7 +28,7 @@ If you’re interested in any of the above or have any other comments, questions
 Here are some suggestions on how to get started with contributing:
 
 - Leave general feedback about the show on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/3).
-- Leave comments about [Episode 1]() by commenting on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/1).
+- Leave comments about [Episode 1](https://www.swiftcommunitypodcast.org) by commenting on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/1).
 - Suggest show topics or ideas for our next episode [here](https://github.com/SwiftCommunityPodcast/podcast/issues/2).
 - Improve our README by opening a pull request.
 - Share this project on Twitter!
