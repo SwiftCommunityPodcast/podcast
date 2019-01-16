@@ -2,6 +2,8 @@
 
 ## About
 
+<img src="https://github.com/SwiftCommunityPodcast/podcast/blob/master/Resources/Logo%402x.png" width="250"/>
+
 A community driven show focusing on the people that build, use, and support Swift, Apple's open source programming language.
 
 Everyone is welcome to contribute as a producer, host, guest, editor, publisher or by suggesting show topics or anything else you can think of!
