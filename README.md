@@ -2,11 +2,11 @@
 
 ### 🎙 For the community. By the community.
 
-Welcome, we're glad you're here! The Swift Community Podcast is a community-driven show focusing on the people that build, use, and support Swift, Apple's open source programming language. This repository is a place where anyone who is interested can stay informed about the latest developments, learn new techniques and engage with others in the community.
+Welcome, we're glad you're here! The Swift Community Podcast focuses on the people that build, use, and support Swift, Apple's open source programming language. This repository contains the full library of episodes, show notes, and supporting documentation used in the development of the podcast to encourage its growth as an open source and community-driven collaboration between members of the Swift community.
 
 ### 🤝 Contributing 
 
-Swift is a language for everyone...from the earliest beginner to most hardcore and everyone in between. No contribution is too small!
+Swift is a language for everyone...from beginner to experienced programmers and everyone in between. In that same spirit, we welcome contributions to the podcast from people of any experience level. No contribution is too small!
 
 This is by no means a complete list, but here are a few ways to contribute to the project:
 
