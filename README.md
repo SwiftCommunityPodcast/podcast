@@ -1,38 +1,36 @@
-# The Swift Community Podcast
+<p align=center><img src="https://github.com/SwiftCommunityPodcast/podcast/blob/master/Resources/Logo%402x.png" width="250"/></p>
 
-## About
+### 🎙 For the community. By the community.
 
-<img src="https://github.com/SwiftCommunityPodcast/podcast/blob/master/Resources/Logo%402x.png" width="250"/>
+Welcome, we're glad you're here! The Swift Community Podcast focuses on the people that build, use, and support Swift, Apple's open source programming language. This repository contains the full library of episodes, show notes, and supporting documentation used in the development of the podcast to encourage its growth as an open source and community-driven collaboration between members of the Swift community.
 
-A community driven show focusing on the people that build, use, and support Swift, Apple's open source programming language.
+### 🤝 Contributing 
 
-Everyone is welcome to contribute as a producer, host, guest, editor, publisher or by suggesting show topics or anything else you can think of!
+Swift is a language for everyone...from beginner to experienced programmers and everyone in between. In that same spirit, we welcome contributions to the podcast from people of any experience level. No contribution is too small!
 
-## Contributing
+This is by no means a complete list, but here are a few ways to contribute to the project:
 
-Example contribution types include but are not limited to:
+- Be a producer or co-producer
+- Be a host or cohost
+- Be a guest
+- Edit an episode
+- Publish an episode
+- Suggest a guest
+- Suggest a show topic and/or format
+- Create shownotes
+- Improve shownotes
+- Create transcripts
 
-- Suggesting a show topic / or show format
-- Being a guest
-- Suggesting a guest
-- Being a co-host
-- Being a co-producer, or producing an episode
-- Editing an episode
-- Publishing an episode
-- Creating shownotes
-- Improving shownotes
-- Creating transcripts
+If you have any other comments, questions, ideas, or suggestions, the best thing to do is open a GitHub issue.
 
-If you’re interested in any of the above or have any other comments, questions, ideas, or suggestions, open a GitHub issue.
+### 🧩 Next Steps
 
-## Next Steps
+- To leave general feedback about the show, add a comment on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/3).
+- To join or follow the discussion around [Episode 1](https://www.swiftcommunitypodcast.org), check out [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/1).
+- To help brainstorm show topics, formats, and ideas for the next episode, head over to the issue [here](https://github.com/SwiftCommunityPodcast/podcast/issues/2).
+- To improve this README, simply fork the project and open a pull request.
 
-Here are some suggestions on how to get started with contributing:
+### 📣 Spread the Word
 
-- Leave general feedback about the show on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/3).
-- Leave comments about [Episode 1](https://www.swiftcommunitypodcast.org) by commenting on [this issue](https://github.com/SwiftCommunityPodcast/podcast/issues/1).
-- Suggest show topics or ideas for our next episode [here](https://github.com/SwiftCommunityPodcast/podcast/issues/2).
-- Improve our README by opening a pull request.
-- Share this project on Twitter!
-- Follow us on Twitter [@theswiftpodcast](https://twitter.com/theswiftpodcast)
+- Tweet about the project and follow us on Twitter [@theswiftpodcast](https://twitter.com/theswiftpodcast)
 - Subscribe to the show on [Apple Podcasts](https://itunes.apple.com/us/podcast/the-swift-community-podcast/id1449664346?mt=2), [Overcast](https://overcast.fm/p1065244-3zhoR6), or by adding the RSS feed `https://swiftcommunitypodcast.org/?format=rss` to your podcast player of choice.
