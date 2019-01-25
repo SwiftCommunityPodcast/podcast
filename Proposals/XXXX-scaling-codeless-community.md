@@ -45,3 +45,23 @@ Bas was already interviewed in the SwiftCoders podcast but the episode was more 
 - Marketer: open
 
 - Community Follow up handler: open
+
+## Outline
+
+I. Intro (intro music provided by...)
+- Hello and welcome to the Swift Community Podcast, I'm Garric and I'll be your lead host today and I'm joined by Chris Lattner, say hi, Chris...
+- and I'm also joined by Bas Broek, welcome to the show, Bas...
+- For those that dont know, Bas is the current steward of the Swift Weekly Brief.
+
+II. Follow up
+- Podcast launch response was great
+- Features, Issues, PRs
+- Where are we at?
+
+III. Potential Episode Proposal Process
+
+IV. Swift Weekly Brief and Scaling A Codeless Open Source Swift Community
+
+V. Q&A
+
+VI. Outro (outro music provided by...)
