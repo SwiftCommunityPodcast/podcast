@@ -57,7 +57,9 @@ I. Intro (intro music provided by...)
 
 II. Follow up
 - Podcast launch response was great
-- Features, Issues, PRs
+- Features: iOS Dev Weekly, Swift Weekly Brief
+- Issues: #15, #13, #9, #2 (vjosullivan) #1 (mortenbekditlevsen)
+- PRs
 - Where are we at?
 
 III. Potential Episode Proposal Process
