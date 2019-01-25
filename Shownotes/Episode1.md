@@ -18,7 +18,7 @@ Want to contribute to the Swift Community Podcast? We’d love your help and sup
 - [Swift by Sundell](https://swiftbysundell.com)
 - [Swift Weekly Brief](https://swiftweekly.github.io)
 - [Bertrand Serlet](https://en.wikipedia.org/wiki/Bertrand_Serlet)
-- [Firefly](https://en.wikipedia.org/wiki/Automatic_Reference_Counting)
+- [Firefly](https://en.wikipedia.org/wiki/Firefly_\(TV_series\))
 - [ARC (Automatic Reference Counting)](https://en.wikipedia.org/wiki/Automatic_Reference_Counting)
 - [libauto](https://opensource.apple.com/source/libauto/libauto-77.1/README.html)
 - [John’s first article](https://www.swiftbysundell.com/posts/providing-a-unified-swift-error-api)
