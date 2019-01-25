@@ -6,7 +6,7 @@
 
 * Review Manager: [Chris Lattner](https://github.com//lattner)
 
-* Status: Proposed
+* Status: Proposal Accepted
 
 * Date of Recording: Saturday January 26 2019 10:00 AM PST
 
