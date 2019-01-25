@@ -8,6 +8,8 @@
 
 * Status: Proposed
 
+* Date of Recording: Saturday January 26 2019 10:00 AM PST
+
 ## Introduction
 
 Garric, Chris, and Bas will use Bas's experience as the steward of Swift Weekly Brief as a jumping off point to discuss the challenges and lessons learned with scaling a mostly code-less open source Swift community.
