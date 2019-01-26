@@ -34,3 +34,9 @@ If you have any other comments, questions, ideas, or suggestions, the best thing
 
 - Tweet about the project and follow us on Twitter [@theswiftpodcast](https://twitter.com/theswiftpodcast)
 - Subscribe to the show on [Apple Podcasts](https://itunes.apple.com/us/podcast/the-swift-community-podcast/id1449664346?mt=2), [Overcast](https://overcast.fm/p1065244-3zhoR6), or by adding the RSS feed `https://swiftcommunitypodcast.org/?format=rss` to your podcast player of choice.
+
+### ⚖️License for this work
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+This allows you to use and remix any of this content, only requiring that you provide attribution to its source and indicate if you made modifications.
