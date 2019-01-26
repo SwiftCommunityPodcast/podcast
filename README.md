@@ -37,6 +37,6 @@ If you have any other comments, questions, ideas, or suggestions, the best thing
 
 ### ⚖️License for this work
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 This allows you to use and remix any of this content, only requiring that you provide attribution to its source and indicate if you made modifications.
