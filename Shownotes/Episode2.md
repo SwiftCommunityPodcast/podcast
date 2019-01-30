@@ -15,6 +15,7 @@ Want to contribute to the Swift Community Podcast? We’d love your help and sup
 ## Links
 
 - [Swift Weekly Brief](https://swiftweekly.github.io)
+- [Swift Weekly Brief Sponsorships](https://swiftweekly.github.io/sponsorship/)
 - [Jesse Squires](https://twitter.com/jesse_squires)
 - [iOS Dev Weekly](https://iosdevweekly.com)
 - [Ole Begemann's PR](https://github.com/SwiftCommunityPodcast/podcast/issues/15)
