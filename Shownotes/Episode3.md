@@ -6,7 +6,7 @@ On this episode, Jon Shier, Kelvin Mau, and Chris Lattner...
 
 
 - [Jon Shier]()
-- [Kelvin Mau]()
+- [Kelvin Ma]()
 - [Chris Lattner](https://twitter.com/clattner_llvm)
 
 ## How to get involved
@@ -24,3 +24,15 @@ Want to contribute to the Swift Community Podcast? We’d love your help and sup
 - [SE-0184 Unsafe Pointer(https://github.com/apple/swift-evolution/blob/master/proposals/0184-unsafe-pointers-add-missing.md)
 - [Doug Gregor]()
 - [Harlan Haskins]()
+- [Nate Cook]()
+- [ASCI]()
+- [Generics Manifesto]()
+- [Issue 23]
+- [PR 34]
+- [PR 35]
+- [Issue 28 Issue Templates]
+- [Bas's Issue]
+
+## Special Thanks
+- Intro song
+- Outro song
