@@ -13,13 +13,13 @@ This is by no means a complete list, but here are a few ways to contribute to th
 - Be a producer or co-producer
 - Be a host or cohost
 - Be a guest
-- Edit an episode
+- [Edit an episode](https://github.com/SwiftCommunityPodcast/podcast/issues/9)
 - Publish an episode
 - Suggest a guest
 - Suggest a show topic and/or format
 - Create shownotes
 - Improve shownotes
-- Create transcripts
+- [Create transcripts](https://github.com/SwiftCommunityPodcast/podcast/issues/15)
 
 If you have any other comments, questions, ideas, or suggestions, the best thing to do is open a GitHub issue.
 
@@ -35,7 +35,7 @@ If you have any other comments, questions, ideas, or suggestions, the best thing
 - Tweet about the project and follow us on Twitter [@theswiftpodcast](https://twitter.com/theswiftpodcast)
 - Subscribe to the show on [Apple Podcasts](https://itunes.apple.com/us/podcast/the-swift-community-podcast/id1449664346?mt=2), [Overcast](https://overcast.fm/p1065244-3zhoR6), or by adding the RSS feed `https://swiftcommunitypodcast.org/?format=rss` to your podcast player of choice.
 
-### ⚖️License for this work
+### ⚖️ License for this work
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
