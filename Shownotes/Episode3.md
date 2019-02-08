@@ -16,7 +16,7 @@ Want to contribute to the Swift Community Podcast? We’d love your help and sup
 ## Links
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
-- [Result Type SE-0325](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md)
+- [Result Type SE-0235](https://github.com/apple/swift-evolution/blob/master/proposals/0235-add-result.md)
 - [SE-0240 Integer-convertible character literals](https://github.com/apple/swift-evolution/pull/939)
 - [SE-0184 Unsafe Pointer](https://github.com/apple/swift-evolution/blob/master/proposals/0184-unsafe-pointers-add-missing.md)
 - [Doug Gregor](https://twitter.com/dgregor79)
