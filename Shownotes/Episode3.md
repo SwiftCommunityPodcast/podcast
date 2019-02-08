@@ -31,5 +31,5 @@ Want to contribute to the Swift Community Podcast? We’d love your help and sup
 - [Bas's Issue about episode collaboration](https://github.com/SwiftCommunityPodcast/podcast/issues/28)
 
 ## Special Thanks
-- To Ercilla for the Intro song(https://github.com/SwiftCommunityPodcast/podcast/pull/35)
-- To Marcus for the Outro song(https://github.com/SwiftCommunityPodcast/podcast/pull/34)
+- To Ercilla for the [intro song](https://github.com/SwiftCommunityPodcast/podcast/pull/35)
+- To Marcus for the [outro song](https://github.com/SwiftCommunityPodcast/podcast/pull/34)
