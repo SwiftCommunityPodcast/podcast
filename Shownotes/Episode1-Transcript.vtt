@@ -1,0 +1,973 @@
+WEBVTT
+
+00:00:00.540 --> 00:00:21.250
+<v John Sundell>Welcome to the very first episode of the Swift Community Podcast. A show for the Swift community by the Swift Community. I am one of your hosts, John Sindel. And with me, I have two wonderful co hosts, the first of which you might know as the host of the Swift coders podcast. Mr. Garric Nahapetian. How's going Garric?
+
+00:00:21.380 --> 00:00:24.270
+<v Garric Nahapetian>Excellent. Thank you so much for having me. How you doing?
+
+00:00:24.460 --> 00:00:35.970
+<v John Sundell>I'm doing great. And we also have our third and final co host for this episode. And it's none other than the creator of Swift itself. Mr Chris Lattner. How's it going, Chris?
+
+00:00:35.980 --> 00:00:40.750
+<v Chris Lattner>Doing great. I'm excited to hear John well, but a little bit nervous. Little bit terrified. But that's okay.
+
+00:00:40.890 --> 00:00:46.790
+<v John Sundell>That's how it should be, right. Like nice mixed butterflies in the stomach and, you know, excitement and all that stuff.
+
+00:00:46.800 --> 00:00:47.430
+<v Chris Lattner>It'll be great.
+
+00:00:47.610 --> 00:01:12.280
+<v John Sundell>So before we dive into this first episode on which we both want to talk a bit about this show itself, kind of why we're doing it and what makes it unique in terms of its concept. And we also want to take a look at kind of the current state of Swift and how the community came to be. Let's just take a quick moment to kind of introduce ourselves a little bit to the audience. Eso Garric. Why don't you kick things off and tell us a little bit about what are you up to these
+
+00:01:12.280 --> 00:01:38.750
+<v Garric Nahapetian>days? Hello, Swift community. My name's Garric Napa tion. I am in Iowa's engineer at Tinder. I'm the founder and host of the Swift coders podcast. We've been on a little bit of ah hiatus have been waiting. Teo record this episode. Ah, and so I'm really happy I'm finally doing it. I feel like podcasting again. Yea. And also I'm also the founder of the Swift coders community. We do learn Swift city.
+
+00:01:39.340 --> 00:01:41.050
+<v Garric Nahapetian>We have ah, Swift coder slack team
+
+00:01:41.640 --> 00:01:58.580
+<v Garric Nahapetian>on. And we have ah, Swift coders network of podcasts. On The biggest thing that we do is our learned Swift city effort where we have about maybe fifteen or sixteen learned Swift meet ups all around the world. No and yes. Oh, my biggest contribution these days is through
+
+00:01:59.230 --> 00:02:05.598
+<v Garric Nahapetian>the outside world, like actually meeting in real life and helping P people learn about Swift and start meet ups around the world.
+
+00:02:05.698 --> 00:02:14.008
+<v John Sundell>That's really cool. How do you feel about Swift Like us as a first language for some people, Like, is it a good language to teach for you? And it's, you know, easy to get people started.
+
+00:02:14.018 --> 00:02:46.818
+<v Garric Nahapetian>It is definitely the best language to get started. I think I am on Ios engineer because of Swift. I tried learning object to see Swift made it so much easier. So yeah, I think it's a great way to get started. We could talk more about that, like, you know, if it comes up, but really, like one of the big things I would say and some other parts of the world, it's like the cost of the Mac and how most people want to make iPhone apse right now. But, you know, Mac is really expensive, so that that's a big barrier, but we're trying to help people get into it, so you know it being open source, that's really important.
+
+00:02:47.008 --> 00:02:59.918
+<v John Sundell>Yeah, that's really cool. And the open source part was a big thing for you. Chris wasn't. It s Oh, what have you been up to since I kind of the doors opened and and Swift kind of was released into the world.
+
+00:03:00.128 --> 00:03:09.418
+<v Chris Lattner>I wear lots of different hats. So I I've contributed the stuff compiler quite a bit. I'm on Swift core team, have pushed and cared about, so for a long time
+
+00:03:10.478 --> 00:03:18.018
+<v Chris Lattner>now could have a different rule. And I still care a tremendous amount about the community, and I really want to know what I could do to help.
+
+00:03:19.438 --> 00:03:27.948
+<v Chris Lattner>This is the show I think is a really big piece of that. I think it's a really great way to kind of reach people in a different way, and we could talk about how the show came to be in a bit, but
+
+00:03:28.468 --> 00:03:40.048
+<v Chris Lattner>for me, this is fully a spare time project. I'm not here in any official capacity for my employer or anything like that, but I just care a lot about the community and just you don't want to see it grow and do cool new things.
+
+00:03:40.108 --> 00:04:03.938
+<v John Sundell>Yeah, that's awesome. And I think like the community in general. I mean, that's That's why we all three kind of, you know, got together and got to know each other, and I think that's something that really sets Swift apart. I mean, obviously, a lot of programming languages have really strong communities as well. But that's something that I personally really like about Swift and what makes me even more excited about it. Then I was about something like objective. See which
+
+00:04:04.087 --> 00:04:04.107
+<v (Unknown)>
+
+00:04:04.107 --> 00:04:20.117
+<v John Sundell>objective C. I always saw you as the kind of just a means to an end, like a way to build APS. But it was never something that was, like, intimately involved with in terms of the language itself. And that's just something that excites me a lot that you know, the community around Swift and kind of how people can contribute to many different ways.
+
+00:04:20.127 --> 00:04:45.867
+<v Chris Lattner>Yeah, very much agree. And while things are good, they could be so much better to write. And that's one of the one of things I hope that this podcasts helps with is help grow the community and help build out new things. And you know, there's a tremendous number of packages that should exist that don't and lots of different ways. Teo kind of get people involved in different ways that are not even coding. And so so I'm really excited about that. I think that the sky's the limit.
+
+00:04:46.107 --> 00:04:48.357
+<v John Sundell>Yeah, absolutely. That supercool.
+
+00:04:48.487 --> 00:05:03.097
+<v Garric Nahapetian>Yes. Oh, I completely agree about the Swift community. I think the fact that Swift is so accessible allowed me to be in Ios Engineer, but also because it's so accessible. It reaches so many more people and the community is that much more
+
+00:05:03.187 --> 00:05:03.207
+<v (Unknown)>
+
+00:05:03.207 --> 00:05:12.997
+<v Garric Nahapetian>inclusive. And that allowed me to be a part of it and tow learn because I was able to see so many free resource is and meet so many people and was so welcoming
+
+00:05:13.587 --> 00:05:13.607
+<v (Unknown)>
+
+00:05:13.617 --> 00:05:18.597
+<v Garric Nahapetian>on DH. So the community aspect that Swift is really a bedrock on DH.
+
+00:05:19.187 --> 00:05:22.297
+<v Garric Nahapetian>You were a big part of that, John. Actually, a lot of the work you did
+
+00:05:22.887 --> 00:05:24.787
+<v Garric Nahapetian>early on when I was just getting started.
+
+00:05:25.417 --> 00:05:33.197
+<v Garric Nahapetian>It made me very excited about the possibilities. And, you know, you were a big part of my learning in my excitement,
+
+00:05:33.857 --> 00:05:38.497
+<v Garric Nahapetian>so I wanted to thank you for that. How about you? What do you up to? What you've been doing lately?
+
+00:05:38.887 --> 00:06:21.864
+<v John Sundell>Yeah, so that's first of all. That's super cool to hear. It's always incredible for me to hear, like, you know, that my work can can have an impact on people and, like, help people learn something new, or discover some new technique or something like that. And that's really kind of what drives me these days. So I'm kind of right now making a big transition from being a freelancer, working with clients all the time and building APS and writing code all the time. Two more work with kind of creating content for the community. So I run Swift by Sundell dot com, which is a weekly series of articles about Swift. I also now have started doing some different article serious. I just launched an initiative called Swift by Sundell Basics, which is,
+
+00:06:22.454 --> 00:06:27.734
+<v John Sundell>you know, aiming to kind of teach some of the more core concepts of Swift. And I was development in the kind of more
+
+00:06:27.794 --> 00:06:27.834
+<v (Unknown)>
+
+00:06:27.834 --> 00:06:52.904
+<v John Sundell>lightweight manner. And I also run a podcast this well and do a bunch of other things for the community. So yeah, the community is incredibly important to me, and I'm trying to devote kind of more and more time to doing things for the community while of course still kind of staying very, very connected with coding because I do love programming a lots and I'm still building APS and I'm still working on projects and and doing those kind of things and kind of
+
+00:06:53.594 --> 00:07:10.004
+<v John Sundell>trying to make it this, like nice circle where the work I do building aps and coding can then kind of feed into my content creation. And then the feedback I get from people in the community candid feedback into that. So yeah, it's it's really, really, really nice and kind of create this nice feedback loop.
+
+00:07:10.194 --> 00:07:16.554
+<v Chris Lattner>Yeah. And I have to say that not not only do I love that you're doing it, but the work you do super high quality and really impressive.
+
+00:07:16.594 --> 00:07:17.524
+<v John Sundell>Thanks, Locke. Chris. Yeah,
+
+00:07:17.534 --> 00:07:31.304
+<v Garric Nahapetian>I think that's why it was a no brainer to getyou involved. And try Teo, encourage you and coax you into being the, you know, sort of the first main like producer of this podcast. Because,
+
+00:07:31.894 --> 00:07:59.104
+<v Garric Nahapetian>ah, you are a really big part of the Swift community. Think a lot of people look to you and the work that you're doing. So I think when Chris and I were talking about doing this podcast like it made sense to bring you on, because I think one of the most important things is a community. Eyes did empower people like you encourage people like you, support you so that you can continue to do what you're doing in a sustainable way, and we definitely want
+
+00:07:59.794 --> 00:08:01.724
+<v Garric Nahapetian>to keep you help you keep going.
+
+00:08:02.064 --> 00:08:55.929
+<v John Sundell>Yeah, the super cool. And for me also, to get more people involved, a swell and to kind of also show that, you know, when you look at someone who is running something that has a kind of a big following are a bit big audience. It's easy to look at that and think it was always that way, right? Like objective seed, Ohio was always this big side or his hipster or, you know, any of these kind of, like, really big sites. And and for me, it's very important to always emphasize that, you know, just a couple of years ago, like one or two years ago, almost no one knew who I wass. And no one was reading my my articles. I didn't even have any articles. S o You know, things like that can happen pretty fast. And even though you might not be in its to kind of have a big audience or whatever, like just creating content for the community can can be really, really great even if you are starting out from scratch today. Because you know, you can really create something of value even though you haven't done so before.
+
+00:08:56.059 --> 00:09:20.649
+<v Chris Lattner>Yeah, I think that one of the interesting things about creating new things is that, at least in my experience, the persistence part of it is maybe the most important piece. Yeah. I mean, if you have persistence and you keep at it and keep trying to make it better and better and better than it doesn't matter if it starts out as a really amazing perfect thing, if it just keeps improving. And if you stick with it, eventually become really great on every every learns and everybody starts somewhere.
+
+00:09:20.839 --> 00:09:22.099
+<v John Sundell>Yeah, absolutely.
+
+00:09:22.639 --> 00:09:46.529
+<v John Sundell>So I'm incredibly excited about doing this together with you and with the rest of the community as well. Eh? So you kind of came to me, Both of you. And you had this idea for this show. So why don't you tell the audience a little bit about this? Garric? Why don't you start in? So it's a little bit about the idea. And you had that you had for this show. Kind of You know how Chris got involved, how I got involved in and why we're now talking to everyone here on the on the show
+
+00:09:46.669 --> 00:09:50.449
+<v Garric Nahapetian>So Dub Dub two thousand eighteen.
+
+00:09:51.039 --> 00:10:01.409
+<v Garric Nahapetian>Yeah. I've been doing this Swift coders podcast for maybe two years. At that point, like eighty episodes. I had been doing my learned Swift delay stuffs with coders l A
+
+00:10:01.969 --> 00:10:19.454
+<v Garric Nahapetian>And you had just joined tinder about, you know, six months had been working there, and I think like all that work, you know, for those that don't know, like my background, I was a lawyer. Then I quit. I drove Uber, taught myself programming, you know, like two years later and working as an IOS and Jared tender. But that build up
+
+00:10:20.044 --> 00:10:33.154
+<v Garric Nahapetian>really took a lot out of me. I almost don't really understand how it was able to do that. It's almost like I woke up and it was like it happened. And so Dub Dub two thousand eighteen, I hadn't really been doing the podcast this much have been kind of feeling down
+
+00:10:34.044 --> 00:10:40.254
+<v Garric Nahapetian>and actually not as inspired the year before. Dub Dub. I think it was my first dub dub. It was so inspiring. And then I'm back there
+
+00:10:40.774 --> 00:10:56.374
+<v Garric Nahapetian>the same the same place, you know, in San Jose, not feeling is inspired. It was so this different energy and I had toe just feel into that energy and just go into it. And it was really interesting. What happened when I did that end up having really interesting conversations to people
+
+00:10:57.114 --> 00:11:03.154
+<v Garric Nahapetian>in particular. So one was with Jessie Squires. He and I sat and had lunch together, and I was just telling him about my feelings, and
+
+00:11:03.694 --> 00:11:04.654
+<v Garric Nahapetian>we kind of just shared,
+
+00:11:05.244 --> 00:11:17.754
+<v Garric Nahapetian>and it was really encouraging to, like, hear him. You haven't listened to me and give me his thoughts. And then the other person was Chris. So Chris was participating in the tri, Swift San Jose Open source Meet up on the Friday of Dub Dub
+
+00:11:18.314 --> 00:11:49.954
+<v Garric Nahapetian>and I think it was lunchtime and Chris and I saw each other, and we're like, Let's go eat. So I'm sitting, you know, we're having lunch together. And Chris and I had connected before, you know, I had interviewed him. I think we had a couple conversations and I had interviewed him for my podcast. But like this was the first time he and I had really interacted like that before. Never took a walk with him, so we walk from the venue to Dub Dub. But we have lunch and I get into the same details with Chris because he's, you know, he's checking in with me. He has a going, you know, what's going on. And I notice you have been doing the podcast is much, and I just start telling him
+
+00:11:50.514 --> 00:11:51.554
+<v Garric Nahapetian>and we talk about
+
+00:11:51.944 --> 00:11:51.964
+<v (Unknown)>
+
+00:11:52.224 --> 00:11:59.954
+<v Garric Nahapetian>different ways to get inspiration and, you know, maybe you keep doing it, or maybe you do it differently, and maybe you don't do it. And And that was really great.
+
+00:12:00.594 --> 00:12:09.304
+<v Garric Nahapetian>And then some time goes by and he emails me or so we kind of reconnect over email. And he had this idea, like, Hey, you know what? If you did a show kind of like this and I was like
+
+00:12:09.451 --> 00:12:09.961
+<v (Unknown)>
+
+00:12:11.051 --> 00:12:25.461
+<v Garric Nahapetian>and I could kind of sense, like maybe, like he was wanting to maybe exercise it, his podcasting talents, and I was like, Well, that sounds cool. Would you want to do it together? And he was like, Yeah, that could be cool. So over the course, like this summer,
+
+00:12:26.151 --> 00:13:24.821
+<v Garric Nahapetian>we were planning it together. But by the time it was like ready to go and we're going to pull the button, you push the button to actually start recording. He could sense in me that I really wasn't fully there and it was true. And I was so glad to like, have that same honest conversation with him again. And and I said, Yeah, you know what? Like I really do want to do this, but I don't know if I can put all of it on my shoulders. And he said, You know what? This is a community podcast. So what do you think about reaching out to more people in the community and seeing if we can, you know, get someone else to help Andi? I said that would be a great idea. And in that moment, I was relieved, but also scared. You know, it's coming coming from a place of, like, abundance, but also scarcity like I was, I was relieved, but scared because I kind of wanted it to be just me and Chris, you know? But then But then when he mentioned, you know, John, and it just, you know, mentioned you and it just made total sense. And then we brought you in. And you, us three, we started just talking and It just made so much sense, and it just felt so much more inspired.
+
+00:13:24.981 --> 00:13:45.401
+<v Chris Lattner>I felt like pulling John and was really fantastic, because then it really cannot. Chris, like John's perspective, really crystallized the show. And and, you know, it should not be one or two or three people should be anybody who wants to get involved in any different kind of way. And if there's anybody else who wants to produce a show, then they should be able Teo. And this is about and formed by the community.
+
+00:13:45.631 --> 00:13:58.911
+<v John Sundell>Yeah, absolutely. I mean, the way I look at this and, you know, when you got me involved and yes, if I wanted to be part of this, I was, Of course, they're really excited about that because I love podcasting. And even though I'm already doing two different shows, you know, why not add a third right?
+
+00:13:59.461 --> 00:14:32.367
+<v John Sundell>But the thing that we kind of all agreed on was, you know, this is not any one of us is kind of individual show, and we won't necessarily be on all the episodes even like we'll help kind of bootstrap that you kind of look at. This is the kind of you know, initial commit of the repository, and then whoever contributes and helps out you know who wants to be on the show. Who wants to help out with things like, you know, editing or putting things together, or, you know, it's coming up with topics to talk about. You know, all of this stuff is kind of very much up to the community and were actively looking for people to get involved.
+
+00:14:32.357 --> 00:14:43.337
+<v Garric Nahapetian>Yeah, I'm really inspired by what Jesse Squires has done with the Swift weekly brief. And now baas like taking over. And so I feel like somehow using that model but for a podcast
+
+00:14:43.847 --> 00:14:46.767
+<v Garric Nahapetian>could be really, I think, powerful.
+
+00:14:47.257 --> 00:15:13.397
+<v Chris Lattner>Yeah, well, And if you look at big, successful things across the world, the ones that really work in the long term of the ones that can scale right and you can't scale if everything is dependent on one person. And so the more you can pull people in, the more you could take advantage of a different people, skill, sets and abilities and, you know, interests and time and all the things that going to making something really the better. And so the Swift communities, so many different kinds of backgrounds and perspectives.
+
+00:15:14.437 --> 00:15:15.697
+<v Chris Lattner>I think everybody has something bad.
+
+00:15:15.887 --> 00:15:38.067
+<v John Sundell>Yeah, absolutely. And so many people have so many kind of hidden talents, right? Like when you talk to people, like at a conference or something, you know, it comes up like, Yeah, I used to be an audio engineer, or, you know, I used to do writing for a living or something like that. And, you know, all those kind of extra skills that people have condemned innately help, you know, building something like this, you know, which, you know, podcasting is a lot of fun, but it also
+
+00:15:38.157 --> 00:15:38.237
+<v (Unknown)>
+
+00:15:38.237 --> 00:15:45.157
+<v John Sundell>requires kind of a lot of different parts. And, you know, this is something that we definitely want everyone you know, who wants to to kind of help out with
+
+00:15:45.277 --> 00:15:49.007
+<v Chris Lattner>on DSO. I think this shows a really great potential because
+
+00:15:49.517 --> 00:16:06.777
+<v Chris Lattner>I think we all see it is kind of a variety show with no fixed format. We could do short up so long episodes, we could have one person, lots of people. There's lots, lots of different things that could happen. So yeah, I think everybody out there should tell us and get involved and and help shape it and make him to something great.
+
+00:16:06.867 --> 00:16:39.531
+<v John Sundell>Yeah, totally. And we'll talk a little bit later at the end of this episode. Kind of exactly how you can get involved. You know what kind of formats and where you can find things in resource is on how to get involved. But for now, I think we should We should get started with our main topic for this episode. So for our main topic for this first episode, we want to take things back a little bit to the origins of Swift itself and kind of talk a little bit about how the community kind of came to be and how Swift came to be.
+
+00:16:40.061 --> 00:16:59.071
+<v John Sundell>And of course, this all starts a couple of years ago, back at Apple, when you Chris, started writing the actual code for the compiler. Or perhaps it even started before them. So why don't you take us back a little bit in time to that moment and tell us a little about you know, how was Swift? Kind of born to begin with?
+
+00:16:59.141 --> 00:17:28.621
+<v Chris Lattner>Yeah, sure. So I think I have to go back in time. Tio. It was right around WNBC twenty ten We just launched a C plus plus support in Klang and that was a huge, huge, huge amount of effort, as you could imagine building a C plus plus compiler for tons of people. Yeah, and I was feeling both very happy about that, but also kind of burnt out a little bit because it was a lot of really Negri work that was very focused on
+
+00:17:28.961 --> 00:17:28.981
+<v (Unknown)>
+
+00:17:28.981 --> 00:17:35.401
+<v Chris Lattner>implementing C Plus plus and you can't implement C Plus plus without thinking. Gosh, there should be a better thing out there
+
+00:17:36.671 --> 00:17:42.171
+<v Chris Lattner>and so has actually got into number conversations with a guy named Beltran. Surly
+
+00:17:42.911 --> 00:17:50.501
+<v Chris Lattner>Bertrand was the head of the software team at at the time, and Baton is an exceptional engineer. He's an amazing human.
+
+00:17:51.521 --> 00:18:06.941
+<v Chris Lattner>He's also a bit of a language geek. And so he had been pushing on objective C to make objective see better. And he always wanted more out of objective C and to make it better and better and better. And he and I got into a number of just kind of one on one white board sessions.
+
+00:18:08.401 --> 00:18:09.951
+<v Chris Lattner>Bertrand ran all of software,
+
+00:18:10.901 --> 00:18:13.441
+<v Chris Lattner>and so he had No, I had no time
+
+00:18:13.441 --> 00:18:14.251
+<v John Sundell>kind of busy guy.
+
+00:18:14.421 --> 00:18:21.952
+<v Chris Lattner>Yeah, but he always kind of encouraged me to, like, drop by at the end of the day and try to see if he's available and he'd stay late, and we would We'd geek out on the white board.
+
+00:18:22.512 --> 00:18:27.802
+<v Chris Lattner>We talk about a ton of different things. Like the goals were details like the type system,
+
+00:18:28.852 --> 00:18:46.962
+<v Chris Lattner>and we eventually turned into a pitch deck. And so I don't the pitch deck for him and came up this idea of building a new a new language on. But the time it was code named shiny as your building a shiny new thing. All right. Ah, that was also a fan of the Firefly TV show.
+
+00:18:47.012 --> 00:18:47.682
+<v John Sundell>Right?
+
+00:18:48.382 --> 00:18:50.622
+<v John Sundell>Was that it was the file extension dot Shiny?
+
+00:18:51.122 --> 00:19:06.382
+<v Chris Lattner>Yes. In fact, it wass eyes also S O. You know, at the time, it was like super tiny. It was really just profound. I can't talking about it. Another really awesome engineer named Dave's Ozeki got involved in some that early conceptual discussion.
+
+00:19:07.042 --> 00:19:17.552
+<v Chris Lattner>But one of the things that came out of it even really early on. As we start talking about memory management on at the time, you know, we were both convinced that there had to be a good way to solve or improve memory management,
+
+00:19:18.342 --> 00:19:22.892
+<v Chris Lattner>and we need to get to memory safety. And so you have to have automatic memory management.
+
+00:19:24.042 --> 00:19:41.852
+<v Chris Lattner>One of the key things that came out of that was ARC and the idea that we could have the compiler own and drive this instead of having a run time objectives. He had this live auto garbage collector at the time, but it had a number of problems. And so, you know, that was kind of the genesis of Swift internal design discussions and that kind of stuff
+
+00:19:42.962 --> 00:19:53.922
+<v Chris Lattner>turning into objective see features and many of the things that came out, including Arkan modules and even liberals and things like that really came from the behind the scenes development of Swift.
+
+00:19:54.172 --> 00:20:09.432
+<v John Sundell>So there was, like, a bunch of features that you had in mind for shiny and what would later become Swift. But you said, You know, we don't wanna wait until we have a brand new language, you know, completely implemented. Let's go ahead and take those features that we really, really want. And just add those to objective C.
+
+00:20:09.502 --> 00:20:29.510
+<v Chris Lattner>Yeah, well, so if you think about it from a different perspective. So it may seem obvious now, but the time it was not obvious at all to anybody and even me, and I mean Beltran was really great and is still really great because he's always super encouraging. And he always kind of, you know, pushed through the doubts and the Trans a bit of a scientist. He's,
+
+00:20:29.510 --> 00:20:29.880
+<v (Unknown)>
+
+00:20:30.620 --> 00:20:34.280
+<v Chris Lattner>you know, he just wants to find truth in many ways and
+
+00:20:34.970 --> 00:20:59.090
+<v Chris Lattner>on DH. So yeah, there's tons of uncertainty, but at the same time, there's lots of good ideas. And so hey and others were pushing say, Well, okay, I mean, it's part of the idea ideation behind building new language. You always have to ask the question of Why not make the existing thing better? Yeah, and so the answer was yes. We should make the existing thing better clearly, and so are you.
+
+00:20:59.630 --> 00:21:01.920
+<v Chris Lattner>All the other things that came out of that happened,
+
+00:21:02.480 --> 00:21:09.180
+<v Chris Lattner>but in the case of Swift became memory safety and you can't retrofit memory safety into
+
+00:21:09.570 --> 00:21:09.620
+<v (Unknown)>
+
+00:21:09.620 --> 00:21:17.110
+<v Chris Lattner>objective C without removing the C. And if you move the see you, you just lose too much and it becomes not objective C anymore,
+
+00:21:17.420 --> 00:21:28.380
+<v Garric Nahapetian>right? So was it somewhat like a Trojan horse to like? Add those Swift features to objective see which kind of made it easier to then convince people about Swift Later,
+
+00:21:28.970 --> 00:21:30.580
+<v Garric Nahapetian>as you'd already done the objective, See work.
+
+00:21:31.010 --> 00:21:38.070
+<v Chris Lattner>I think so. Interesting internal dynamics. I guess we were very focused on making Jack C and the platform better.
+
+00:21:39.370 --> 00:21:55.360
+<v Chris Lattner>It was in terms of the Swift development. It was a way of de risking innocence, because if you say we don't rule out everything all at once and you have benry right, and none of it is tested that it's hugely risky. But if you were allowed minor things like a holy memory management system
+
+00:21:55.880 --> 00:22:16.890
+<v Chris Lattner>separately, and then you iterated, debug and develop that with the community and work it out, then like it takes a certain amount of risk away. But but I would say that both the external and internal community Apple was kind, saying like, Well, why you prioritizing this? It feels like we're kind of on a random walk. And why? Why are you doing this and not this other thing? And so there was an interesting dynamic with that.
+
+00:22:17.110 --> 00:22:19.480
+<v Garric Nahapetian>Can you talk just briefly about like what
+
+00:22:20.070 --> 00:22:20.120
+<v (Unknown)>
+
+00:22:20.120 --> 00:22:30.195
+<v Garric Nahapetian>community aspects at that time made something like Swift possible. Um, you mentioned bro Tron, and you mentioned another gentleman's name I can't remember. But like,
+
+00:22:31.185 --> 00:22:34.655
+<v Garric Nahapetian>you know, there has to be some nugget of community.
+
+00:22:35.335 --> 00:22:40.995
+<v Garric Nahapetian>Because Swift is like, Swift Min is so strong right now, there has to be I feel like some nugget of community that was
+
+00:22:41.585 --> 00:22:46.495
+<v Garric Nahapetian>available at Apple or wherever you were at that time with those people
+
+00:22:47.335 --> 00:22:49.015
+<v Garric Nahapetian>that maids with possible.
+
+00:22:49.115 --> 00:22:56.535
+<v Chris Lattner>Well, so Apple has a really strong engineering team. And so there's a ton of people at the time. They're all writing objective, see
+
+00:22:57.165 --> 00:23:13.555
+<v Chris Lattner>that are highly opinionated about things. But I also have a huge depth in background and in building frameworks and absent all all these kinds of things. And so there were a lot of ideas on how to make objects see better. And they all their big white papers written by
+
+00:23:14.385 --> 00:23:21.715
+<v Chris Lattner>luminaries have been working since the next day on this kind of stuff. And so there's a tremendous internal community that drove That
+
+00:23:22.475 --> 00:23:31.535
+<v Chris Lattner>s o a time. It was Tron and Dave and I talked about ideas and I started coding a prototype of the compiler.
+
+00:23:32.785 --> 00:24:09.235
+<v Chris Lattner>But obviously, I could not build everything myself. And so what's happening is around April in twenty eleven. We discuss it with management and then got agreement pulling a few more people. This is when folks like Ted Kremen, AC and Doug Gregor and John McCall in a bunch of other exceptional engineers over time got pulled in. And, you know, looking back on that, it was it was really interesting, because this is the first time that other people were taking other other language experts and other design like this kind of expert. People were
+
+00:24:09.925 --> 00:24:17.145
+<v Chris Lattner>taking a critical look at this, and they had a lot of really harsh feedback, and it wasn't intended is harsh. But it
+
+00:24:18.405 --> 00:24:30.245
+<v Chris Lattner>they were right. It was terrible on and and like, you know, the ability to have one of the world's experts on generics pulled into this is and have, ah, culture where
+
+00:24:31.082 --> 00:24:50.062
+<v Chris Lattner>you know, it's been a team that had built the Clinton compiler and have been working together for years on many different, really interesting projects. And so being able to draw on that that engineering talent and was critical to making everything happened. And you know that these are just a few of the people that helped drive and build that, But it was it was a big deal.
+
+00:24:50.222 --> 00:25:04.802
+<v John Sundell>Yeah, I can imagine what was the kind of state of the language at that point. Like, what did the kind of syntax look like? Like what part of the compiler infrastructure was there? Was it all kind of very much in the prototype face Or had you kind of gotten a little bit further along At that point,
+
+00:25:04.802 --> 00:25:06.512
+<v Chris Lattner>it was very much in the prototype phase,
+
+00:25:07.332 --> 00:25:12.492
+<v Chris Lattner>the so this is all public because the revision history's all public. But
+
+00:25:12.502 --> 00:25:13.892
+<v John Sundell>right, you guys get along
+
+00:25:13.892 --> 00:25:18.202
+<v Chris Lattner>so you can get love. There's a change log, because not all the way back quite a ways back
+
+00:25:18.902 --> 00:25:28.402
+<v Chris Lattner>the So before Doug got involved, there was no generic system. So we wanted the genetic system that I don't have the expertise design it myself. And Doug is the guy
+
+00:25:28.982 --> 00:25:37.002
+<v Chris Lattner>John. I remember very early on. He took over, making actually generate code instead of just being apart, sir. And so that was a major piece that he took on
+
+00:25:37.552 --> 00:25:44.202
+<v Chris Lattner>there's there's tons of missing pieces, but there are also pieces that go all the way back. I think of our and funk go all the way back to the beginning.
+
+00:25:44.862 --> 00:25:48.112
+<v Chris Lattner>You know, some of the basic syntax ideas are very, very similar,
+
+00:25:48.992 --> 00:26:09.642
+<v Chris Lattner>So it was very much prototype on DH. But you know, a lot of the ideas, as as I explain to people when building anything off in the ideas, were head of the documentation and sometimes the documentations ahead of the code. Yeah, eso is very much like that. And the ideas they're so way ahead of the code right now. Incidentally,
+
+00:26:10.672 --> 00:26:18.672
+<v Chris Lattner>so another another kind of, you know, different. Part of the community that was really important was a guy named Craig said Ri G.
+
+00:26:20.002 --> 00:26:29.122
+<v Chris Lattner>Craig is, I think, well known in the Apple community. He is, Hey became involved in the project and sometime early twenty eleven.
+
+00:26:29.842 --> 00:26:33.669
+<v Chris Lattner>That was right around when Beltran retired from Apple and Craig took over a show.
+
+00:26:34.479 --> 00:26:55.899
+<v Chris Lattner>No, Craig is Craig's it a really, really interesting person, so he is super charismatic, both on stage, but also in person, in one on ones. But the thing that I think a lot of people don't understand is that Craig is just like, ridiculously smart and he is super deep on so many topics, and I didn't expect this. But he
+
+00:26:57.009 --> 00:27:18.689
+<v Chris Lattner>he's also really. He knows a lot about languages and former roles. He's worked with groovy and lots of other kinds of languages, and I think that I had not come in contact with, and he's not just, you know, the little guy who cares about strategy. But he also cares about a ton of things like closure, syntax, keywords, all that kind of stuff. And Craig really was a,
+
+00:27:19.509 --> 00:27:46.619
+<v Chris Lattner>you know, he was the hard, hard driver and the advocate for making it really and making it relevant to objective C and carrying about objects, see development and carrying about the eyes and carrying what the FBI's importance with look like and in all all that kind of stuff. And Craig, in addition, giving great feedback, just kept and keeps an exceptionally high bar on the team in the project. And he really helped shape a lot of what Swift was today.
+
+00:27:46.809 --> 00:27:52.969
+<v Garric Nahapetian>It's pretty cool, too, because he believed was the one that kind of first announced it on stage. It dubbed up.
+
+00:27:53.029 --> 00:27:53.449
+<v Chris Lattner>Yes,
+
+00:27:53.609 --> 00:27:55.229
+<v John Sundell>yeah, and then he brought you out right?
+
+00:27:56.169 --> 00:27:59.409
+<v John Sundell>That was the classic line the objective C without the C,
+
+00:27:59.669 --> 00:28:02.789
+<v Chris Lattner>which which which honestly have mixed feelings about, because that's
+
+00:28:02.789 --> 00:28:05.629
+<v John Sundell>really not what it's about. Is it a good tagline?
+
+00:28:05.639 --> 00:28:07.939
+<v Chris Lattner>It was the right thing to say to the community at the time.
+
+00:28:08.329 --> 00:28:27.619
+<v John Sundell>Yeah. I mean, it was because I was actually in the audience there and I was watching the keynote. And that phrase like the objective C without the C it's kind of explained, is in a way because, you know, the story was, you know, we have all this kind of crufts or or legacy, if you will. That is kind of built because of
+
+00:28:27.809 --> 00:28:27.839
+<v (Unknown)>
+
+00:28:27.839 --> 00:28:47.178
+<v John Sundell>objective cease, you know, being a super set of C and now we want to please clean slate. So we still want you know, what makes objective C good. The objective part. Like what we've added on to see. We want to keep those, you know, the convention's thie. You know, the message passing all that, all that kind of good stuff. But do it in a more modern way.
+
+00:28:47.238 --> 00:28:52.618
+<v Chris Lattner>Yeah, well, absolutely. And but And so the reason it it is conflicting to me is that
+
+00:28:53.128 --> 00:29:26.998
+<v Chris Lattner>so, You know, from the beginning of the project. My, my goal was to build a full stack system. It was to look in all the existing systems out there, see what's good or bad about each of them, and then cherry pick the best ideas from systems wherever they come from. And the goal was really to build something that you could write firmware and or that you could do scripting, you know, the right you could write mobile, absent or sort of wraps or like low level systems code and and have it be great at all of those, not just some terrible compromise and so that that that positioning was absolutely the right thing to do, right? But
+
+00:29:27.718 --> 00:29:35.298
+<v Chris Lattner>but, you know, it's, you know, hopefully, Swift will grow over time and kinds of what what is able to dio
+
+00:29:35.538 --> 00:29:44.938
+<v Garric Nahapetian>I was sitting at home watching. I wasn't at Dub Dub. I was still just in an outside observer, and when it was announced, I had no idea what it meant.
+
+00:29:45.528 --> 00:29:48.138
+<v Garric Nahapetian>All I knew is that people were excited
+
+00:29:48.658 --> 00:29:54.628
+<v Garric Nahapetian>and people were also unsure about what it's like. They were unsure, I guess, or they were. Questioning
+
+00:29:54.848 --> 00:29:57.778
+<v John Sundell>was like excitement mixed with anxiety, write
+
+00:29:57.838 --> 00:30:04.308
+<v Garric Nahapetian>something and I just remember not knowing what it meant. All I really knew is that it was a new and shiny
+
+00:30:05.028 --> 00:30:28.238
+<v Garric Nahapetian>and I wanted Teo like, just look into it and learnt about. And so I remember trying to listen to every podcast I could, like, get my hands on or every article to try to understand what it meant, ultimately what it meant for me, and I only discovered this maybe six months later was that it was going Tio, be more accessible for me. It was going to enable me to
+
+00:30:28.978 --> 00:30:32.178
+<v Garric Nahapetian>give myself another shot at making an iPhone app.
+
+00:30:32.658 --> 00:30:36.918
+<v Chris Lattner>Well, and I think that's a perfect segue into the last group I won't talk about because,
+
+00:30:38.211 --> 00:30:56.181
+<v Chris Lattner>you know, you look at what Swift is and sure it's a compiler. It's a language spec. It's a set of a P A, Is it Z ninety? But the thing that makes it real and I think the thing that reached so many people is the work done by the developer of Publication Group. So these are the tech writers at Apple that
+
+00:30:56.571 --> 00:30:56.811
+<v (Unknown)>
+
+00:30:56.811 --> 00:31:03.481
+<v Chris Lattner>wrote things such as the Swift programming language book and you know the success and the rapid
+
+00:31:04.101 --> 00:31:09.181
+<v Chris Lattner>The rapid adoption. Swift, I think, is a huge part directly related to
+
+00:31:10.071 --> 00:31:18.041
+<v Chris Lattner>such high quality good documentation and a book being available on Day one. And it's continually maintained today, and it's it's amazing.
+
+00:31:18.571 --> 00:31:27.501
+<v Chris Lattner>And part of that was that we pulled in the decorators right into the design meetings. And so folks like Tim I. Stead and Brain Lanyon, Alex Martini
+
+00:31:28.361 --> 00:31:34.451
+<v Chris Lattner>spent a tremendous amount of time in weekly meetings where we were arguing about, you know, do we use
+
+00:31:35.271 --> 00:31:53.731
+<v Chris Lattner>dot versus colon weigh? Do you use this word versus that keyword or or you know, is it should we change funk to death? Or, you know, but also how the depths of the type system how do the co John algorithms work? And how do we get good performance and how to string work and all the different pieces go into it and
+
+00:31:55.071 --> 00:31:59.921
+<v Chris Lattner>and I to me again in terms of you know, how how you make something happen. It's
+
+00:31:59.921 --> 00:31:59.981
+<v (Unknown)>
+
+00:32:00.671 --> 00:32:05.481
+<v Chris Lattner>not only were they there, so they could absorb, but they contributed a ton and they were one of the
+
+00:32:05.871 --> 00:32:05.941
+<v (Unknown)>
+
+00:32:05.941 --> 00:32:11.711
+<v Chris Lattner>strongest advocates for, you know, if you can't explain something, it isn't good, right? Yeah. You know,
+
+00:32:12.381 --> 00:32:28.831
+<v Chris Lattner>I've seen so many, so many systems where you know, like you build a thing and then you try to explain it afterwards. And when you go to explain and it's it's really awkward and you're like, Wow, I have to kind of explain the workarounds for this thing. If you can kind of clothes that feedback loop it include the documentation include the
+
+00:32:29.941 --> 00:32:34.551
+<v Chris Lattner>you know, explaining it to people part of this into the design process. You get something that's so much better.
+
+00:32:34.701 --> 00:33:34.386
+<v John Sundell>Yeah, absolutely. It's kind of like, you know, when you make a product or something, you kind of want to have that good elevator pitch or you want to have, like, the reason why you're doing it and, you know the same goes for a tech decisions. I think you know to your point where you know, if you're going to build something, whether that's an AP I language or whatever you're designing or framework, you know it needs toe. Have that, like, you know, easy way of explaining something easy way to get into it. And I completely agree that that the documentation and the book that came out and also the websites where you know you could go and you can get The language reference was extremely high quality and enabled people like myself who, you know, New Iowa's had been doing Iowa saps for a couple of years, and, you know, we're familiar with the big sea, and all the guys could kind of dive in and start, you know, understanding those new concepts that we weren't used to like generics, for example, or type inference and kind of understand those things in a very nice way. In a gradual way. We're kind of one thing was building on another thing,
+
+00:33:34.676 --> 00:33:38.786
+<v Chris Lattner>right? And and this is what I mean. One of the reasons why I'm so impressed with your work, John, is that
+
+00:33:39.326 --> 00:34:06.216
+<v Chris Lattner>I the way because I can sympathize with an individual person at a time, and I can figure out where they're coming from and figure out the right way to explain it to the one person. But taking something and explain it to a mass of people is just its own incredible design process that is so challenging. And I have a tremendous amount of respect for because I'm really bad at it. But it's just it's it's a superpower and not very many people have that.
+
+00:34:06.876 --> 00:34:39.966
+<v John Sundell>Yeah, it's something like like with everything it's I think it's good to start out, like if you want to learn the skill or like if you want to improve it, I think the way to do it. Usually it's like to start out simple. Like if you look at my first article that I wrote, it was incredibly simple. It, like just had a couple of paragraphs in a couple of of of coded samples. And, you know, I think also one key point that I kind of told myself from the beginning was, You know, I always want to use really live concrete examples that people can relate to and not use, like full on bar or ABC or something for variable names. But I think having some of those kind of
+
+00:34:40.516 --> 00:34:57.718
+<v John Sundell>just like, just like how you brought in the writers like in the meetings and they were there from the beginning. I think setting some good kind of principles that you think well, you know, yield a good result. But then just starting out very, very simple and kind of learning on the job because you know, there's only one way to acquire most skills, and that's just to do it, right,
+
+00:34:57.908 --> 00:35:33.938
+<v Chris Lattner>right? Absolutely. And so I mean, this this is this is the kind of thing where a lot of people say, Oh, Chris invented Swift and, well, it's I mean, there's a There's a truth to that. I've pushed it over many years in many different ways and kind of shepherd of the project. But Miss is the fact that there's hundreds of people involved in so many critical ways building that bugger building, the idee, building playgrounds, building educational content within a building like all this stuff, that building the community, aspects of it building like there's so many different pieces of this that that far transcend me and it very much is
+
+00:35:34.738 --> 00:35:47.238
+<v Chris Lattner>a community of people both inside Apple but outside Apple, that air all pushing together and in building things and contributing their own ways, and that that that I think, is why Swift is where it is. And that is why I see it growing.
+
+00:35:47.458 --> 00:35:53.838
+<v Garric Nahapetian>And that's why one of the reasons we wanna have this podcast is to bring some of those people to life.
+
+00:35:54.228 --> 00:35:54.838
+<v (Unknown)>
+
+00:35:54.928 --> 00:36:18.668
+<v Garric Nahapetian>You know, Obviously, everyone probably knows about John or some people might know about me or you are in. A lot of people know about you, Chris, but there are people who make just the same amount of impact. But people don't know about them. And so hopefully over time through this podcast, we can have them on the show are bring them toe light, whether they hopefully maybe one day, people that work inside of Apple or people who are working in the open source community
+
+00:36:20.338 --> 00:36:28.038
+<v Garric Nahapetian>and we can bring them on and let people know about them and just learn from them and share their stories to hopefully inspire and encourage other people.
+
+00:36:28.278 --> 00:36:53.806
+<v John Sundell>Yeah, totally. So Garric you mentioned earlier that you were watching from home, you're watching the keynote at WWDC Use saw Swift being introduced. You started, you know, reading more about it and trying to, you know, to, you know, get yourself a second chance to kind of learn I was development. So where the kind of things go from there from you like, how did you kind of become a Swift developer in that sense? Like when? When was it that you first started, like really writing Swift code and using it
+
+00:36:53.966 --> 00:37:16.256
+<v Garric Nahapetian>Yes, so Swift is announced, and I'm just trying to understand what it meant. But at that time, I was, you know, still working as a lawyer, I think. And that summer I started maybe driving uber. And and then I had a had an app idea, and I was working on this app idea with some other developers and but all the while kind of like digesting all the dub dub DC videos. And I think maybe
+
+00:37:16.786 --> 00:37:23.756
+<v Garric Nahapetian>I wasn't going to read that Swift book, you know, because I didn't really know that much about programming. In fact, I need nothing about programs. So that Swift book,
+
+00:37:24.296 --> 00:37:38.156
+<v Garric Nahapetian>like I could have, you know, read it because that that introduction part was actually very digestible. But as you pointed out, like A B and C and an array doesn't mean anything to me. If I don't know why, I would use an array. So I think what happened was
+
+00:37:39.146 --> 00:37:51.256
+<v Garric Nahapetian>it took, like, a few months for people like you, John, to digest the Swift book and produce content that's more, even more digestible. So building off the excellent work of the documentation writers at Apple
+
+00:37:51.846 --> 00:38:10.856
+<v Garric Nahapetian>and putting more digestible work out their content for people like me. Plus the, you know, Swift kind of gaining more momentum. And then me starting to feel like, Well, I can actually maybe do this myself. Swift is so much more accessible. It it just reads like English, human, really readable English. And so
+
+00:38:11.446 --> 00:38:18.556
+<v Garric Nahapetian>around January, like the new year of two thousand fifteen, I decided like her, I'm going to give give it another shot. And so I started
+
+00:38:19.246 --> 00:38:43.156
+<v Garric Nahapetian>learning Swift, let's say an average of one hour a night that was just like, you know, try to learn it did a lot of like Ray Wonderlic and and whatever document you know, documentation or articles, editorials I could get my hands on, but ultimately what led me to, you know, be kind of become a maur, a bigger part of the community. I was feeling isolated and like feeling alone,
+
+00:38:43.716 --> 00:38:51.816
+<v Garric Nahapetian>that I was like the only person on earth that was in my situation. That was like doing one thing and wanted to do another thing. And I wanted to, like, make a nap and I wanted to
+
+00:38:52.074 --> 00:38:52.094
+<v (Unknown)>
+
+00:38:52.094 --> 00:39:04.684
+<v Garric Nahapetian>learned Swift and so I had too much coffee. One morning I was with my wife at her office, and I've been thinking about creating a meet up, and I just had too much coffee that morning and I just did it. You know, I didn't think too much about it, just like I'm going to create a meet up.
+
+00:39:05.434 --> 00:39:06.474
+<v Garric Nahapetian>And that was learned Swift,
+
+00:39:07.374 --> 00:39:08.584
+<v Garric Nahapetian>and it really just took off
+
+00:39:09.174 --> 00:39:11.994
+<v Garric Nahapetian>because there was so much excitement around Swift
+
+00:39:13.114 --> 00:39:19.884
+<v Garric Nahapetian>because of that community, you know, and just all the excitement around it. And it really took off. And there were more people like me.
+
+00:39:20.674 --> 00:39:37.284
+<v Garric Nahapetian>And so I started teaching them, and they were teaching me, and it really allowed me Tio just kind of become a leader in L. A. And if you gave me a lot member ofthe line, John, you know, we're talking about finding energy and creating inspiration and all that, and that was like a really big part of that.
+
+00:39:37.984 --> 00:39:43.334
+<v Garric Nahapetian>This meet up produced so much positive inspiration and energy for me personally
+
+00:39:43.974 --> 00:39:43.994
+<v (Unknown)>
+
+00:39:43.994 --> 00:39:54.794
+<v Garric Nahapetian>allowed. It pushed me that. That's what allowed me to shoot so far so fast and then wake up two years later and I'm in Iowa's engineer tender, you know, it was a big part of that that community aspect of the media.
+
+00:39:55.214 --> 00:40:03.164
+<v Chris Lattner>And what about you, John? What was electing the audience and having this, like, very big bomb kind of dropped on you all at once without expecting it.
+
+00:40:03.774 --> 00:40:56.678
+<v John Sundell>So I was incredibly excited, like I had come from a background of doing like, C sharp and doing javascript. So I had kind of both of those languages, kind of in the back of my mind as I was learning objective C. So I really loved objective CM, you know, mostly because of the eyes and because of cocoa and things like that. But I definitely was ready for, like, a more modern take on those philosophies. So when that bomb was dropped, I literally ran down to this area in W w. In Mosconi at the time where they had these Ethernet cables where you could actually connect your computer to download Exco, too. Like Dex Code Beta because he couldn't do it over WiFi. So I ran down. I installed a new version of X Code and I started opening up a playground. So that was, like my very first like impression of writing Swift code.
+
+00:40:57.268 --> 00:41:12.378
+<v John Sundell>And at the time, playgrounds they weren't super stable. I'll admit that there was a lot of a lot of fighting with them to get them working, but once they got working, I had a lot of fun. I was writing lots of different a lot, a lot of code, and
+
+00:41:12.918 --> 00:41:32.318
+<v John Sundell>at the time I was working for Spotify. So by the time I came back from the U. S, I came back to Sweden. Andi I was at work, actually built together with a couple of co workers. We built a prototype feature inside of the Spotify abusing Swift, and that was a really great learning experience for me, because that let me kind of compare it
+
+00:41:32.828 --> 00:42:03.058
+<v John Sundell>to objective. See, in many ways, you know how it interacts with objective C AP Eyes Aunt also just to see, like the differences and what it was like building something real in Swift and that was back in Swift one. And yeah, then I've been like following it ever since. And once I kind of made a decision to leave Spotify and become a freelancer. I knew that I wanted to focus one hundred percent on Swift, and that kind of led to the whole kind of you. Know involving myself more with the community with open sores and content creation, these kind of things. But it all kind of, you know,
+
+00:42:04.008 --> 00:42:15.288
+<v John Sundell>came from that moment of realizing that, you know, there's a really cool language and and that it felt, you know, so much nicer to write than objectives he did, even though I did, like, objective Cielo to
+
+00:42:15.438 --> 00:42:23.788
+<v Chris Lattner>Yeah, well, and I mean, I think one of the things that's fascinating about this is that people will quickly find out the two of you ever eaten far more Swift code than I have,
+
+00:42:24.658 --> 00:42:35.698
+<v Chris Lattner>right, Right. And so I know a lot about the insides and how and why and how it fits together in peace like that, but you guys have the actual experience of building and using it in production.
+
+00:42:35.708 --> 00:42:45.778
+<v John Sundell>Yeah, yeah, that's that's always kind of funny when you look at it like, you know, there's this bunch of people working on Swift working on the compiler and they're all writing C plus plus most of the time, right
+
+00:42:45.968 --> 00:42:45.988
+<v (Unknown)>
+
+00:42:45.998 --> 00:42:59.535
+<v John Sundell>on DH, just just a quick as a quick aside, like what's that? Like? Like, you know, when you are, you have this cool language that you've you've designed and you know everyone else gets to use it, But you still have to use C plus. Plus, you know what's that like?
+
+00:42:59.855 --> 00:43:10.315
+<v Chris Lattner>Tells me it's terrible on DH, so the it is, you know, the universe is trick on me to force me to keep people. Plus,
+
+00:43:11.685 --> 00:44:10.475
+<v Chris Lattner>but I think that there's another aspect of that which which goes untold, which is one of the major reasons that Swift is good right now is that there's a big community of people out there that we're blogging about it, right? And so that feedback really shaped. So if we want to, I mean, that was the feedback, the signal, all those complaints, you know, people saying like, this doesn't make sense. I'm having this problem with this. That and the other thing that really shaped and prioritize and drove a lot of what got built. And, you know, there was a long arc of okay, you know, Swift one accident way. Well, not accidentally. We'll intentionally shipped without air hand chipped without protocol extensions, things that we absolutely wanted and Justin sit with the schedule. So we knew we had to do all those things, but a lot of what happened in that first year, too, is directly during by the community. And when Swift became open source. Swift evolution is a hugely great thing, and it's maybe not ideal in terms of optimizing for human time spent.
+
+00:44:11.255 --> 00:44:15.185
+<v Chris Lattner>But it is. It's an essential part of what makes Swift really, really
+
+00:44:15.705 --> 00:44:23.235
+<v Chris Lattner>exceptional. And I think that is total credit to the community and the community of people that that spend their time there and that helped shape and drive it.
+
+00:44:23.425 --> 00:45:14.780
+<v John Sundell>Yeah, absolutely. One thing that comes to mind is kind of like how not only like articles and content, but also open source, it feels like has fed a lot into Swift itself. Like, for example, right now with things like Kota ble, for example, that was one of the things that people were creating, like a thousand different Jason Mapping library's right. I was I was one of them. I built on box because of that, because it was one of those things where you know an objective C didn't think a lot about. It's a lot of the times where he just said, You know, here's a dictionary like me, just access this key and I'm just gonna assume that that's always a string. But what? Once, once you kind of sat down and wrote that same code and Swift, you realised, you know, you needed to build it like Big Pyramid of if let's So I can only imagine that like seeing those kind of things that people have to solve in many different ways must have also kind of fed into the design process.
+
+00:45:14.950 --> 00:45:23.140
+<v Chris Lattner>Yeah, absolutely. And the design of quotable came from a frame or team at Apple that were outside of the core Swift group.
+
+00:45:23.830 --> 00:45:31.160
+<v Chris Lattner>They were really passion about this, and they came up with this and drove it and advocated for it. And and community could mean so many different things, right? And
+
+00:45:32.770 --> 00:46:06.940
+<v Chris Lattner>and you look at results. Why is result now coming into Swift five? Well, it's because so many people built it and did over and over and over again. And while the core teams like we really don't want to have a result because it's kind of a failing of the language and when we get concurrency won't be is necessary. And the community says loud and clear, Look, we need it. It doesn't matter if it's not ideal in the long term, we need it. And so you know, the community really does shaped things. And it's it's maybe not understood as how much the community does have that effect.
+
+00:46:07.330 --> 00:46:22.590
+<v John Sundell>So speaking about that, like speaking about the release of Swift and and the and the years that have passed since then for you now kind of looking at the current state of Swift and and what's it kind of becomes, since you kind of put it out there.
+
+00:46:23.330 --> 00:46:35.180
+<v John Sundell>Has it kind of matched your your expectations if you had any and like, you know, how does it match the kind of the ideas that you had in the beginning and now that it's been out for a couple of years?
+
+00:46:35.300 --> 00:47:23.090
+<v Chris Lattner>Well, so I guess expectations change over time. Back in two thousand ten two thousand eleven, I had no expectation that it would ever turn into anything on. And I admit that it was very much a fun side project. That was the nights and weekends thing originally that have a day job, have a side project that that's intellectually interesting and challenging. Um, a zit became more real than and in launch to Swift one right. There is a question of Can we captured the objective C community? Can we? Can we really capture the Iowa's ecosystem, for example, or are we going to fragment it right? And that was that was a real concern. And so I'm really happy that today I think that the vast majority of the community is happy was Swift. And while there's still tons of work to be done, it seems like it's very successful within that community.
+
+00:47:23.850 --> 00:47:27.450
+<v Chris Lattner>But there's a huge open frontier. Swift on the server still
+
+00:47:28.510 --> 00:47:31.730
+<v Chris Lattner>was making great progress, but there's still a ton of work to be done.
+
+00:47:32.910 --> 00:47:53.910
+<v Chris Lattner>There's other communities out there. I'm particularly fond of the numeric ce and machine learning communities, and they're they're super important to the world, and there's a ton of really interesting people in these communities, and I think Swift could be really great there. And I think, you know, I jokingly say, like Swift World domination is a goal. And yeah, it's a joking goal. But
+
+00:47:54.430 --> 00:47:59.170
+<v Chris Lattner>but, you know, it's based on the belief that people who use Swift Lovett, and
+
+00:48:00.560 --> 00:48:30.810
+<v Chris Lattner>if that's the case, I'd love to bring that joy to more people and just really help improve the world. And so many of the systems out there really unfortunate in various ways, right? People were still writing, see, you know, and just in terms of the bugs and security, vulnerabilities and things like that, you know, it's just it's just really unfortunate and but you know, there's ecosystem problems. There's other challenges that we have to overcome. And and that's something that we as a community Khun Dio. So I don't see anyone. It's on that.
+
+00:48:31.100 --> 00:48:41.620
+<v Garric Nahapetian>I feel like that's what this podcast has a potential to do there Hasn't you know I have I have my podcast John as his heir. Swift on wrapped Fireside Swift There's all these
+
+00:48:42.210 --> 00:48:49.420
+<v Garric Nahapetian>other podcast. But what I feel like we're all in agreeance that we're hoping that this podcast king can't give voice
+
+00:48:50.190 --> 00:49:34.414
+<v Garric Nahapetian>to this Swift community. Also be like an ear to the fore the Swift community and also be like a galvanizing another galvanizing point in addition to the forums. And you know something. A lot of talk is on Twitter, too, you know, I'm see the forums and then in person meet ups, but also, hopefully this podcast could be a galvanizing force to find out what? What do we need to do and how can we What are the different goals and like, how can we help each other to achieve those? Not everybody is, you know, as familiar with, like having conversations on on a forum on. And so for me, like one of the unexpected things. It was like when I would talk to non Swift developers like, let's say, a job, Ah, script developer or
+
+00:49:35.044 --> 00:49:40.914
+<v Garric Nahapetian>or whatever. You know, I I love Swift. I'm so excited about it. When I would talk to them, they might kind of like, brush it off
+
+00:49:41.504 --> 00:49:44.534
+<v Garric Nahapetian>on and say, like, Oh, it's not going to be possible
+
+00:49:45.454 --> 00:50:04.214
+<v Garric Nahapetian>But then but then, on the other side, I think, John, you kind of mentioned this recently, like the appetite for Swift is so insatiable. You're saying like And as you pointed out, Chris like people who love Swift really, really love it. And so somehow we can kind of continue to do what we're doing to like feed
+
+00:50:05.574 --> 00:50:18.494
+<v Garric Nahapetian>in the feed that the community to keep growing but also, like bring in these other communities, like make ourselves accessible to those community so that and maybe we should come up with a better phrase for it. That Swift can be in a world dominating in a language.
+
+00:50:18.774 --> 00:50:24.214
+<v Chris Lattner>Well, and I think that a big piece of that is, well, this has been a very upbeat, positive discussion about Swift,
+
+00:50:24.804 --> 00:50:34.114
+<v Chris Lattner>so it also has lots of problems. And I think we need to be open to talking about that and and treat that as a problem solving exercise. Right there. There are major issues with
+
+00:50:34.804 --> 00:50:47.524
+<v Chris Lattner>the Winnicks ecosystem. For example, the Windows ecosystem is barely barely getting off the ground. At this point, there's so many different things that that really need toe happen to get it to be relevant to the broader audience.
+
+00:50:47.664 --> 00:52:09.789
+<v John Sundell>Yeah, and it's super interesting when you speak to people who are getting into Swift but who are not Apple developers like in the beginning and especially, you know, going back to something like Objective C, which was, you know, pretty much on Lee, used by people building apse for for the Mac and for Iowa's. But even in the early days of Swift or even the first couple of years you had, you know, I don't know the numbers, but I would I would get something like ninety percent plus of people who were writing Swift code. We're doing it for Apple platforms, but now I'm more and more meeting people who are getting into Swift learning it on even in a working with Swift. But they're not Apple developers. They're using it for the server, and they're they're using for for other tasks. And that, I think, is both, like, incredibly exciting to to have those people kind of come into the community, but it also presents us with a bit of a challenge because, you know, just take myself. For example, when I'm writing, I'm writing a loss from the perspective of Iowa's developer. And a lot of the the problems that I'm writing about it I'm thinking about are coming from an iris perspective. While you know the people coming from from other service side languages and doing using Swift in that environment, they're going to be facing other kinds of problems and have other priorities. And it's going to be interesting to see where kind of those meets in the long run. And you know, how do you balance things that is needed on something like Windows and and Lennox and for Apple spot forms as well.
+
+00:52:09.799 --> 00:52:23.609
+<v Chris Lattner>Right? And, you know, I think all of our goals to build an inclusive community. But if you're not an Apple developer, it can feel alienating that every time you search for some Swift bearing you and API in Iowa's discussion.
+
+00:52:24.039 --> 00:52:26.629
+<v John Sundell>Yeah, exactly. Here's something that in a year I view controller.
+
+00:52:26.639 --> 00:52:36.249
+<v Chris Lattner>Yeah, exactly. And so that makes you feel like an outsider and that that Khun send the wrong signal and nobody nobody means for that. Awesome. But the but the fact Israel
+
+00:52:37.069 --> 00:52:41.539
+<v Chris Lattner>on DH that's that's a challenge that we as a community face. And I don't know that there
+
+00:52:42.099 --> 00:52:46.229
+<v Chris Lattner>good, easy answers for any of these problems. But I think we can get there.
+
+00:52:46.359 --> 00:53:14.815
+<v John Sundell>Yeah, absolutely. And something that I think will play a big part in that is thie open, evolution designed process where, you know, people anyone can can make a pitch. Anyone can make their case for something. And we can get those, you know, other sides of the story and others, other sides of something kind of heard. And so how has Swift evolution from from both of your perspectives? Kind of been working so far. And where do you see a kind of going within the next couple of
+
+00:53:14.815 --> 00:53:18.885
+<v Garric Nahapetian>years? I actually didn't participate that much on Swift evolution.
+
+00:53:19.405 --> 00:54:01.625
+<v Garric Nahapetian>You know, there was like the old style was like the email like ghetto, like sign up for some email thing. And it was like a lot of emails going back and forth. And, you know, that's not really how I can contribute. I feel like where I wasn't inspired to really contribute in the evolution process. I mean, I would read a little bit about the proposals. I never really commented, but I think like that was something that I noticed early. What what I noticed early on and would always mention whenever it came up was That is just one way to contribute is like being involved in the evolution process, reading the proposals, creating proposals, commenting on them. And that was actually something that I thought was really awesome but also kind of like confusing,
+
+00:54:02.225 --> 00:54:05.425
+<v Garric Nahapetian>because most of what gets talked about in,
+
+00:54:06.085 --> 00:54:24.785
+<v Garric Nahapetian>you know, online and in the community is like, What are we doing with the language or how is like how is the language evolving, but like there's a lot of stuff happening, kind of just in the background. That is a part of the community. But it's not necessarily programming related, like when I'm doing a podcast about Swift,
+
+00:54:25.515 --> 00:55:11.672
+<v Garric Nahapetian>it's a it's like in that it's a part of the community. But I'm not talking about coding. And it was really weird, like grapple with that to feel like a part of the community. But, um, I actually contributing. But that's something that, like I've I've been just kind of coming to terms with, like, over the last, like it's a year or so, that my contribution is my ability to be a leader in the community and bring people together on DH to, like, help make the community more accessible. So so Yeah, I mean, I I was just really happy that it moved to the forums. But, ah, I would say I was more just watching as an outsider, and that's fine, You know, like if you look at what I was able to achieve, I did all of that. I've been that involved this involved in Swift, but I wasn't that involved in the evolution process, and that's okay,
+
+00:55:11.822 --> 00:55:18.202
+<v Chris Lattner>Yeah. So I could probably talk for five hours about this because it's very complicated.
+
+00:55:18.822 --> 00:55:36.392
+<v Chris Lattner>I guess the short, the short answer. This is that I really so I one of the default views that I hold is the open is better than close, like if you can keep. If you could get more people involved, you will get a better thing. And so I think that Thie Swift evolution process has lots of problems.
+
+00:55:37.032 --> 00:55:38.592
+<v Chris Lattner>Think Eric identified several of them,
+
+00:55:39.692 --> 00:55:55.832
+<v Chris Lattner>but I think it's generally really good thing. I think it's also a great forcing function that slows down the evolution of language, which I think is good. I think it's better for evolution to be deliberate and carefully considered. There has to be fast.
+
+00:55:56.462 --> 00:56:02.332
+<v Chris Lattner>I also think it's good to force a certain amount of documentation and process on it, which is which is important.
+
+00:56:03.162 --> 00:56:05.342
+<v Chris Lattner>It's also really interesting way that
+
+00:56:06.932 --> 00:56:11.562
+<v Chris Lattner>leads to Apple collaborating with community in a different way by providing providing
+
+00:56:12.082 --> 00:56:14.342
+<v Chris Lattner>kind of a form for doing that, which is really great.
+
+00:56:15.462 --> 00:56:33.142
+<v Chris Lattner>I don't I don't see Swift of Alicia's a fixed thing like it's changed in many ways over the time over the years and It's always a hard tradeoff between ru allocating design authority of the community or prioritization ability to the community. And I think it sze challenging because if you leave it up to
+
+00:56:33.672 --> 00:56:42.172
+<v Chris Lattner>the community completely, then you get lots of small things. But their major things that need to happen in the Swift world, including currency, for example.
+
+00:56:42.702 --> 00:56:48.432
+<v Chris Lattner>And so that's that's a bigger effort, and that's that's harder to do through a completely bottom up
+
+00:56:49.752 --> 00:56:58.532
+<v Chris Lattner>community process. So so I don't know. I mean, I think that Swift evolution's a really good thing. I'm really glad we have it. I agree. It's not the only thing, and it should not be the only thing,
+
+00:56:59.122 --> 00:56:59.632
+<v (Unknown)>
+
+00:57:00.022 --> 00:57:02.132
+<v Chris Lattner>but I think I think it's overall good.
+
+00:57:02.572 --> 00:57:06.902
+<v Garric Nahapetian>What about you, Jon? Did you get involved at all with the evolution processing proposals or anything like that?
+
+00:57:07.105 --> 00:57:12.085
+<v John Sundell>I read a lot like I read a lot about the evolution process. I read a lot of the proposals,
+
+00:57:12.725 --> 00:57:19.375
+<v John Sundell>but just just like yourself. I haven't really been, you know, commenting a lot and involving myself, and that's
+
+00:57:19.955 --> 00:57:58.985
+<v John Sundell>very much a kind of a decision on my part. Like, you know, at some point you have to kind of draw the line to say, you know, what are the areas that you're going to focus on and for me like doing all the things that I do with you know that the site that I do and and and also working on different projects and all that kind of stuff I've said, You know, at least for now, I'm going to I'm going to be well informed about what's going on in Swift evolution. I'm going to comment on it occasionally, but I'm not going to like, heavily involved myself and and be an active participant like that. But that might change, just like you know, how everything can evolve. So, Khun, my involvement as well, so we'll see.
+
+00:57:58.995 --> 00:58:11.465
+<v Garric Nahapetian>I think, like that's one of the things this podcast can kind of bring toe light is the all the different parts of the Swift community. Like, you know, my podcast was really about. It was mostly Iowa's developers, but it was also it's just people
+
+00:58:11.455 --> 00:58:11.525
+<v (Unknown)>
+
+00:58:11.525 --> 00:59:04.165
+<v Garric Nahapetian>building kind of cool stuff. Usually like in this Swift community. We talked about the person you know, your podcast, like you love talking. I think it's like a lot of people who are building Iowa's developed a I was kind of related stuff, and you really get into like the details of what they're building, and you also talk about the person, and they don't kind of on the other side. You have, like, Swift unwrapped. It gets like really into the details of Swift evolution or Swift like features in a very technical perspective. But I feel like one of the things I was really excited about this podcast was like the ability, and Chris kept saying, like almost like a variety show, like the ability to talk about the diversity of all these people, Teo helping to build this language together and just like in any city or any community, there's going to be almost every type of thing or person or activity, and Swift really has that. And so I think it's going to be really exciting to even actually discover things that
+
+00:59:04.555 --> 00:59:05.065
+<v (Unknown)>
+
+00:59:05.305 --> 00:59:15.093
+<v Garric Nahapetian>that I don't even know about. There's all these interesting things happening in this community, and I think I'm really excited to bring those those different stories to life with this podcast.
+
+00:59:15.213 --> 01:00:02.733
+<v John Sundell>Yeah, absolutely. And you hit on a point there also, which is you know there are so many different ways to contribute. And, you know, even if you're a person who doesn't have either the time or or you know it's not in your within your interest to be like heavily involved in the evolution process itself, you can still kind of, you know, appreciate it. You can still look at it from from from the distance, and you still involve yourself in other ways as well. So that's also, ah, beauty of something like this with community, which is kind of broad, in that sense, where you can contribute in so many different ways, I don't just go back very quickly to something. Chris, you said earlier, which is, you said that you do want to enforce a certain kind of ceremony, if you will, or rather process on the changes that are being made. And,
+
+01:00:03.293 --> 01:00:08.903
+<v John Sundell>um, I think that's also really important. And one thing we have to remember is that we,
+
+01:00:09.893 --> 01:00:51.363
+<v John Sundell>you know, talking about this here, people listening to the show. We're all pretty, probably pretty, like, excited about the language itself. We are looking at what's happening were very involved, and we're paying attention to what's going on but for many, many people, just like how I was relating to objective C earlier saying it was just like a tool for me to get my job done. That's how people relate to Swift. And if it changes too quickly and you know, every month there would be like a completely new thing that could be really tiring for a lot of people. So I think, you know, taking to step back and saying, OK, this process is going to take a little bit longer, but it's going to yield a better result and it's going to have a more steady pace. I think that's that's probably good as well,
+
+01:00:51.513 --> 01:00:57.993
+<v Chris Lattner>right, and each change. It takes time to digest in a certain sense. And when a major new capability comes in,
+
+01:00:58.923 --> 01:01:06.083
+<v Chris Lattner>it takes time for the community to figure it out and applied and figure out what the, how it fits with everything else. And so taking time to do that is good.
+
+01:01:06.703 --> 01:01:36.092
+<v Chris Lattner>The number one thing I learned from Swift evolution is the power of having the right catalysts. Little community and so Swift evolution really pulled together a community of language geeks together to care about one specific aspect of the Swift project. And so I'm always on the lookout for what is the catalyst that allows, like Swift package ecosystem to take off, or that allows the Swift on server community to take off or get the machine learning community together, maybe and do cool things.
+
+01:01:36.992 --> 01:01:48.852
+<v Chris Lattner>And how do we find those catalysts and allow the people to come together in the right forum and really build on their strength and get the energy But also get the talent, get the people working together in a collaborative way,
+
+01:01:49.142 --> 01:01:49.822
+<v Garric Nahapetian>right? And then the
+
+01:01:50.472 --> 01:01:56.102
+<v Garric Nahapetian>well can't sustain that energy, you know, like so get people excited about service side Swift. But then how do we
+
+01:01:56.942 --> 01:02:02.502
+<v Garric Nahapetian>you keep that going? How do we keep having support people, for instance, Like John, how do we support people in the community?
+
+01:02:03.062 --> 01:02:06.302
+<v Garric Nahapetian>Help you continue to have that energy toe push forward.
+
+01:02:07.092 --> 01:02:24.002
+<v John Sundell>Cool. So what do you say? Should we round off this episode by talking a little bit about how people can get involved? And, you know, if you've not been listening to this episode and you feel the sounds cool, how can I help, or how can I involve myself What can I do to make this
+
+01:02:24.532 --> 01:02:34.292
+<v John Sundell>podcast kind of at a nice thing and to keep it moving forward? So Garric, why don't you start off like What are some of the ways that people can contributes to the show?
+
+01:02:34.392 --> 01:02:55.502
+<v Garric Nahapetian>Yeah, so I mean, I was really inspired by the way Jesse Squires set up the Swift weekly brief. It's almost like it's really this automated open source newsletter where everything's hosted on Get Hub. The next issue's on Get Hub. It's all like in this marked down for Matt and you. You talk about the next issue with the community on there. You post
+
+01:02:55.992 --> 01:02:56.082
+<v (Unknown)>
+
+01:02:56.082 --> 01:03:01.402
+<v Garric Nahapetian>comments on on the getup issue and then, like you kind of just hit a button and it just, like,
+
+01:03:01.992 --> 01:03:02.042
+<v (Unknown)>
+
+01:03:02.042 --> 01:03:07.702
+<v Garric Nahapetian>spits out thie issue. There's a lot more work to it. I'm sure, actually did it on issue
+
+01:03:08.292 --> 01:03:09.672
+<v Garric Nahapetian>number on a forty something,
+
+01:03:10.202 --> 01:03:24.107
+<v Garric Nahapetian>so there's a lot more work to that. But it was like, really cool, and I was very inspired by how Jesse had set that up. Now I don't know if we could get there with this podcast, but when we were talking about how to get the community involved, we thought, Why not somehow use get up?
+
+01:03:24.797 --> 01:03:54.007
+<v Garric Nahapetian>And so we have Ah, get up organization. It's called Swift community podcast S O It's get up, you know dot com slash Swift community about gas and there's a repo on there called Podcast. And then we will. I guess we'll do maybe just an issue. And then people can comment on there and get feedback on I guess what they think about the show and none of this is really set in stone were kind of We really want this to be a community effort. We're just sort of going to be setting up this initial scaffolding.
+
+01:03:54.547 --> 01:04:05.657
+<v Garric Nahapetian>So, you know, we'll have an issue up there. Give us comments on you know what you think about the show. And then, I think also will have another issue for the next episode. Like suggestions on what the next episode should be.
+
+01:04:05.947 --> 01:04:28.007
+<v Chris Lattner>Yeah, I think that's what I think they should go to the God repo or the website that Swift community podcast out. Or and that would be a good jumping off point. You can look at the read me there, which will have all the details. I think the thing I want have says this is very much an experiment. Hopefully, if we're all successful five years from now, everybody looked back and we'll feel obvious, All right.
+
+01:04:28.987 --> 01:04:38.067
+<v Chris Lattner>But right now where we are, we don't know. We don't know what this will be. We don't know who's out there that may might want to get involved, and we don't know exactly the best way to do it. Nobody's done this before.
+
+01:04:38.597 --> 01:04:57.457
+<v Chris Lattner>That's okay. Like, if it doesn't work out, that's okay. No harm would have come from it, but I I tend to believe this could be huge. That could be. It could be a great way to get people involved that like that, want to do things and have amazing skills and can contribute in lots of different ways. So I'm excited to see what happens.
+
+01:04:57.697 --> 01:05:36.600
+<v John Sundell>Yeah, absolutely. And just to give some examples like what kind of skills were looking for, if you will. You know everything from actually being on the show, being a guest or hosting to show, if that's your thing, or even something like editing an episode or putting things together or editing apart Oven Episode if you don't have a lot of time you know, all of those things are kind of up for grabs, and you can help out with one or two episodes, and then that's it. If you don't, you know, I have more time or you want to move on something else. But everything is really kind of up for grabs. And there will be information about all of the stuff in the getup repositories. Well, kind of, you know what we're looking for, and you can kind of volunteer there to help out if you want to.
+
+01:05:36.780 --> 01:05:44.250
+<v Chris Lattner>Another thing is to suggest topics and drag people in that you think would be really great on reach out to somebody who you think is
+
+01:05:44.930 --> 01:05:51.830
+<v Chris Lattner>got an interesting talent or is working an interesting project and kind of anything goes so it's Let's work. Let's work this out.
+
+01:05:52.790 --> 01:06:04.410
+<v John Sundell>All right. What do you say, guys? I think that's a great point to end to this first episode. I It's been a lot of fun to do this, and I'm really looking forward to seeing where the show goes with this this year and and beyond
+
+01:06:04.560 --> 01:06:06.870
+<v Garric Nahapetian>me to Chris, Thanks for
+
+01:06:07.380 --> 01:06:20.000
+<v Garric Nahapetian>kicking me in the butt to try to get me back on the air. And, John, thank you so much for taking the lead again. I really appreciate the work you're doing, and I I want to be able to just support you and other people like you
+
+01:06:20.720 --> 01:06:23.360
+<v Garric Nahapetian>to give back to the community that's already given me so much.
+
+01:06:23.370 --> 01:06:24.350
+<v John Sundell>Yeah, Supercool.
+
+01:06:24.500 --> 01:06:30.300
+<v Chris Lattner>Absolutely. And thank you to both of you. Because this is where I insert the name of I have no idea what I'm doing.
+
+01:06:30.690 --> 01:06:32.300
+<v (Unknown)>
+
+01:06:32.690 --> 01:06:36.710
+<v Chris Lattner>So I'm really excited that I'm also looking to learn much. Just say
+
+01:06:36.980 --> 01:06:39.610
+<v John Sundell>yeah, and the feeling is mutual.
+
+01:06:40.290 --> 01:06:56.600
+<v John Sundell>When it comes to this, I do know a little bit what I'm doing, but with other things, Always always happy to learn new things and super excited to do this show with you and the rest of the community. So if people want to find us, where should they go? So for you, Garric, what's the best place to reach you?
+
+01:06:56.690 --> 01:07:02.200
+<v Garric Nahapetian>Twitter G A R R I C n at Garric and on Twitter.
+
+01:07:02.590 --> 01:07:04.380
+<v John Sundell>Excellent. And what about you, Chris
+
+01:07:04.910 --> 01:07:09.240
+<v Chris Lattner>Twitter? See latner underscore l v m.
+
+01:07:11.180 --> 01:07:11.500
+<v Chris Lattner>That's
+
+01:07:11.510 --> 01:07:13.330
+<v John Sundell>right on brand.
+
+01:07:13.340 --> 01:07:14.500
+<v Chris Lattner>And what about you, John
+
+01:07:14.990 --> 01:07:26.240
+<v John Sundell>s? So you can find me also on Twitter. I am at John Sindel and you confined my weekly articles at Swift by Sundell dot com and my podcast at Swift Bison. A lot com slash podcast.
