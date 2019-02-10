@@ -13,102 +13,94 @@ in them, and submit a pull request to the Swift Community Podcast repo at
 https://github.com/SwiftCommunityPodcast/podcast. Please try to keep the
 timecode information intact (and merge timecodes manually when merging 
 paragraphs). Thank you!
+Search for "NOTE === Paragraphs above this point have been edited" to find the 
+current edit point.
 
 00:00:00.540 --> 00:00:21.250
-<v John Sundell>Welcome to the very first episode of the Swift Community Podcast. A show for the Swift community by the Swift Community. I am one of your hosts, John Sindel. And with me, I have two wonderful co hosts, the first of which you might know as the host of the Swift coders podcast. Mr. Garric Nahapetian. How's going Garric?
+<v John Sundell>Welcome to the very first episode of the Swift Community Podcast, a show for the Swift community by the Swift Community. I am one of your hosts, John Sundell. And with me, I have two wonderful co-hosts, the first of which you might know as the host of the Swift Coders podcast, Mr. Garric Nahapetian. How's it going, Garric?
 
 00:00:21.380 --> 00:00:24.270
-<v Garric Nahapetian>Excellent. Thank you so much for having me. How you doing?
+<v Garric Nahapetian>Excellent. Thank you so much for having me. How are you doing?
 
 00:00:24.460 --> 00:00:35.970
-<v John Sundell>I'm doing great. And we also have our third and final co host for this episode. And it's none other than the creator of Swift itself. Mr Chris Lattner. How's it going, Chris?
+<v John Sundell>I'm doing great. And we also have our third and final co-host for this episode, and it's none other than the creator of Swift itself, Mr. Chris Lattner. How's it going, Chris?
 
 00:00:35.980 --> 00:00:40.750
-<v Chris Lattner>Doing great. I'm excited to hear John well, but a little bit nervous. Little bit terrified. But that's okay.
+<v Chris Lattner>Doing great. I'm excited to be here, John. A little bit nervous, a little bit terrified, but that's okay.
 
 00:00:40.890 --> 00:00:46.790
-<v John Sundell>That's how it should be, right. Like nice mixed butterflies in the stomach and, you know, excitement and all that stuff.
+<v John Sundell>That's how it should be, right? A nice mix of butterflies in the stomach and excitement and all that stuff.
 
 00:00:46.800 --> 00:00:47.430
 <v Chris Lattner>It'll be great.
 
 00:00:47.610 --> 00:01:12.280
-<v John Sundell>So before we dive into this first episode on which we both want to talk a bit about this show itself, kind of why we're doing it and what makes it unique in terms of its concept. And we also want to take a look at kind of the current state of Swift and how the community came to be. Let's just take a quick moment to kind of introduce ourselves a little bit to the audience. Eso Garric. Why don't you kick things off and tell us a little bit about what are you up to these
+<v John Sundell>So before we dive into this first episode, in which we want to talk a bit about both the show itself, why we're doing it and what makes it unique in terms of its concept, and we also want to take a look at the current state of Swift and how the community came to be. Let's just take a quick moment to kind of introduce ourselves a little bit to the audience. Garric, why don't you kick things off and tell us a little bit about what you're up to these days?
 
-00:01:12.280 --> 00:01:38.750
-<v Garric Nahapetian>days? Hello, Swift community. My name's Garric Napa tion. I am in Iowa's engineer at Tinder. I'm the founder and host of the Swift coders podcast. We've been on a little bit of ah hiatus have been waiting. Teo record this episode. Ah, and so I'm really happy I'm finally doing it. I feel like podcasting again. Yea. And also I'm also the founder of the Swift coders community. We do learn Swift city.
-
-00:01:39.340 --> 00:01:41.050
-<v Garric Nahapetian>We have ah, Swift coder slack team
+00:01:12.280 --> 00:01:41.050
+<v Garric Nahapetian>Hello, Swift community. My name's Garric Nahapetian. I am an iOS engineer at Tinder. I'm the founder and host of the Swift Coders podcast. We've been on a little bit of a hiatus. I've been waiting to record this episode, and so I'm really happy I'm finally doing it. I feel like podcasting again. Yay! And I'm also the founder of the Swift Coders community. We do Learn Swift {CITY}, we have a Swift Coders Slack team,
 
 00:01:41.640 --> 00:01:58.580
-<v Garric Nahapetian>on. And we have ah, Swift coders network of podcasts. On The biggest thing that we do is our learned Swift city effort where we have about maybe fifteen or sixteen learned Swift meet ups all around the world. No and yes. Oh, my biggest contribution these days is through
+<v Garric Nahapetian>and we have a Swift Coders network of podcasts. The biggest thing that we do is our Learn Swift {CITY} effort, where we have about 15 or 16 Learn Swift meetups all around the world. So my biggest contribution these days is through
 
 00:01:59.230 --> 00:02:05.598
-<v Garric Nahapetian>the outside world, like actually meeting in real life and helping P people learn about Swift and start meet ups around the world.
+<v Garric Nahapetian>the outside world, like actually meeting in real life and helping people learn about Swift and start meetups around the world.
 
 00:02:05.698 --> 00:02:14.008
-<v John Sundell>That's really cool. How do you feel about Swift Like us as a first language for some people, Like, is it a good language to teach for you? And it's, you know, easy to get people started.
+<v John Sundell>That's really cool. How do you feel about Swift as a first language? Is it a good language to teach for you? And is it easy to get people started?
 
 00:02:14.018 --> 00:02:46.818
-<v Garric Nahapetian>It is definitely the best language to get started. I think I am on Ios engineer because of Swift. I tried learning object to see Swift made it so much easier. So yeah, I think it's a great way to get started. We could talk more about that, like, you know, if it comes up, but really, like one of the big things I would say and some other parts of the world, it's like the cost of the Mac and how most people want to make iPhone apse right now. But, you know, Mac is really expensive, so that that's a big barrier, but we're trying to help people get into it, so you know it being open source, that's really important.
+<v Garric Nahapetian>It is definitely the best language to get started. I think I am an iOS engineer because of Swift. I tried learning Objective-C, but Swift made it so much easier. So yeah, I think it's a great way to get started. We could talk more about that if it comes up, but really, one of the big things I would say in some other parts of the world is the cost of the Mac and how most people want to make iPhone apps right now. But a Mac is really expensive, so that that's a big barrier. But we're trying to help people get into it. It being open source, that's really important.
 
 00:02:47.008 --> 00:02:59.918
-<v John Sundell>Yeah, that's really cool. And the open source part was a big thing for you. Chris wasn't. It s Oh, what have you been up to since I kind of the doors opened and and Swift kind of was released into the world.
+<v John Sundell>Yeah, that's really cool. And the open source part was a big thing for you, Chris, wasn't it? So, what have you been up to since the doors opened and and Swift was released into the world?
 
 00:03:00.128 --> 00:03:09.418
-<v Chris Lattner>I wear lots of different hats. So I I've contributed the stuff compiler quite a bit. I'm on Swift core team, have pushed and cared about, so for a long time
+<v Chris Lattner>I wear lots of different hats. I've contributed to the Swift compiler quite a bit. I'm on the Swift Core Team. I have pushed and cared about Swift for a long time,
 
 00:03:10.478 --> 00:03:18.018
-<v Chris Lattner>now could have a different rule. And I still care a tremendous amount about the community, and I really want to know what I could do to help.
+<v Chris Lattner>now kind of in a different role. And I still care a tremendous amount about the community, and I really want to know what I can do to help.
 
 00:03:19.438 --> 00:03:27.948
-<v Chris Lattner>This is the show I think is a really big piece of that. I think it's a really great way to kind of reach people in a different way, and we could talk about how the show came to be in a bit, but
+<v Chris Lattner>This show I think is a really big piece of that. I think it's a really great way to reach people in a different way, and we could talk about how the show came to be in a bit.
 
 00:03:28.468 --> 00:03:40.048
-<v Chris Lattner>for me, this is fully a spare time project. I'm not here in any official capacity for my employer or anything like that, but I just care a lot about the community and just you don't want to see it grow and do cool new things.
+<v Chris Lattner>For me, this is fully a spare time project. I'm not here in any official capacity for my employer or anything like that. I just care a lot about the community and want to see it grow and do cool new things.
 
 00:03:40.108 --> 00:04:03.938
-<v John Sundell>Yeah, that's awesome. And I think like the community in general. I mean, that's That's why we all three kind of, you know, got together and got to know each other, and I think that's something that really sets Swift apart. I mean, obviously, a lot of programming languages have really strong communities as well. But that's something that I personally really like about Swift and what makes me even more excited about it. Then I was about something like objective. See which
-
-00:04:04.087 --> 00:04:04.107
-<v (Unknown)>
+<v John Sundell>That's awesome. The community in general, I mean, that's why we all three got together and got to know each other. And I think that's something that really sets Swift apart. I mean, obviously, a lot of programming languages have really strong communities as well. But that's something that I personally really like about Swift and what makes me even more excited about it than I was about something like Objective-C.
 
 00:04:04.107 --> 00:04:20.117
-<v John Sundell>objective C. I always saw you as the kind of just a means to an end, like a way to build APS. But it was never something that was, like, intimately involved with in terms of the language itself. And that's just something that excites me a lot that you know, the community around Swift and kind of how people can contribute to many different ways.
+<v John Sundell>I always saw Objective-C as just the means to an end, a way to build apps. But it was never something that I was intimately involved with in terms of the language itself. And that's just something that excites me a lot, the community around Swift and how people can contribute to it in many different ways.
 
 00:04:20.127 --> 00:04:45.867
-<v Chris Lattner>Yeah, very much agree. And while things are good, they could be so much better to write. And that's one of the one of things I hope that this podcasts helps with is help grow the community and help build out new things. And you know, there's a tremendous number of packages that should exist that don't and lots of different ways. Teo kind of get people involved in different ways that are not even coding. And so so I'm really excited about that. I think that the sky's the limit.
+<v Chris Lattner>Yeah, I very much agree. And while things are good, they could be so much better too, right? And that's one of the things I hope that this podcasts helps with, help grow the community and help build out new things. There's a tremendous number of packages that should exist that don't, and lots of different ways to get people involved in different ways that are not even coding. I'm really excited about that. The sky's the limit.
 
 00:04:46.107 --> 00:04:48.357
-<v John Sundell>Yeah, absolutely. That supercool.
+<v John Sundell>Yeah, absolutely. That's supercool.
 
 00:04:48.487 --> 00:05:03.097
-<v Garric Nahapetian>Yes. Oh, I completely agree about the Swift community. I think the fact that Swift is so accessible allowed me to be in Ios Engineer, but also because it's so accessible. It reaches so many more people and the community is that much more
-
-00:05:03.187 --> 00:05:03.207
-<v (Unknown)>
+<v Garric Nahapetian>Yes. I completely agree about the Swift community. I think the fact that Swift is so accessible allowed me to be an iOS engineer. But also because it's so accessible it reaches so many more people, and the community is that much more
 
 00:05:03.207 --> 00:05:12.997
-<v Garric Nahapetian>inclusive. And that allowed me to be a part of it and tow learn because I was able to see so many free resource is and meet so many people and was so welcoming
-
-00:05:13.587 --> 00:05:13.607
-<v (Unknown)>
+<v Garric Nahapetian>inclusive. And that allowed me to be a part of it and to learn. Because I was able to see so many free resources and meet so many people and it was so welcoming.
 
 00:05:13.617 --> 00:05:18.597
-<v Garric Nahapetian>on DH. So the community aspect that Swift is really a bedrock on DH.
+<v Garric Nahapetian>So the community aspect of Swift is really a bedrock.
 
 00:05:19.187 --> 00:05:22.297
-<v Garric Nahapetian>You were a big part of that, John. Actually, a lot of the work you did
+<v Garric Nahapetian>And you were a big part of that, John, actually. A lot of the work you did
 
 00:05:22.887 --> 00:05:24.787
-<v Garric Nahapetian>early on when I was just getting started.
+<v Garric Nahapetian>early on when I was just getting started
 
 00:05:25.417 --> 00:05:33.197
-<v Garric Nahapetian>It made me very excited about the possibilities. And, you know, you were a big part of my learning in my excitement,
+<v Garric Nahapetian>made me very excited about the possibilities. You were a big part of my learning and my excitement,
 
 00:05:33.857 --> 00:05:38.497
-<v Garric Nahapetian>so I wanted to thank you for that. How about you? What do you up to? What you've been doing lately?
+<v Garric Nahapetian>so I wanted to thank you for that. How about you? What are you up to? What haev you been doing lately?
+
+NOTE === Paragraphs above this point have been edited.
 
 00:05:38.887 --> 00:06:21.864
 <v John Sundell>Yeah, so that's first of all. That's super cool to hear. It's always incredible for me to hear, like, you know, that my work can can have an impact on people and, like, help people learn something new, or discover some new technique or something like that. And that's really kind of what drives me these days. So I'm kind of right now making a big transition from being a freelancer, working with clients all the time and building APS and writing code all the time. Two more work with kind of creating content for the community. So I run Swift by Sundell dot com, which is a weekly series of articles about Swift. I also now have started doing some different article serious. I just launched an initiative called Swift by Sundell Basics, which is,
