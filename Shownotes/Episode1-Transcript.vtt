@@ -100,49 +100,37 @@ current edit point.
 00:05:33.857 --> 00:05:38.497
 <v Garric Nahapetian>so I wanted to thank you for that. How about you? What are you up to? What haev you been doing lately?
 
-NOTE === Paragraphs above this point have been edited.
-
 00:05:38.887 --> 00:06:21.864
-<v John Sundell>Yeah, so that's first of all. That's super cool to hear. It's always incredible for me to hear, like, you know, that my work can can have an impact on people and, like, help people learn something new, or discover some new technique or something like that. And that's really kind of what drives me these days. So I'm kind of right now making a big transition from being a freelancer, working with clients all the time and building APS and writing code all the time. Two more work with kind of creating content for the community. So I run Swift by Sundell dot com, which is a weekly series of articles about Swift. I also now have started doing some different article serious. I just launched an initiative called Swift by Sundell Basics, which is,
+<v John Sundell>First of all, that's super cool to hear. It's always incredible for me to hear that my work can have an impact on people and help them learn something new, or discover some new technique or something like that. And that's really what drives me these days. I'm right now making a big transition from being a freelancer, working with clients all the time and building apps and writing code all the time, to creating content for the community. So I run swiftbysundell.com, which is a weekly series of articles about Swift. I've also started doing a different article series: I just launched an initiative called Swift by Sundell Basics, which is
 
-00:06:22.454 --> 00:06:27.734
-<v John Sundell>you know, aiming to kind of teach some of the more core concepts of Swift. And I was development in the kind of more
-
-00:06:27.794 --> 00:06:27.834
-<v (Unknown)>
-
-00:06:27.834 --> 00:06:52.904
-<v John Sundell>lightweight manner. And I also run a podcast this well and do a bunch of other things for the community. So yeah, the community is incredibly important to me, and I'm trying to devote kind of more and more time to doing things for the community while of course still kind of staying very, very connected with coding because I do love programming a lots and I'm still building APS and I'm still working on projects and and doing those kind of things and kind of
+00:06:22.454 --> 00:06:52.904
+<v John Sundell>aiming to teach some of the more core concepts of Swift and iOS development in more of a lightweight manner. And I also run a podcast as well and do a bunch of other things for the community. So yeah, the community is incredibly important to me, and I'm trying to devote more and more time to doing things for the community while of course still staying very connected with coding. Because I do love programming a lot and I'm still building apps and I'm still working on projects and doing those kinds of things.
 
 00:06:53.594 --> 00:07:10.004
-<v John Sundell>trying to make it this, like nice circle where the work I do building aps and coding can then kind of feed into my content creation. And then the feedback I get from people in the community candid feedback into that. So yeah, it's it's really, really, really nice and kind of create this nice feedback loop.
+<v John Sundell>I'm trying to make it this nice circle where the work I do building apps and coding can then feed into my content creation. And then the feedback I get from people in the community can then feed back into that. So yeah, it's really, really nice to create this feedback loop.
 
 00:07:10.194 --> 00:07:16.554
-<v Chris Lattner>Yeah. And I have to say that not not only do I love that you're doing it, but the work you do super high quality and really impressive.
+<v Chris Lattner>Yeah. And I have to say that not not only do I love that you're doing it, but the work you do is super high quality and really impressive.
 
 00:07:16.594 --> 00:07:17.524
-<v John Sundell>Thanks, Locke. Chris. Yeah,
+<v John Sundell>Thanks a lot, Chris.
 
-00:07:17.534 --> 00:07:31.304
-<v Garric Nahapetian>I think that's why it was a no brainer to getyou involved. And try Teo, encourage you and coax you into being the, you know, sort of the first main like producer of this podcast. Because,
-
-00:07:31.894 --> 00:07:59.104
-<v Garric Nahapetian>ah, you are a really big part of the Swift community. Think a lot of people look to you and the work that you're doing. So I think when Chris and I were talking about doing this podcast like it made sense to bring you on, because I think one of the most important things is a community. Eyes did empower people like you encourage people like you, support you so that you can continue to do what you're doing in a sustainable way, and we definitely want
-
-00:07:59.794 --> 00:08:01.724
-<v Garric Nahapetian>to keep you help you keep going.
+00:07:17.534 --> 00:08:01.724
+<v Garric Nahapetian>I think that's why it was a no-brainer to get you involved and try to encourage you and coax you into being the first main producer of this podcast. Because you are a really big part of the Swift community. I think a lot of people look to you and the work that you're doing. So I think when Chris and I were talking about doing this podcast it made sense to bring you on, because I think one of the most important things as a community is to empower people like you, encourage people like you, support you so that you can continue to do what you're doing in a sustainable way, and we definitely want to help you keep going.
 
 00:08:02.064 --> 00:08:55.929
-<v John Sundell>Yeah, the super cool. And for me also, to get more people involved, a swell and to kind of also show that, you know, when you look at someone who is running something that has a kind of a big following are a bit big audience. It's easy to look at that and think it was always that way, right? Like objective seed, Ohio was always this big side or his hipster or, you know, any of these kind of, like, really big sites. And and for me, it's very important to always emphasize that, you know, just a couple of years ago, like one or two years ago, almost no one knew who I wass. And no one was reading my my articles. I didn't even have any articles. S o You know, things like that can happen pretty fast. And even though you might not be in its to kind of have a big audience or whatever, like just creating content for the community can can be really, really great even if you are starting out from scratch today. Because you know, you can really create something of value even though you haven't done so before.
+<v John Sundell>That's super cool. And for me also, to get more people involved, as well, and also to show that, you know, when you look at someone who is running something that has a big following or a big audience, it's easy to look at that and think it was always that way, right? Like, objc.io was always this big site or NSHipster or any of these really big sites. And for me, it's very important to always emphasize that, you know, just a couple of years ago, like one or two years ago, almost no one knew who I was. And no one was reading my articles. I didn't even have any articles. So you know, things like that can happen pretty fast. And even though you might not be in it have a big audience or whatever, just creating content for the community can be really, really great even if you are starting out from scratch today. Because you can really create something of value even though you haven't done so before.
 
 00:08:56.059 --> 00:09:20.649
-<v Chris Lattner>Yeah, I think that one of the interesting things about creating new things is that, at least in my experience, the persistence part of it is maybe the most important piece. Yeah. I mean, if you have persistence and you keep at it and keep trying to make it better and better and better than it doesn't matter if it starts out as a really amazing perfect thing, if it just keeps improving. And if you stick with it, eventually become really great on every every learns and everybody starts somewhere.
+<v Chris Lattner>Yeah. I think that one of the interesting things about creating new things is that, at least in my experience, the persistence part of it is maybe the most important piece. I mean, if you have persistence and you keep at it and keep trying to make it better and better and better, then it doesn't matter if it starts out as a really amazing perfect thing, if it just keeps improving. And if you stick with it, eventually it'll become really great. And everybody learns and everybody starts somewhere.
 
 00:09:20.839 --> 00:09:22.099
 <v John Sundell>Yeah, absolutely.
 
 00:09:22.639 --> 00:09:46.529
-<v John Sundell>So I'm incredibly excited about doing this together with you and with the rest of the community as well. Eh? So you kind of came to me, Both of you. And you had this idea for this show. So why don't you tell the audience a little bit about this? Garric? Why don't you start in? So it's a little bit about the idea. And you had that you had for this show. Kind of You know how Chris got involved, how I got involved in and why we're now talking to everyone here on the on the show
+<v John Sundell>So I'm incredibly excited about doing this together with you and with the rest of the community as well. So you kind of came to me, both of you, and you had the idea for this show. So why don't you tell the audience a little bit about this, Garric? Why don't you start and tell us a little bit about the idea that you had for this show. How Chris got involved, how I got involved and why we're now talking to everyone here on the show.
+
+NOTE === Paragraphs above this point have been edited.
 
 00:09:46.669 --> 00:09:50.449
 <v Garric Nahapetian>So Dub Dub two thousand eighteen.
