@@ -202,160 +202,88 @@ NOTE === Paragraphs above this point have been edited.
 <v Chris Lattner>Yeah, well, And if you look at big, successful things across the world, the ones that really work in the long term of the ones that can scale right and you can't scale if everything is dependent on one person. And so the more you can pull people in, the more you could take advantage of a different people, skill, sets and abilities and, you know, interests and time and all the things that going to making something really the better. And so the Swift communities, so many different kinds of backgrounds and perspectives.
 
 00:15:14.437 --> 00:15:15.697
-<v Chris Lattner>I think everybody has something bad.
+<v Chris Lattner>I think everybody has something to add.
 
-00:15:15.887 --> 00:15:38.067
-<v John Sundell>Yeah, absolutely. And so many people have so many kind of hidden talents, right? Like when you talk to people, like at a conference or something, you know, it comes up like, Yeah, I used to be an audio engineer, or, you know, I used to do writing for a living or something like that. And, you know, all those kind of extra skills that people have condemned innately help, you know, building something like this, you know, which, you know, podcasting is a lot of fun, but it also
+00:15:15.887 --> 00:15:45.157
+<v John Sundell>Yeah, absolutely. And so many people have so many hidden talents, right? Like, when you talk to people at a conference or something, it comes up, "yeah, I used to be an audio engineer," or "I used to do writing for a living" or something like that. And all those kind of extra skills that people have can definitely help building something like this. Podcasting is a lot of fun, but it also requires a lot of different parts. And this is something that we definitely want everyone who wants to, to help out with.
 
-00:15:38.157 --> 00:15:38.237
-<v (Unknown)>
-
-00:15:38.237 --> 00:15:45.157
-<v John Sundell>requires kind of a lot of different parts. And, you know, this is something that we definitely want everyone you know, who wants to to kind of help out with
-
-00:15:45.277 --> 00:15:49.007
-<v Chris Lattner>on DSO. I think this shows a really great potential because
-
-00:15:49.517 --> 00:16:06.777
-<v Chris Lattner>I think we all see it is kind of a variety show with no fixed format. We could do short up so long episodes, we could have one person, lots of people. There's lots, lots of different things that could happen. So yeah, I think everybody out there should tell us and get involved and and help shape it and make him to something great.
+00:15:45.277 --> 00:16:06.777
+<v Chris Lattner>Right. I think this show has a really great potential because we all see it as a variety show with no fixed format. We could do short episodes or long episodes. We could have one person, lots of people. There's lots of different things that could happen. So I think everybody out there should tell us and get involved and and help shape it and make it into something great.
 
 00:16:06.867 --> 00:16:39.531
-<v John Sundell>Yeah, totally. And we'll talk a little bit later at the end of this episode. Kind of exactly how you can get involved. You know what kind of formats and where you can find things in resource is on how to get involved. But for now, I think we should We should get started with our main topic for this episode. So for our main topic for this first episode, we want to take things back a little bit to the origins of Swift itself and kind of talk a little bit about how the community kind of came to be and how Swift came to be.
+<v John Sundell>Yeah, totally. And we'll talk a little bit later at the end of this episode exactly how you can get involved, what kind of formats and where you can find things, and resources on how to get involved. But for now, I think we should get started with our main topic for this episode. So for our main topic for this first episode, we want to take things back to the origins of Swift itself and talk a little bit about how the community came to be and how Swift came to be.
 
 00:16:40.061 --> 00:16:59.071
-<v John Sundell>And of course, this all starts a couple of years ago, back at Apple, when you Chris, started writing the actual code for the compiler. Or perhaps it even started before them. So why don't you take us back a little bit in time to that moment and tell us a little about you know, how was Swift? Kind of born to begin with?
+<v John Sundell>And of course, this all starts a couple of years ago back at Apple, when you, Chris, started writing the actual code for the compiler. Or perhaps it even started before then. So why don't you take us back a little bit in time to that moment and tell us a little about how Swift was born to begin with?
 
-00:16:59.141 --> 00:17:28.621
-<v Chris Lattner>Yeah, sure. So I think I have to go back in time. Tio. It was right around WNBC twenty ten We just launched a C plus plus support in Klang and that was a huge, huge, huge amount of effort, as you could imagine building a C plus plus compiler for tons of people. Yeah, and I was feeling both very happy about that, but also kind of burnt out a little bit because it was a lot of really Negri work that was very focused on
-
-00:17:28.961 --> 00:17:28.981
-<v (Unknown)>
-
-00:17:28.981 --> 00:17:35.401
-<v Chris Lattner>implementing C Plus plus and you can't implement C Plus plus without thinking. Gosh, there should be a better thing out there
+00:16:59.141 --> 00:17:35.401
+<v Chris Lattner>Sure. So I think I have to go back in time to, it was right around WWDC 2010. We just launched C++ support in Clang and that was a huge, huge, huge amount of effort, as you can imagine, building a C++ compiler, for tons of people. And I was feeling both very happy about that, but also kind of burnt out a little bit because it was a lot of really nitty-gritty work that was very focused on implementing C++. And you can't implement C++ without thinking, "gosh, there should be a better thing out there!"
 
 00:17:36.671 --> 00:17:42.171
-<v Chris Lattner>and so has actually got into number conversations with a guy named Beltran. Surly
+<v Chris Lattner>And so I actually got into a number of conversations with a guy named Bertrand Serlet.
 
 00:17:42.911 --> 00:17:50.501
-<v Chris Lattner>Bertrand was the head of the software team at at the time, and Baton is an exceptional engineer. He's an amazing human.
+<v Chris Lattner>Bertrand was the head of the software team at the time, and Bertrand is an exceptional engineer. He's an amazing human.
 
 00:17:51.521 --> 00:18:06.941
-<v Chris Lattner>He's also a bit of a language geek. And so he had been pushing on objective C to make objective see better. And he always wanted more out of objective C and to make it better and better and better. And he and I got into a number of just kind of one on one white board sessions.
+<v Chris Lattner>He's also a bit of a language geek. And so he had been pushing on Objective-C, to make Objective-C better. And he always wanted more out of Objective-C and to make it better and better and better. And he and I got into a number of one on one whiteboard sessions.
 
-00:18:08.401 --> 00:18:09.951
-<v Chris Lattner>Bertrand ran all of software,
-
-00:18:10.901 --> 00:18:13.441
-<v Chris Lattner>and so he had No, I had no time
+00:18:08.401 --> 00:18:13.441
+<v Chris Lattner>Bertrand ran all of software at Apple, and so he had no time.
 
 00:18:13.441 --> 00:18:14.251
-<v John Sundell>kind of busy guy.
+<v John Sundell>Kind of a busy guy.
 
 00:18:14.421 --> 00:18:21.952
-<v Chris Lattner>Yeah, but he always kind of encouraged me to, like, drop by at the end of the day and try to see if he's available and he'd stay late, and we would We'd geek out on the white board.
+<v Chris Lattner>Yeah. But he always encouraged me to drop by at the end of the day and try to see if he's available. And he'd stay late, and we would geek out on the whiteboard.
 
-00:18:22.512 --> 00:18:27.802
-<v Chris Lattner>We talk about a ton of different things. Like the goals were details like the type system,
+00:18:22.512 --> 00:18:46.962
+<v Chris Lattner>We talked about a ton of different things. Like the goals, weird details like the type system, and we eventually turned it into a pitch deck. And so I built the pitch deck for him and came up with this idea of building a new language. And at the time it was codenamed "Shiny", as though "you're building a shiny new thing." I was also a fan of the Firefly TV show.
 
-00:18:28.852 --> 00:18:46.962
-<v Chris Lattner>and we eventually turned into a pitch deck. And so I don't the pitch deck for him and came up this idea of building a new a new language on. But the time it was code named shiny as your building a shiny new thing. All right. Ah, that was also a fan of the Firefly TV show.
-
-00:18:47.012 --> 00:18:47.682
-<v John Sundell>Right?
-
-00:18:48.382 --> 00:18:50.622
-<v John Sundell>Was that it was the file extension dot Shiny?
+00:18:47.012 --> 00:18:50.622
+<v John Sundell>Right. Was the file extension ".shiny"?
 
 00:18:51.122 --> 00:19:06.382
-<v Chris Lattner>Yes. In fact, it wass eyes also S O. You know, at the time, it was like super tiny. It was really just profound. I can't talking about it. Another really awesome engineer named Dave's Ozeki got involved in some that early conceptual discussion.
+<v Chris Lattner>Yes, in fact, it was. You know, at the time, it was super tiny. It was really just Bertrand and I kind of talking about it. Another really awesome engineer named Dave Zarzycki got involved in some of that early conceptual discussion.
 
-00:19:07.042 --> 00:19:17.552
-<v Chris Lattner>But one of the things that came out of it even really early on. As we start talking about memory management on at the time, you know, we were both convinced that there had to be a good way to solve or improve memory management,
+00:19:07.042 --> 00:19:22.892
+<v Chris Lattner>But one of the things that came out of it even really early on was that we started talking about memory management. At the time, we were both convinced that there had to be a good way to solve or improve memory management and we needed to get to memory safety. So you have to have automatic memory management.
 
-00:19:18.342 --> 00:19:22.892
-<v Chris Lattner>and we need to get to memory safety. And so you have to have automatic memory management.
-
-00:19:24.042 --> 00:19:41.852
-<v Chris Lattner>One of the key things that came out of that was ARC and the idea that we could have the compiler own and drive this instead of having a run time objectives. He had this live auto garbage collector at the time, but it had a number of problems. And so, you know, that was kind of the genesis of Swift internal design discussions and that kind of stuff
-
-00:19:42.962 --> 00:19:53.922
-<v Chris Lattner>turning into objective see features and many of the things that came out, including Arkan modules and even liberals and things like that really came from the behind the scenes development of Swift.
+00:19:24.042 --> 00:19:53.922
+<v Chris Lattner>One of the key things that came out of that was ARC and the idea that we could have the compiler own and drive this instead of having a runtime. Objective-C had this libauto garbage collector at the time, but it had a number of problems. And so that was kind of the genesis of Swift internal design discussions and that kind of stuff turning into Objective-C features. And many of the things that came out, including ARC and modules and even literals and things like that, really came from the behind the scenes development of Swift.
 
 00:19:54.172 --> 00:20:09.432
-<v John Sundell>So there was, like, a bunch of features that you had in mind for shiny and what would later become Swift. But you said, You know, we don't wanna wait until we have a brand new language, you know, completely implemented. Let's go ahead and take those features that we really, really want. And just add those to objective C.
+<v John Sundell>So there was a bunch of features that you had in mind for Shiny and what would later become Swift. But you said, we don't wanna wait until we have a brand-new language completely implemented. Let's go ahead and take those features that we really, really want and just add those to Objective-C.
 
-00:20:09.502 --> 00:20:29.510
-<v Chris Lattner>Yeah, well, so if you think about it from a different perspective. So it may seem obvious now, but the time it was not obvious at all to anybody and even me, and I mean Beltran was really great and is still really great because he's always super encouraging. And he always kind of, you know, pushed through the doubts and the Trans a bit of a scientist. He's,
+00:20:09.502 --> 00:20:34.280
+<v Chris Lattner>And if you think about it from a different perspective, Swift may seem obvious now, but at the time it was not obvious at all to anybody and even me. I mean, Bertrand was really great, and is still really great, because he's always super encouraging. And he always pushed through the doubts. Bertrand's a bit of a scientist. He just wants to find truth in many ways.
 
-00:20:29.510 --> 00:20:29.880
-<v (Unknown)>
+00:20:34.970 --> 00:21:01.920
+<v Chris Lattner>So yeah, there's tons of uncertainty, but at the same time, there's lots of good ideas. And so he and others were pushing to say, okay, it's part of the ideation behind building a new language, you always have to ask the question of "why not make the existing thing better?" And so the answer was, "yes, we should make the existing thing better, clearly," and so ARC and all the other things that came out of that happened.
 
-00:20:30.620 --> 00:20:34.280
-<v Chris Lattner>you know, he just wants to find truth in many ways and
+00:21:02.480 --> 00:21:28.380
+<v Chris Lattner>But in the case of Swift it became memory safety. And you can't retrofit memory safety into Objective-C without removing the C. And if you remove the C you just lose too much and it becomes not Objective-C anymore.
 
-00:20:34.970 --> 00:20:59.090
-<v Chris Lattner>on DH. So yeah, there's tons of uncertainty, but at the same time, there's lots of good ideas. And so hey and others were pushing say, Well, okay, I mean, it's part of the idea ideation behind building new language. You always have to ask the question of Why not make the existing thing better? Yeah, and so the answer was yes. We should make the existing thing better clearly, and so are you.
+00:21:17.420 --> 00:21:30.580
+<v Garric Nahapetian>Right. So was it somewhat like a Trojan horse to add those Swift features to Objective-C, which kind of made it easier to then convince people about Swift later, as you'd already done the Objective-C work?
 
-00:20:59.630 --> 00:21:01.920
-<v Chris Lattner>All the other things that came out of that happened,
-
-00:21:02.480 --> 00:21:09.180
-<v Chris Lattner>but in the case of Swift became memory safety and you can't retrofit memory safety into
-
-00:21:09.570 --> 00:21:09.620
-<v (Unknown)>
-
-00:21:09.620 --> 00:21:17.110
-<v Chris Lattner>objective C without removing the C. And if you move the see you, you just lose too much and it becomes not objective C anymore,
-
-00:21:17.420 --> 00:21:28.380
-<v Garric Nahapetian>right? So was it somewhat like a Trojan horse to like? Add those Swift features to objective see which kind of made it easier to then convince people about Swift Later,
-
-00:21:28.970 --> 00:21:30.580
-<v Garric Nahapetian>as you'd already done the objective, See work.
-
-00:21:31.010 --> 00:21:38.070
-<v Chris Lattner>I think so. Interesting internal dynamics. I guess we were very focused on making Jack C and the platform better.
-
-00:21:39.370 --> 00:21:55.360
-<v Chris Lattner>It was in terms of the Swift development. It was a way of de risking innocence, because if you say we don't rule out everything all at once and you have benry right, and none of it is tested that it's hugely risky. But if you were allowed minor things like a holy memory management system
+00:21:31.010 --> 00:21:55.360
+<v Chris Lattner>Interesting internal dynamics. I guess we were very focused on making Objective-C and the platform better. In terms of the Swift development, it was a way of de-risking in a sense, because if you say, "we're gonna roll out everything all at once", and none of it is tested then it's hugely risky. But if you roll out minor things like a whole new memory management system
 
 00:21:55.880 --> 00:22:16.890
-<v Chris Lattner>separately, and then you iterated, debug and develop that with the community and work it out, then like it takes a certain amount of risk away. But but I would say that both the external and internal community Apple was kind, saying like, Well, why you prioritizing this? It feels like we're kind of on a random walk. And why? Why are you doing this and not this other thing? And so there was an interesting dynamic with that.
+<v Chris Lattner>separately, and then you iterate, debug and develop that with the community and work it out, then it takes a certain amount of risk away. But I would say that both the external and internal community at Apple was kind of saying like, "why are you prioritizing this? It feels like we're kind of on a random walk. And why? Why are you doing this and not this other thing?" And so there was an interesting dynamic with that.
 
-00:22:17.110 --> 00:22:19.480
-<v Garric Nahapetian>Can you talk just briefly about like what
-
-00:22:20.070 --> 00:22:20.120
-<v (Unknown)>
-
-00:22:20.120 --> 00:22:30.195
-<v Garric Nahapetian>community aspects at that time made something like Swift possible. Um, you mentioned bro Tron, and you mentioned another gentleman's name I can't remember. But like,
-
-00:22:31.185 --> 00:22:34.655
-<v Garric Nahapetian>you know, there has to be some nugget of community.
+00:22:17.110 --> 00:22:49.015
+<v Garric Nahapetian>Can you talk just briefly about like what community aspects at that time made something like Swift possible? You mentioned Bertrand, and you mentioned another gentleman's name I can't remember. But you know, there has to be some nugget of community.
 
 00:22:35.335 --> 00:22:40.995
-<v Garric Nahapetian>Because Swift is like, Swift Min is so strong right now, there has to be I feel like some nugget of community that was
+<v Garric Nahapetian>Because the Swift community is so strong right now, there has to be, I feel like, some nugget of community that was available at Apple or wherever you were at that time with those people that made Swift possible.
 
-00:22:41.585 --> 00:22:46.495
-<v Garric Nahapetian>available at Apple or wherever you were at that time with those people
-
-00:22:47.335 --> 00:22:49.015
-<v Garric Nahapetian>that maids with possible.
-
-00:22:49.115 --> 00:22:56.535
-<v Chris Lattner>Well, so Apple has a really strong engineering team. And so there's a ton of people at the time. They're all writing objective, see
-
-00:22:57.165 --> 00:23:13.555
-<v Chris Lattner>that are highly opinionated about things. But I also have a huge depth in background and in building frameworks and absent all all these kinds of things. And so there were a lot of ideas on how to make objects see better. And they all their big white papers written by
-
-00:23:14.385 --> 00:23:21.715
-<v Chris Lattner>luminaries have been working since the next day on this kind of stuff. And so there's a tremendous internal community that drove That
+00:22:49.115 --> 00:23:21.715
+<v Chris Lattner>Apple has a really strong engineering team. And so there's a ton of people at the time, they're all writing Objective-C, that are highly opinionated about things, but also have a huge depth and background in building frameworks and apps and all these kinds of things. And so there were a lot of ideas on how to make Objective-C better. There were big white papers written by luminaries that had been working since the NeXT day on this kind of stuff. And so there was a tremendous internal community that drove that.
 
 00:23:22.475 --> 00:23:31.535
-<v Chris Lattner>s o a time. It was Tron and Dave and I talked about ideas and I started coding a prototype of the compiler.
+<v Chris Lattner>At the time, it was, Bertrand and Dave and I talked about ideas and I started coding a prototype of the compiler.
 
 00:23:32.785 --> 00:24:09.235
 <v Chris Lattner>But obviously, I could not build everything myself. And so what's happening is around April in twenty eleven. We discuss it with management and then got agreement pulling a few more people. This is when folks like Ted Kremen, AC and Doug Gregor and John McCall in a bunch of other exceptional engineers over time got pulled in. And, you know, looking back on that, it was it was really interesting, because this is the first time that other people were taking other other language experts and other design like this kind of expert. People were
