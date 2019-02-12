@@ -130,25 +130,23 @@ current edit point.
 00:09:22.639 --> 00:09:46.529
 <v John Sundell>So I'm incredibly excited about doing this together with you and with the rest of the community as well. So you kind of came to me, both of you, and you had the idea for this show. So why don't you tell the audience a little bit about this, Garric? Why don't you start and tell us a little bit about the idea that you had for this show. How Chris got involved, how I got involved and why we're now talking to everyone here on the show.
 
-NOTE === Paragraphs above this point have been edited.
-
 00:09:46.669 --> 00:09:50.449
-<v Garric Nahapetian>So Dub Dub two thousand eighteen.
+<v Garric Nahapetian>So WW two thousand eighteen.
 
 00:09:51.039 --> 00:10:01.409
-<v Garric Nahapetian>Yeah. I've been doing this Swift coders podcast for maybe two years. At that point, like eighty episodes. I had been doing my learned Swift delay stuffs with coders l A
+<v Garric Nahapetian>Yeah. I've been doing this Swift coders podcast for maybe two years. At that point, like eighty episodes. I had been doing my learn Swift L.A. stuffs with Coders L.A.
 
 00:10:01.969 --> 00:10:19.454
-<v Garric Nahapetian>And you had just joined tinder about, you know, six months had been working there, and I think like all that work, you know, for those that don't know, like my background, I was a lawyer. Then I quit. I drove Uber, taught myself programming, you know, like two years later and working as an IOS and Jared tender. But that build up
+<v Garric Nahapetian>And had just joined tinder about, you know, six months had been working there, and I think like all that work, you know, for those that don't know, like my background, I was a lawyer. Then I quit. I drove Uber, taught myself programming, you know, like two years later and working as an iOS engineer at tinder. But that build up
 
 00:10:20.044 --> 00:10:33.154
-<v Garric Nahapetian>really took a lot out of me. I almost don't really understand how it was able to do that. It's almost like I woke up and it was like it happened. And so Dub Dub two thousand eighteen, I hadn't really been doing the podcast this much have been kind of feeling down
+<v Garric Nahapetian>really took a lot out of me. I almost don't really understand how I was able to do that. It's almost like I woke up and it was like it happened. And so WW two thousand eighteen, I hadn't really been doing the podcast this much have been kind of feeling down
 
 00:10:34.044 --> 00:10:40.254
-<v Garric Nahapetian>and actually not as inspired the year before. Dub Dub. I think it was my first dub dub. It was so inspiring. And then I'm back there
+<v Garric Nahapetian>and actually not as inspired the year before. WW. I think it was my first WW. It was so inspiring. And then I'm back there
 
 00:10:40.774 --> 00:10:56.374
-<v Garric Nahapetian>the same the same place, you know, in San Jose, not feeling is inspired. It was so this different energy and I had toe just feel into that energy and just go into it. And it was really interesting. What happened when I did that end up having really interesting conversations to people
+<v Garric Nahapetian>the same the same place, you know, in San Jose, not feeling is inspired. It was so this different energy and I had to just feel into that energy and just go into it. And it was really interesting. What happened when I did that end up having really interesting conversations to two people
 
 00:10:57.114 --> 00:11:03.154
 <v Garric Nahapetian>in particular. So one was with Jessie Squires. He and I sat and had lunch together, and I was just telling him about my feelings, and
@@ -157,49 +155,40 @@ NOTE === Paragraphs above this point have been edited.
 <v Garric Nahapetian>we kind of just shared,
 
 00:11:05.244 --> 00:11:17.754
-<v Garric Nahapetian>and it was really encouraging to, like, hear him. You haven't listened to me and give me his thoughts. And then the other person was Chris. So Chris was participating in the tri, Swift San Jose Open source Meet up on the Friday of Dub Dub
+<v Garric Nahapetian>and it was really encouraging to, like, hear him, to have him listened to me and give me his thoughts. And then the other person was Chris. So Chris was participating in the try! Swift San Jose Open source Meetup on the Friday of WW
 
 00:11:18.314 --> 00:11:49.954
-<v Garric Nahapetian>and I think it was lunchtime and Chris and I saw each other, and we're like, Let's go eat. So I'm sitting, you know, we're having lunch together. And Chris and I had connected before, you know, I had interviewed him. I think we had a couple conversations and I had interviewed him for my podcast. But like this was the first time he and I had really interacted like that before. Never took a walk with him, so we walk from the venue to Dub Dub. But we have lunch and I get into the same details with Chris because he's, you know, he's checking in with me. He has a going, you know, what's going on. And I notice you have been doing the podcast is much, and I just start telling him
+<v Garric Nahapetian>and I think it was like lunchtime and Chris and I saw each other, and we're like, Let's go eat. So I'm sitting, you know, we're having lunch together. And Chris and I had connected before, you know, I had interviewed him. I think we had a couple conversations and I had interviewed him for my podcast. But like this was the first time he and I had really interacted like that before. Never took a walk with him, so we walk from the venue to WW. We have lunch and I get into the same details with Chris because he's, you know, he's checking in with me. He has a going, you know, what's going on. And I notice you haven't been doing the podcast is much, and I just start telling him
 
-00:11:50.514 --> 00:11:51.554
+00:11:50.514 --> 00:11:51.964
 <v Garric Nahapetian>and we talk about
 
-00:11:51.944 --> 00:11:51.964
-<v (Unknown)>
-
 00:11:52.224 --> 00:11:59.954
-<v Garric Nahapetian>different ways to get inspiration and, you know, maybe you keep doing it, or maybe you do it differently, and maybe you don't do it. And And that was really great.
+<v Garric Nahapetian>different ways to get inspiration and, you know, maybe you keep doing it, or maybe you do it differently, and maybe you don't do it. And that was really great.
 
-00:12:00.594 --> 00:12:09.304
-<v Garric Nahapetian>And then some time goes by and he emails me or so we kind of reconnect over email. And he had this idea, like, Hey, you know what? If you did a show kind of like this and I was like
-
-00:12:09.451 --> 00:12:09.961
-<v (Unknown)>
+00:12:00.594 --> 00:12:09.961
+<v Garric Nahapetian>And then some time goes by and he emails me so we kind of reconnect over email. And he had this idea, like, Hey, you know what? If you did a show kind of like this and I was like hmmm
 
 00:12:11.051 --> 00:12:25.461
 <v Garric Nahapetian>and I could kind of sense, like maybe, like he was wanting to maybe exercise it, his podcasting talents, and I was like, Well, that sounds cool. Would you want to do it together? And he was like, Yeah, that could be cool. So over the course, like this summer,
 
 00:12:26.151 --> 00:13:24.821
-<v Garric Nahapetian>we were planning it together. But by the time it was like ready to go and we're going to pull the button, you push the button to actually start recording. He could sense in me that I really wasn't fully there and it was true. And I was so glad to like, have that same honest conversation with him again. And and I said, Yeah, you know what? Like I really do want to do this, but I don't know if I can put all of it on my shoulders. And he said, You know what? This is a community podcast. So what do you think about reaching out to more people in the community and seeing if we can, you know, get someone else to help Andi? I said that would be a great idea. And in that moment, I was relieved, but also scared. You know, it's coming coming from a place of, like, abundance, but also scarcity like I was, I was relieved, but scared because I kind of wanted it to be just me and Chris, you know? But then But then when he mentioned, you know, John, and it just, you know, mentioned you and it just made total sense. And then we brought you in. And you, us three, we started just talking and It just made so much sense, and it just felt so much more inspired.
+<v Garric Nahapetian>we were planning it together. But by the time it was like ready to go and we're going to pull the button, you push the button to actually start recording. He could sense in me that I really wasn't fully there and it was true. And I was so glad to like, have that same honest conversation with him again. And and I said, Yeah, you know what? Like I really do want to do this, but I don't know if I can put all of it on my shoulders. And he said, You know what? This is a community podcast. So what do you think about reaching out to more people in the community and seeing if we can, you know, get someone else to help? And I said that would be a great idea. And in that moment, I was relieved, but also scared. You know, it's coming from a place of, like, abundance, but also scarcity like I was, I was relieved, but scared because I kind of wanted it to be just me and Chris, you know? But then But then when he mentioned, you know, John, and it just, you know, mentioned you and it just made total sense. And then we brought you in. And you, us three, we started just talking and It just made so much sense, and it just felt so much more inspired.
 
 00:13:24.981 --> 00:13:45.401
-<v Chris Lattner>I felt like pulling John and was really fantastic, because then it really cannot. Chris, like John's perspective, really crystallized the show. And and, you know, it should not be one or two or three people should be anybody who wants to get involved in any different kind of way. And if there's anybody else who wants to produce a show, then they should be able Teo. And this is about and formed by the community.
+<v Chris Lattner>I felt like pulling John and was really fantastic, because then it really kind of, like John's perspective, really crystallized the show. And, and, you know, it should not be one or two or three people should be anybody who wants to get involved in any different kind of way. And if there's anybody else who wants to produce a show, then they should be able to. And this is about and formed by the community.
 
 00:13:45.631 --> 00:13:58.911
-<v John Sundell>Yeah, absolutely. I mean, the way I look at this and, you know, when you got me involved and yes, if I wanted to be part of this, I was, Of course, they're really excited about that because I love podcasting. And even though I'm already doing two different shows, you know, why not add a third right?
+<v John Sundell>Yeah, absolutely. I mean, the way I look at this and, you know, when you got me involved and yes, if I wanted to be part of this, I was, Of course, were really excited about that because I love podcasting. And even though I'm already doing two different shows, you know, why not add a third right?
 
 00:13:59.461 --> 00:14:32.367
-<v John Sundell>But the thing that we kind of all agreed on was, you know, this is not any one of us is kind of individual show, and we won't necessarily be on all the episodes even like we'll help kind of bootstrap that you kind of look at. This is the kind of you know, initial commit of the repository, and then whoever contributes and helps out you know who wants to be on the show. Who wants to help out with things like, you know, editing or putting things together, or, you know, it's coming up with topics to talk about. You know, all of this stuff is kind of very much up to the community and were actively looking for people to get involved.
+<v John Sundell>But the thing that we kind of all agreed on was, you know, this is not anyone of us is kind of individual show, and we won't necessarily be on all the episodes even like we'll help kind of bootstrap that you kind of look at. This is the kind of you know, initial commit of the repository, and then whoever contributes and helps out you know who wants to be on the show. Who wants to help out with things like, you know, editing or putting things together, or, you know, it's coming up with topics to talk about. You know, all of this stuff is kind of very much up to the community and were actively looking for people to get involved.
 
-00:14:32.357 --> 00:14:43.337
-<v Garric Nahapetian>Yeah, I'm really inspired by what Jesse Squires has done with the Swift weekly brief. And now baas like taking over. And so I feel like somehow using that model but for a podcast
-
-00:14:43.847 --> 00:14:46.767
-<v Garric Nahapetian>could be really, I think, powerful.
+00:14:32.357 --> 00:14:46.767
+<v Garric Nahapetian>Yeah, I'm really inspired by what Jesse Squires has done with the Swift weekly brief. And now Bas like taking over. And so I feel like somehow using that model but for a podcast could be really, I think, powerful.
 
 00:14:47.257 --> 00:15:13.397
-<v Chris Lattner>Yeah, well, And if you look at big, successful things across the world, the ones that really work in the long term of the ones that can scale right and you can't scale if everything is dependent on one person. And so the more you can pull people in, the more you could take advantage of a different people, skill, sets and abilities and, you know, interests and time and all the things that going to making something really the better. And so the Swift communities, so many different kinds of backgrounds and perspectives.
+<v Chris Lattner>Yeah, well, And if you look at big, successful things across the world, the ones that really work in the long term are the ones that can scale right and you can't scale if everything is dependent on one person. And so the more you can pull people in, the more you could take advantage of a different people, skill, sets and abilities and, you know, interests and time and all the things that going to making something real the better. And so the Swift communities, so many different kinds of backgrounds and perspectives.
 
 00:15:14.437 --> 00:15:15.697
 <v Chris Lattner>I think everybody has something to add.
@@ -817,3 +806,4 @@ NOTE === Paragraphs below this point have been edited.
 
 01:07:14.990 --> 01:07:26.240
 <v John Sundell>So, you can find me also on Twitter. I am @johnsundell and you can find my weekly articles at https://www.swiftbysundell.com/ and my podcast at https://www.swiftbysundell.com/podcast.
+
