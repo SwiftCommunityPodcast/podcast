@@ -789,7 +789,7 @@ NOTE === Paragraphs below this point have been edited.
 <v John Sundell>Yeah, absolutely. And you hit on a point there also, which is there are so many different ways to contribute. And, even if you're a person who doesn't have either the time or it's not within your interest to be heavily involved in the evolution process itself, you can still appreciate it. You can still look at it from a distance, and you still involve yourself in other ways as well. So that's also a beauty of something like the swift community, which is kind of broad, in that sense, where you can contribute in so many different ways. I want to go back very quickly to something, Chris, you said earlier, which is, you said that you do want to enforce a certain kind of ceremony, if you will, or rather process on the changes that are being made. 
 
 01:00:03.293 --> 01:00:08.903
-<v John Sundell> I think that's also really important. And one thing we have to remember is that we,
+<v John Sundell>I think that's also really important. And one thing we have to remember is that we,
 
 01:00:09.893 --> 01:00:51.363
 <v John Sundell>talking about this here, people listening to the show, we're all probably pretty excited about the language itself. We are looking at what is happening, we're very involved, and we're paying attention to what's going on. But for many, many people, just like how I was relating to Objective-C earlier saying it was just a tool for me to get my job done, that's how people relate to Swift. And if it changes too quickly and every month there would be a completely new thing, that could be really tiring for a lot of people. So I think, taking a step back and saying, OK, this process is going to take a little bit longer, but it's going to yield a better result and it's going to have a more steady pace, I think that's probably good as well.
@@ -801,22 +801,13 @@ NOTE === Paragraphs below this point have been edited.
 <v Chris Lattner>it takes time for the community to figure it out and apply it and figure out how it fits with everything else. And so taking time to do that is good.
 
 01:01:06.703 --> 01:01:36.092
-<v Chris Lattner>The number one thing I learned from Swift evolution is the power of having the right catalysts in the community. And so Swift evolution really pulled together a community of language geeks together to care about one specific aspect of the Swift project. And so I'm always on the lookout for what is the catalyst that allows, like the Swift package ecosystem to take off, or that allows the Swift on server community to take off or get the machine learning community together maybe and do cool things.
+<v Chris Lattner>The number one thing I learned from Swift Evolution is the power of having the right catalysts in the community. And so Swift Evolution really pulled together a community of language geeks together to care about one specific aspect of the Swift project. And so I'm always on the lookout for what is the catalyst that allows, like the Swift package ecosystem to take off, or that allows the Swift on server community to take off or get the machine learning community together maybe and do cool things.
 
 01:01:36.992 --> 01:01:48.852
 <v Chris Lattner>And how do we find those catalysts that allow the people to come together in the right forum and really build on their strength and get the energy but also get the talent, get the people working together in a collaborative way.
 
-01:01:49.142 --> 01:01:49.822
-<v Garric Nahapetian>Right? And then 
-
-01:01:50.472 --> 01:01:56.102
-<v Garric Nahapetian>sustain that energy, so get people excited about server side Swift. But then how do we
-
-01:01:56.942 --> 01:02:02.502
-<v Garric Nahapetian>keep that going? How do we support people, for instance, like John? How do we support people in the community
-
-01:02:03.062 --> 01:02:06.302
-<v Garric Nahapetian>to continue to have that energy to push forward?
+01:01:49.142 --> 01:02:06.302
+<v Garric Nahapetian>Right? And then sustain that energy. So get people excited about server-side Swift. But then how do we keep that going? How do we support people, for instance, like John? How do we support people in the community to continue to have that energy to push forward?
 
 01:02:07.092 --> 01:02:24.002
 <v John Sundell>Cool. So, what do you say? Should we round off this episode by talking a little bit about how people can get involved? If you've now been listening to this episode and you feel, this sounds cool, how can I help, or how can I involve myself, what can I do to make this
@@ -896,17 +887,8 @@ NOTE === Paragraphs below this point have been edited.
 01:07:02.590 --> 01:07:04.380
 <v John Sundell>Excellent. And what about you, Chris?
 
-01:07:04.910 --> 01:07:09.240
-<v Chris Lattner>Twitter? @clattner_llvm
-
-01:07:11.180 --> 01:07:11.500
-<v Chris Lattner>That's
-
-01:07:11.510 --> 01:07:13.330
-<v John Sundell>right on brand.
-
-01:07:13.340 --> 01:07:14.500
-<v Chris Lattner>And what about you, John?
+01:07:04.910 --> 01:07:14.500
+<v Chris Lattner>Twitter? @clattner_llvm. That's right on brand. And what about you, John?
 
 01:07:14.990 --> 01:07:26.240
-<v John Sundell>So, you can find me also on Twitter. I am @johnsundell and you can find my weekly articles at https://www.swiftbysundell.com/ and my podcast at https://www.swiftbysundell.com/podcast
+<v John Sundell>So, you can find me also on Twitter. I am @johnsundell and you can find my weekly articles at https://www.swiftbysundell.com/ and my podcast at https://www.swiftbysundell.com/podcast.
