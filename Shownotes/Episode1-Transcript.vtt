@@ -717,119 +717,73 @@ NOTE === Paragraphs above this point have been edited.
 00:50:05.574 --> 00:50:18.494
 <v Garric Nahapetian>in the feed that the community to keep growing but also, like bring in these other communities, like make ourselves accessible to those community so that and maybe we should come up with a better phrase for it. That Swift can be in a world dominating in a language.
 
-00:50:18.774 --> 00:50:24.214
-<v Chris Lattner>Well, and I think that a big piece of that is, well, this has been a very upbeat, positive discussion about Swift,
+NOTE === Paragraphs below this point have been edited.
 
-00:50:24.804 --> 00:50:34.114
-<v Chris Lattner>so it also has lots of problems. And I think we need to be open to talking about that and and treat that as a problem solving exercise. Right there. There are major issues with
+00:50:18.774 --> 00:50:34.114
+<v Chris Lattner>Well, and I think that a big piece of that is, while this has been a very upbeat, positive discussion about Swift, Swift also has lots of problems. And I think we need to be open to talking about that and treat that as a problem solving exercise, right? There are major issues with
 
 00:50:34.804 --> 00:50:47.524
-<v Chris Lattner>the Winnicks ecosystem. For example, the Windows ecosystem is barely barely getting off the ground. At this point, there's so many different things that that really need toe happen to get it to be relevant to the broader audience.
+<v Chris Lattner>the Linux ecosystem, for example. The Windows ecosystem is barely, barely getting off the ground at this point. There's so many different things that really need to happen to get it to be relevant to the broader audience.
 
 00:50:47.664 --> 00:52:09.789
-<v John Sundell>Yeah, and it's super interesting when you speak to people who are getting into Swift but who are not Apple developers like in the beginning and especially, you know, going back to something like Objective C, which was, you know, pretty much on Lee, used by people building apse for for the Mac and for Iowa's. But even in the early days of Swift or even the first couple of years you had, you know, I don't know the numbers, but I would I would get something like ninety percent plus of people who were writing Swift code. We're doing it for Apple platforms, but now I'm more and more meeting people who are getting into Swift learning it on even in a working with Swift. But they're not Apple developers. They're using it for the server, and they're they're using for for other tasks. And that, I think, is both, like, incredibly exciting to to have those people kind of come into the community, but it also presents us with a bit of a challenge because, you know, just take myself. For example, when I'm writing, I'm writing a loss from the perspective of Iowa's developer. And a lot of the the problems that I'm writing about it I'm thinking about are coming from an iris perspective. While you know the people coming from from other service side languages and doing using Swift in that environment, they're going to be facing other kinds of problems and have other priorities. And it's going to be interesting to see where kind of those meets in the long run. And you know, how do you balance things that is needed on something like Windows and and Lennox and for Apple spot forms as well.
+<v John Sundell>Yeah, and it's super interesting when you speak to people who are getting into Swift but who are not Apple developers. Like, in the beginning and especially going back to something like Objective C, which was, pretty much only used by people building apps for the Mac and for iOS. But even in the early days of Swift or even the first couple of years you had, I don't know the numbers, but I would guess something like 90+ percent of people who were writing Swift code were doing it for Apple platforms. But now I'm more and more meeting people who are getting into Swift, learning it, and even working with Swift, but they're not Apple developers. They're using it for the server, and they're using for for other tasks. And that, I think, is both incredibly exciting to to have those people come into the community, but it also presents us with a bit of a challenge because, you know, just take myself, for example. When I'm writing, I'm writing a lot from the perspective of an iOS developer. And a lot of the problems that I'm writing about and I'm thinking about are coming from an iOS perspective. While the people coming from other server-side languages and using Swift in that environment, they're going to be facing other kinds of problems and have other priorities. And it's going to be interesting to see where those meet in the long run. And how do you balance things that are needed on something like Windows and Linux and for Apple's platforms as well.
 
 00:52:09.799 --> 00:52:23.609
-<v Chris Lattner>Right? And, you know, I think all of our goals to build an inclusive community. But if you're not an Apple developer, it can feel alienating that every time you search for some Swift bearing you and API in Iowa's discussion.
+<v Chris Lattner>Right. And I think all of our goal is to build an inclusive community. But if you're not an Apple developer, it can feel alienating that every time you search for some Swift thing you end up in an iOS discussion.
 
 00:52:24.039 --> 00:52:26.629
-<v John Sundell>Yeah, exactly. Here's something that in a year I view controller.
+<v John Sundell>Yeah, exactly. "Here's how to do that in a UIViewController."
 
 00:52:26.639 --> 00:52:36.249
-<v Chris Lattner>Yeah, exactly. And so that makes you feel like an outsider and that that Khun send the wrong signal and nobody nobody means for that. Awesome. But the but the fact Israel
+<v Chris Lattner>Yeah, exactly. And so that makes you feel like an outsider and that can send the wrong signal. And nobody means for that I assume, but the effect is real.
 
-00:52:37.069 --> 00:52:41.539
-<v Chris Lattner>on DH that's that's a challenge that we as a community face. And I don't know that there
-
-00:52:42.099 --> 00:52:46.229
-<v Chris Lattner>good, easy answers for any of these problems. But I think we can get there.
+00:52:37.069 --> 00:52:46.229
+<v Chris Lattner>And that's a challenge that we as a community face. And I don't know that there are good, easy answers for any of these problems. But I think we can get there.
 
 00:52:46.359 --> 00:53:14.815
-<v John Sundell>Yeah, absolutely. And something that I think will play a big part in that is thie open, evolution designed process where, you know, people anyone can can make a pitch. Anyone can make their case for something. And we can get those, you know, other sides of the story and others, other sides of something kind of heard. And so how has Swift evolution from from both of your perspectives? Kind of been working so far. And where do you see a kind of going within the next couple of
+<v John Sundell>Yeah, absolutely. And something that I think will play a big part in that is the open evolution design process. Where anyone can make a pitch, anyone can make their case for something. And we can get those other sides of the story and other sides of something heard. And so how has Swift Evolution from both of your perspectives been working so far? And where do you see it going within the next couple of years?
 
 00:53:14.815 --> 00:53:18.885
-<v Garric Nahapetian>years? I actually didn't participate that much on Swift evolution.
+<v Garric Nahapetian>I actually didn't participate that much on Swift Evolution.
 
 00:53:19.405 --> 00:54:01.625
-<v Garric Nahapetian>You know, there was like the old style was like the email like ghetto, like sign up for some email thing. And it was like a lot of emails going back and forth. And, you know, that's not really how I can contribute. I feel like where I wasn't inspired to really contribute in the evolution process. I mean, I would read a little bit about the proposals. I never really commented, but I think like that was something that I noticed early. What what I noticed early on and would always mention whenever it came up was That is just one way to contribute is like being involved in the evolution process, reading the proposals, creating proposals, commenting on them. And that was actually something that I thought was really awesome but also kind of like confusing,
+<v Garric Nahapetian>You know, there was the old style, the email [list], you had to sign up for some email thing. And it was a lot of emails going back and forth. And, you know, that's not really how I can contribute, I feel like. Or I wasn't inspired to really contribute in the evolution process. I mean, I would read a little bit about the proposals. I never really commented. But what I noticed early on and would always mention whenever it came up was, that is just one way to contribute, being involved in the evolution process, reading the proposals, creating proposals, commenting on them. And that was actually something that I thought was really awesome but also kind of confusing.
 
-00:54:02.225 --> 00:54:05.425
-<v Garric Nahapetian>because most of what gets talked about in,
-
-00:54:06.085 --> 00:54:24.785
-<v Garric Nahapetian>you know, online and in the community is like, What are we doing with the language or how is like how is the language evolving, but like there's a lot of stuff happening, kind of just in the background. That is a part of the community. But it's not necessarily programming related, like when I'm doing a podcast about Swift,
+00:54:02.225 --> 00:54:24.785
+<v Garric Nahapetian>Because most of what gets talked about online and in the community is like, "What are we doing with the language or how is the language evolving?" But there's a lot of stuff happening just in the background that is a part of the community. But it's not necessarily programming related. Like, when I'm doing a podcast about Swift,
 
 00:54:25.515 --> 00:55:11.672
-<v Garric Nahapetian>it's a it's like in that it's a part of the community. But I'm not talking about coding. And it was really weird, like grapple with that to feel like a part of the community. But, um, I actually contributing. But that's something that, like I've I've been just kind of coming to terms with, like, over the last, like it's a year or so, that my contribution is my ability to be a leader in the community and bring people together on DH to, like, help make the community more accessible. So so Yeah, I mean, I I was just really happy that it moved to the forums. But, ah, I would say I was more just watching as an outsider, and that's fine, You know, like if you look at what I was able to achieve, I did all of that. I've been that involved this involved in Swift, but I wasn't that involved in the evolution process, and that's okay,
+<v Garric Nahapetian>it's a part of the community, but I'm not talking about coding. And it was really weird to grapple with that. To feel like a part of the community, but "oh, am I actually contributing?" But that's something that I've been coming to terms with over the last year or so, that my contribution is my ability to be a leader in a community and bring people together and to help make the community more accessible. So yeah, I mean, I was really happy that it moved to the forums. But I would say I was just watching as an outsider, and that's fine, you know. If you look at what I was able to achieve, I did all of that. I've been this involved in Swift, but I wasn't that involved in the evolution process, and that's okay.
 
-00:55:11.822 --> 00:55:18.202
-<v Chris Lattner>Yeah. So I could probably talk for five hours about this because it's very complicated.
+00:55:11.822 --> 00:55:36.392
+<v Chris Lattner>Yeah. So I could probably talk for five hours about this because it's very complicated. I guess the short answer to this is that one of the default views that I hold is that open is better than close. If you can get more people involved, you will get a better thing. And so I think that the Swift Evolution process has lots of problems.
 
-00:55:18.822 --> 00:55:36.392
-<v Chris Lattner>I guess the short, the short answer. This is that I really so I one of the default views that I hold is the open is better than close, like if you can keep. If you could get more people involved, you will get a better thing. And so I think that Thie Swift evolution process has lots of problems.
-
-00:55:37.032 --> 00:55:38.592
-<v Chris Lattner>Think Eric identified several of them,
-
-00:55:39.692 --> 00:55:55.832
-<v Chris Lattner>but I think it's generally really good thing. I think it's also a great forcing function that slows down the evolution of language, which I think is good. I think it's better for evolution to be deliberate and carefully considered. There has to be fast.
+00:55:37.032 --> 00:55:55.832
+<v Chris Lattner>Garric identified several of them. But I think it's generally a really good thing. It's also a great forcing function that slows down the evolution of the language, which I think is good. I think it's better for evolution to be deliberate and carefully considered than it is to be fast.
 
 00:55:56.462 --> 00:56:02.332
-<v Chris Lattner>I also think it's good to force a certain amount of documentation and process on it, which is which is important.
+<v Chris Lattner>I also think it's good to force a certain amount of documentation and process on it, which is important.
 
-00:56:03.162 --> 00:56:05.342
-<v Chris Lattner>It's also really interesting way that
+00:56:03.162 --> 00:56:14.342
+<v Chris Lattner>It's also a really interesting way that leads to Apple collaborating with the community in a different way by providing a form for doing that, which is really great.
 
-00:56:06.932 --> 00:56:11.562
-<v Chris Lattner>leads to Apple collaborating with community in a different way by providing providing
+00:56:15.462 --> 00:56:42.172
+<v Chris Lattner>I don't see Swift Evolution as a fixed thing. It's changed in many ways over the years and it's always a hard tradeoff between, are you allocating design authority to the community or prioritization ability to the community? And I think it's challenging because if you leave it up to the community completely, then you get lots of small things. But there are major things that need to happen in the Swift world, including concurrency, for example.
 
-00:56:12.082 --> 00:56:14.342
-<v Chris Lattner>kind of a form for doing that, which is really great.
-
-00:56:15.462 --> 00:56:33.142
-<v Chris Lattner>I don't I don't see Swift of Alicia's a fixed thing like it's changed in many ways over the time over the years and It's always a hard tradeoff between ru allocating design authority of the community or prioritization ability to the community. And I think it sze challenging because if you leave it up to
-
-00:56:33.672 --> 00:56:42.172
-<v Chris Lattner>the community completely, then you get lots of small things. But their major things that need to happen in the Swift world, including currency, for example.
-
-00:56:42.702 --> 00:56:48.432
-<v Chris Lattner>And so that's that's a bigger effort, and that's that's harder to do through a completely bottom up
-
-00:56:49.752 --> 00:56:58.532
-<v Chris Lattner>community process. So so I don't know. I mean, I think that Swift evolution's a really good thing. I'm really glad we have it. I agree. It's not the only thing, and it should not be the only thing,
-
-00:56:59.122 --> 00:56:59.632
-<v (Unknown)>
-
-00:57:00.022 --> 00:57:02.132
-<v Chris Lattner>but I think I think it's overall good.
+00:56:42.702 --> 00:57:02.132
+<v Chris Lattner>So that's a bigger effort, and that's harder to do through a completely bottom-up community process. So I don't know. I mean, I think that Swift Evolution is a really good thing. I'm really glad we have it. I agree it's not the only thing, and it should not be the only thing, but I think I think it's overall good.
 
 00:57:02.572 --> 00:57:06.902
-<v Garric Nahapetian>What about you, Jon? Did you get involved at all with the evolution processing proposals or anything like that?
+<v Garric Nahapetian>What about you, John? Did you get involved at all with the evolution process, writing proposals or anything like that?
 
-00:57:07.105 --> 00:57:12.085
-<v John Sundell>I read a lot like I read a lot about the evolution process. I read a lot of the proposals,
+00:57:07.105 --> 00:57:58.985
+<v John Sundell>I read a lot about the evolution process. I read a lot of the proposals, but just like yourself, I haven't really been commenting a lot and involving myself, and that's very much a decision on my part. You know, at some point you have to draw the line to say, what are the areas that you're going to focus on? And for me, doing all the things that I do with the site that I do and and also working on different projects and all that kind of stuff, I've said, at least for now, I'm going to be well-informed about what's going on in Swift Evolution. I'm going to comment on it occasionally, but I'm not going to heavily involve myself and be an active participant like that. But that might change, just like everything can evolve. So can my involvement as well, so we'll see.
 
-00:57:12.725 --> 00:57:19.375
-<v John Sundell>but just just like yourself. I haven't really been, you know, commenting a lot and involving myself, and that's
-
-00:57:19.955 --> 00:57:58.985
-<v John Sundell>very much a kind of a decision on my part. Like, you know, at some point you have to kind of draw the line to say, you know, what are the areas that you're going to focus on and for me like doing all the things that I do with you know that the site that I do and and and also working on different projects and all that kind of stuff I've said, You know, at least for now, I'm going to I'm going to be well informed about what's going on in Swift evolution. I'm going to comment on it occasionally, but I'm not going to like, heavily involved myself and and be an active participant like that. But that might change, just like you know, how everything can evolve. So, Khun, my involvement as well, so we'll see.
-
-00:57:58.995 --> 00:58:11.465
-<v Garric Nahapetian>I think, like that's one of the things this podcast can kind of bring toe light is the all the different parts of the Swift community. Like, you know, my podcast was really about. It was mostly Iowa's developers, but it was also it's just people
-
-00:58:11.455 --> 00:58:11.525
-<v (Unknown)>
-
-00:58:11.525 --> 00:59:04.165
-<v Garric Nahapetian>building kind of cool stuff. Usually like in this Swift community. We talked about the person you know, your podcast, like you love talking. I think it's like a lot of people who are building Iowa's developed a I was kind of related stuff, and you really get into like the details of what they're building, and you also talk about the person, and they don't kind of on the other side. You have, like, Swift unwrapped. It gets like really into the details of Swift evolution or Swift like features in a very technical perspective. But I feel like one of the things I was really excited about this podcast was like the ability, and Chris kept saying, like almost like a variety show, like the ability to talk about the diversity of all these people, Teo helping to build this language together and just like in any city or any community, there's going to be almost every type of thing or person or activity, and Swift really has that. And so I think it's going to be really exciting to even actually discover things that
-
-00:59:04.555 --> 00:59:05.065
-<v (Unknown)>
+00:57:58.995 --> 00:59:04.165
+<v Garric Nahapetian>I think one of the things this podcast can bring to light is all the different parts of the Swift community. Like, my podcast was really about, it was mostly iOS developers, but it was just people building cool stuff, usually in the Swift community. And we talked about the person. Your podcast, you love talking [with] a lot of people who are iOS developers, [building] iOS-related stuff, and you really get into the details of what they're building, and you also talk about the person. And then kind of on the other side you have Swift Unwrapped that gets really into the details of Swift Evolution or Swift features in a very technical perspective. But one of the things I was really excited about this podcast was the ability, and Chris kept saying, almost like a variety show, the ability to talk about the diversity of all these people, helping to build this language together. And just like in any city or any community, there's going to be almost every type of thing or person or activity, and Swift really has that. And so I think it's going to be really exciting to even actually discover things
 
 00:59:05.305 --> 00:59:15.093
-<v Garric Nahapetian>that I don't even know about. There's all these interesting things happening in this community, and I think I'm really excited to bring those those different stories to life with this podcast.
+<v Garric Nahapetian>that I don't even know about. There's all these interesting things happening in this community, and I think I'm really excited to bring those different stories to life with this podcast.
 
 00:59:15.213 --> 01:00:02.733
 <v John Sundell>Yeah, absolutely. And you hit on a point there also, which is there are so many different ways to contribute. And, even if you're a person who doesn't have either the time or it's not within your interest to be heavily involved in the evolution process itself, you can still appreciate it. You can still look at it from a distance, and you still involve yourself in other ways as well. So that's also a beauty of something like the swift community, which is kind of broad, in that sense, where you can contribute in so many different ways. I want to go back very quickly to something, Chris, you said earlier, which is, you said that you do want to enforce a certain kind of ceremony, if you will, or rather process on the changes that are being made. 
