@@ -543,109 +543,106 @@ NOTE === Paragraphs above this point have been edited.
 00:39:43.994 --> 00:39:54.794
 <v Garric Nahapetian>allowed. It pushed me that. That's what allowed me to shoot so far so fast and then wake up two years later and I'm in Iowa's engineer tender, you know, it was a big part of that that community aspect of the media.
 
+NOTE === Paragraphs below this point have been edited.
+
 00:39:55.214 --> 00:40:03.164
-<v Chris Lattner>And what about you, John? What was electing the audience and having this, like, very big bomb kind of dropped on you all at once without expecting it.
+<v Chris Lattner>And what about you, John? What was it like being in the audience and having this very big bomb dropped on you all at once without expecting it.
 
 00:40:03.774 --> 00:40:56.678
-<v John Sundell>So I was incredibly excited, like I had come from a background of doing like, C sharp and doing javascript. So I had kind of both of those languages, kind of in the back of my mind as I was learning objective C. So I really loved objective CM, you know, mostly because of the eyes and because of cocoa and things like that. But I definitely was ready for, like, a more modern take on those philosophies. So when that bomb was dropped, I literally ran down to this area in W w. In Mosconi at the time where they had these Ethernet cables where you could actually connect your computer to download Exco, too. Like Dex Code Beta because he couldn't do it over WiFi. So I ran down. I installed a new version of X Code and I started opening up a playground. So that was, like my very first like impression of writing Swift code.
+<v John Sundell>So, I was incredibly excited. I had come from a background of doing C# and doing JavaScript. So I had both of those languages in the back of my mind as I was learning Objective-C. So I really loved Objective-C, mostly because of the APIs and because of Cocoa and things like that. But, I definitely was ready for a more modern take on those philosophies. So when that bomb was dropped, I literally ran down to this area in WWDC in Moscone at the time where they had these Ethernet cables where you could actually connect your computer to download XCode, the Xcode-Beta because you couldn't do it over WiFi. So I ran down. I installed a new version of XCode and I started opening up a playground. So that was my very first impression of writing Swift code.
 
 00:40:57.268 --> 00:41:12.378
-<v John Sundell>And at the time, playgrounds they weren't super stable. I'll admit that there was a lot of a lot of fighting with them to get them working, but once they got working, I had a lot of fun. I was writing lots of different a lot, a lot of code, and
+<v John Sundell>And at the time, playgrounds they weren't super stable. I'll admit that. There was a lot of fighting with them to get them working, but once they got working, I had a lot of fun. I was writing lots of different code, and
 
 00:41:12.918 --> 00:41:32.318
-<v John Sundell>at the time I was working for Spotify. So by the time I came back from the U. S, I came back to Sweden. Andi I was at work, actually built together with a couple of co workers. We built a prototype feature inside of the Spotify abusing Swift, and that was a really great learning experience for me, because that let me kind of compare it
+<v John Sundell>at the time I was working for Spotify. So by the time I came back from the U.S. I came back to Sweden and I was at work, I actually built together with a couple of co-workers, we built a prototype feature inside of the Spotify app using Swift. And that was a really great learning experience for me, because that let me compare it
 
 00:41:32.828 --> 00:42:03.058
-<v John Sundell>to objective. See, in many ways, you know how it interacts with objective C AP Eyes Aunt also just to see, like the differences and what it was like building something real in Swift and that was back in Swift one. And yeah, then I've been like following it ever since. And once I kind of made a decision to leave Spotify and become a freelancer. I knew that I wanted to focus one hundred percent on Swift, and that kind of led to the whole kind of you. Know involving myself more with the community with open sores and content creation, these kind of things. But it all kind of, you know,
+<v John Sundell>to Objective-C, in many ways. How it interacts with Objective-C APIs and also just to see the differences and what it was like building something real in Swift. And that was back in Swift 1. And then I've been following it ever since. And once I made a decision to leave Spotify and become a freelancer, I knew that I wanted to focus one hundred percent on Swift, and that led to the whole involving myself more with the community with open source and content creation, these kind of things. But it all 
 
 00:42:04.008 --> 00:42:15.288
-<v John Sundell>came from that moment of realizing that, you know, there's a really cool language and and that it felt, you know, so much nicer to write than objectives he did, even though I did, like, objective Cielo to
+<v John Sundell>came from that moment of realizing that this is a really cool language and that it felt so much nicer to write than Objective-C did, even though I did like Objective-C a lot too.
 
 00:42:15.438 --> 00:42:23.788
-<v Chris Lattner>Yeah, well, and I mean, I think one of the things that's fascinating about this is that people will quickly find out the two of you ever eaten far more Swift code than I have,
+<v Chris Lattner>Yeah, and I think one of the things that's fascinating about this is that as people will quickly find out the two of you have written far more Swift code than I have.
 
 00:42:24.658 --> 00:42:35.698
-<v Chris Lattner>right, Right. And so I know a lot about the insides and how and why and how it fits together in peace like that, but you guys have the actual experience of building and using it in production.
+<v Chris Lattner>Right. And so I know a lot about the insides and the how and why and how it fits together in pieces like that, but you guys have the actual experience of building and using it in production.
 
 00:42:35.708 --> 00:42:45.778
-<v John Sundell>Yeah, yeah, that's that's always kind of funny when you look at it like, you know, there's this bunch of people working on Swift working on the compiler and they're all writing C plus plus most of the time, right
-
-00:42:45.968 --> 00:42:45.988
-<v (Unknown)>
+<v John Sundell>Yeah, that's always kind of funny when you look at it. There's this bunch of people working on Swift, working on the compiler and they're all writing C++ most of the time, right.
 
 00:42:45.998 --> 00:42:59.535
-<v John Sundell>on DH, just just a quick as a quick aside, like what's that? Like? Like, you know, when you are, you have this cool language that you've you've designed and you know everyone else gets to use it, But you still have to use C plus. Plus, you know what's that like?
+<v John Sundell>Just a quick aside, what's that like? You have this cool language that you've designed and everyone else gets to use it, but you still have to use C++. What's that like?
 
 00:42:59.855 --> 00:43:10.315
-<v Chris Lattner>Tells me it's terrible on DH, so the it is, you know, the universe is trick on me to force me to keep people. Plus,
+<v Chris Lattner>It kills me. It's terrible. It is the universe's trick on me to force me to keep writing C++.
 
 00:43:11.685 --> 00:44:10.475
-<v Chris Lattner>but I think that there's another aspect of that which which goes untold, which is one of the major reasons that Swift is good right now is that there's a big community of people out there that we're blogging about it, right? And so that feedback really shaped. So if we want to, I mean, that was the feedback, the signal, all those complaints, you know, people saying like, this doesn't make sense. I'm having this problem with this. That and the other thing that really shaped and prioritize and drove a lot of what got built. And, you know, there was a long arc of okay, you know, Swift one accident way. Well, not accidentally. We'll intentionally shipped without air hand chipped without protocol extensions, things that we absolutely wanted and Justin sit with the schedule. So we knew we had to do all those things, but a lot of what happened in that first year, too, is directly during by the community. And when Swift became open source. Swift evolution is a hugely great thing, and it's maybe not ideal in terms of optimizing for human time spent.
+<v Chris Lattner>But I think that there's another aspect of that which goes untold. Which is one of the major reasons that Swift is good right now is that there's a big community of people out there that we're blogging about it, right? And so that feedback really shaped Swift 1 and 2. That was the feedback, the signal, all those complaints, people saying this doesn't make sense, I'm having this problem with this, that and the other thing. That really shaped and prioritize and drove a lot of what got built. There was a long arc of Swift 1 accidently, well not accidentally, well intentionally shipped without error handling. It shipped without protocol extensions, things that we absolutely wanted and just didn't fit with the schedule. So we knew we had to build those things, but a lot of what happened in that first year or two is directly driven by the community. And when Swift became open source, Swift evolution is a hugely great thing, and it's maybe not ideal in terms of optimizing for human time spent,
 
 00:44:11.255 --> 00:44:15.185
-<v Chris Lattner>But it is. It's an essential part of what makes Swift really, really
+<v Chris Lattner>but it is an essential part of what makes Swift really, really
 
 00:44:15.705 --> 00:44:23.235
-<v Chris Lattner>exceptional. And I think that is total credit to the community and the community of people that that spend their time there and that helped shape and drive it.
+<v Chris Lattner>exceptional. And I think that is total credit to the community and the community of people that spend their time there and that helped shape and drive it.
 
 00:44:23.425 --> 00:45:14.780
-<v John Sundell>Yeah, absolutely. One thing that comes to mind is kind of like how not only like articles and content, but also open source, it feels like has fed a lot into Swift itself. Like, for example, right now with things like Kota ble, for example, that was one of the things that people were creating, like a thousand different Jason Mapping library's right. I was I was one of them. I built on box because of that, because it was one of those things where you know an objective C didn't think a lot about. It's a lot of the times where he just said, You know, here's a dictionary like me, just access this key and I'm just gonna assume that that's always a string. But what? Once, once you kind of sat down and wrote that same code and Swift, you realised, you know, you needed to build it like Big Pyramid of if let's So I can only imagine that like seeing those kind of things that people have to solve in many different ways must have also kind of fed into the design process.
+<v John Sundell>Yeah, absolutely. One thing that comes to mind is how not only articles and content, but also open source, it feels like has fed a lot into Swift itself. For example, right now with things like Codable, for example, that was one of the things that people were creating a thousand different JSON Mapping libraries. I was one of them. I built Unbox because of that, because it was one of those things where in Objective-C you didn't think a lot about it a lot of the times. You just said, here's a dictionary, let me just access this key and I'm just gonna assume that's always a string. But once you sat down and wrote that same code in Swift, you realised, you needed to build a big pyramid of if lets. So I can only imagine that seeing those kind of things that people had to solve in many different ways must have also kind of fed into the design process.
 
 00:45:14.950 --> 00:45:23.140
-<v Chris Lattner>Yeah, absolutely. And the design of quotable came from a frame or team at Apple that were outside of the core Swift group.
+<v Chris Lattner>Yeah, absolutely. And the design of Codable came from a framework team at Apple that were outside of the core Swift group.
 
 00:45:23.830 --> 00:45:31.160
-<v Chris Lattner>They were really passion about this, and they came up with this and drove it and advocated for it. And and community could mean so many different things, right? And
+<v Chris Lattner>They were really passion about this, and they came up with this and drove it and advocated for it. And community can mean so many different things, right? And
 
 00:45:32.770 --> 00:46:06.940
-<v Chris Lattner>and you look at results. Why is result now coming into Swift five? Well, it's because so many people built it and did over and over and over again. And while the core teams like we really don't want to have a result because it's kind of a failing of the language and when we get concurrency won't be is necessary. And the community says loud and clear, Look, we need it. It doesn't matter if it's not ideal in the long term, we need it. And so you know, the community really does shaped things. And it's it's maybe not understood as how much the community does have that effect.
+<v Chris Lattner> you look at Result. Why is Result now coming into Swift 5? Well, it's because so many people built it and did it over and over and over again. And while the core team is like we really don't want to have a Result because it's kind of a failing of the language and when we get concurrency it won't be as necessary. And the community says loud and clear, look, we need it. It doesn't matter if it's not ideal in the long term, we need it. And so, the community really does shaped things. And it's maybe not understood how much the community does have that effect.
 
 00:46:07.330 --> 00:46:22.590
-<v John Sundell>So speaking about that, like speaking about the release of Swift and and the and the years that have passed since then for you now kind of looking at the current state of Swift and and what's it kind of becomes, since you kind of put it out there.
+<v John Sundell>So, speaking about that. Speaking about the release of Swift and the years that have passed since then, for you now looking at the current state of Swift and what it's become since you put it out there,
 
 00:46:23.330 --> 00:46:35.180
-<v John Sundell>Has it kind of matched your your expectations if you had any and like, you know, how does it match the kind of the ideas that you had in the beginning and now that it's been out for a couple of years?
+<v John Sundell>has it matched your expectations, if you had any? How does it match the ideas that you had in the beginning and now that it's been out for a couple of years?
 
 00:46:35.300 --> 00:47:23.090
-<v Chris Lattner>Well, so I guess expectations change over time. Back in two thousand ten two thousand eleven, I had no expectation that it would ever turn into anything on. And I admit that it was very much a fun side project. That was the nights and weekends thing originally that have a day job, have a side project that that's intellectually interesting and challenging. Um, a zit became more real than and in launch to Swift one right. There is a question of Can we captured the objective C community? Can we? Can we really capture the Iowa's ecosystem, for example, or are we going to fragment it right? And that was that was a real concern. And so I'm really happy that today I think that the vast majority of the community is happy was Swift. And while there's still tons of work to be done, it seems like it's very successful within that community.
+<v Chris Lattner>Well, so I guess expectations change over time. Back in 2010-2011, I had no expectation that it would ever turn into anything. And I admit that it was very much a fun side project. That it was a nights and weekends thing originally. That I have a day job, have a side project that's intellectually interesting and challenging. As it became more real then it launched into Swift 1, there was a question of can we captured the Objective-C community? Can we really capture the iOS ecosystem, for example, or are we going to fragment it? And that was a real concern. And so I'm really happy that today I think that the vast majority of the community is happy with Swift. And while there's still tons of work to be done, it seems like it's very successful within that community.
 
 00:47:23.850 --> 00:47:27.450
 <v Chris Lattner>But there's a huge open frontier. Swift on the server still
 
 00:47:28.510 --> 00:47:31.730
-<v Chris Lattner>was making great progress, but there's still a ton of work to be done.
+<v Chris Lattner>is making great progress, but there's still a ton of work to be done.
 
 00:47:32.910 --> 00:47:53.910
-<v Chris Lattner>There's other communities out there. I'm particularly fond of the numeric ce and machine learning communities, and they're they're super important to the world, and there's a ton of really interesting people in these communities, and I think Swift could be really great there. And I think, you know, I jokingly say, like Swift World domination is a goal. And yeah, it's a joking goal. But
+<v Chris Lattner>There's other communities out there. I'm particularly fond of the numerics and machine learning communities, and they're super important to the world. And there's a ton of really interesting people in these communities, and I think Swift could be really great there. And, I jokingly say, Swift World domination is a goal, and it's a joking goal, but
 
 00:47:54.430 --> 00:47:59.170
-<v Chris Lattner>but, you know, it's based on the belief that people who use Swift Lovett, and
+<v Chris Lattner>it's based on the belief that people who use Swift love it. And
 
 00:48:00.560 --> 00:48:30.810
-<v Chris Lattner>if that's the case, I'd love to bring that joy to more people and just really help improve the world. And so many of the systems out there really unfortunate in various ways, right? People were still writing, see, you know, and just in terms of the bugs and security, vulnerabilities and things like that, you know, it's just it's just really unfortunate and but you know, there's ecosystem problems. There's other challenges that we have to overcome. And and that's something that we as a community Khun Dio. So I don't see anyone. It's on that.
+<v Chris Lattner>if that's the case, I'd love to bring that joy to more people and just really help improve the world. And so many of the systems out there are really unfortunate in various ways, right? People are still writing C. And just in terms of the bugs and security vulnerabilities and things like that, it's just really unfortunate. And there's ecosystem problems, there's other challenges that we have to overcome and that's something that we as a community can do. So I don't see any limits on that.
 
 00:48:31.100 --> 00:48:41.620
-<v Garric Nahapetian>I feel like that's what this podcast has a potential to do there Hasn't you know I have I have my podcast John as his heir. Swift on wrapped Fireside Swift There's all these
+<v Garric Nahapetian>I feel like that's what this podcast has a potential to do. I have my podcast, John has his, there's Swift Unwrapped, Fireside Swift, there's all these
 
 00:48:42.210 --> 00:48:49.420
-<v Garric Nahapetian>other podcast. But what I feel like we're all in agreeance that we're hoping that this podcast king can't give voice
+<v Garric Nahapetian>other podcast, but what I feel like we're all in agreeance is that we're hoping that this podcast can give voice
 
 00:48:50.190 --> 00:49:34.414
-<v Garric Nahapetian>to this Swift community. Also be like an ear to the fore the Swift community and also be like a galvanizing another galvanizing point in addition to the forums. And you know something. A lot of talk is on Twitter, too, you know, I'm see the forums and then in person meet ups, but also, hopefully this podcast could be a galvanizing force to find out what? What do we need to do and how can we What are the different goals and like, how can we help each other to achieve those? Not everybody is, you know, as familiar with, like having conversations on on a forum on. And so for me, like one of the unexpected things. It was like when I would talk to non Swift developers like, let's say, a job, Ah, script developer or
+<v Garric Nahapetian>to the Swift community. Also be an ear for the Swift community and also be another galvanizing point in addition to the forums. A lot of talk is on Twitter, the forums and the in person meet ups, but also, hopefully this podcast could be a galvanizing force to find out what do we need to do and what are the different goals and how can we help each other to achieve those? Not everybody is as familiar with having conversations on a forum. And for me, one of the unexpected things, was when I would talk to non-Swift developers, let's say, a JavaScript developer
 
 00:49:35.044 --> 00:49:40.914
-<v Garric Nahapetian>or whatever. You know, I I love Swift. I'm so excited about it. When I would talk to them, they might kind of like, brush it off
+<v Garric Nahapetian>or whatever. You know, I love Swift. I'm so excited about it. When I would talk to them, they might brush it off
 
 00:49:41.504 --> 00:49:44.534
-<v Garric Nahapetian>on and say, like, Oh, it's not going to be possible
+<v Garric Nahapetian>and say, Oh, it's not going to be possible.
 
 00:49:45.454 --> 00:50:04.214
-<v Garric Nahapetian>But then but then, on the other side, I think, John, you kind of mentioned this recently, like the appetite for Swift is so insatiable. You're saying like And as you pointed out, Chris like people who love Swift really, really love it. And so somehow we can kind of continue to do what we're doing to like feed
+<v Garric Nahapetian>But then, on the other side, I think, John, you mentioned this recently, the appetite for Swift is so insatiable, you're saying. And as you pointed out, Chris, people who love Swift really, really love it. And so somehow we can continue to do what we're doing to feed
 
 00:50:05.574 --> 00:50:18.494
-<v Garric Nahapetian>in the feed that the community to keep growing but also, like bring in these other communities, like make ourselves accessible to those community so that and maybe we should come up with a better phrase for it. That Swift can be in a world dominating in a language.
-
-NOTE === Paragraphs below this point have been edited.
+<v Garric Nahapetian>the community to keep growing but also, bring in these other communities, and make ourselves accessible to those community so that, and maybe we should come up with a better phrase for it, that Swift can be a world dominating language.
 
 00:50:18.774 --> 00:50:34.114
 <v Chris Lattner>Well, and I think that a big piece of that is, while this has been a very upbeat, positive discussion about Swift, Swift also has lots of problems. And I think we need to be open to talking about that and treat that as a problem solving exercise, right? There are major issues with
