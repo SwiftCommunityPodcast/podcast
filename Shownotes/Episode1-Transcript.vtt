@@ -832,97 +832,91 @@ NOTE === Paragraphs above this point have been edited.
 <v Garric Nahapetian>that I don't even know about. There's all these interesting things happening in this community, and I think I'm really excited to bring those those different stories to life with this podcast.
 
 00:59:15.213 --> 01:00:02.733
-<v John Sundell>Yeah, absolutely. And you hit on a point there also, which is you know there are so many different ways to contribute. And, you know, even if you're a person who doesn't have either the time or or you know it's not in your within your interest to be like heavily involved in the evolution process itself, you can still kind of, you know, appreciate it. You can still look at it from from from the distance, and you still involve yourself in other ways as well. So that's also, ah, beauty of something like this with community, which is kind of broad, in that sense, where you can contribute in so many different ways, I don't just go back very quickly to something. Chris, you said earlier, which is, you said that you do want to enforce a certain kind of ceremony, if you will, or rather process on the changes that are being made. And,
+<v John Sundell>Yeah, absolutely. And you hit on a point there also, which is there are so many different ways to contribute. And, even if you're a person who doesn't have either the time or it's not within your interest to be heavily involved in the evolution process itself, you can still appreciate it. You can still look at it from a distance, and you still involve yourself in other ways as well. So that's also a beauty of something like the swift community, which is kind of broad, in that sense, where you can contribute in so many different ways. I want to go back very quickly to something, Chris, you said earlier, which is, you said that you do want to enforce a certain kind of ceremony, if you will, or rather process on the changes that are being made. 
 
 01:00:03.293 --> 01:00:08.903
-<v John Sundell>um, I think that's also really important. And one thing we have to remember is that we,
+<v John Sundell> I think that's also really important. And one thing we have to remember is that we,
 
 01:00:09.893 --> 01:00:51.363
-<v John Sundell>you know, talking about this here, people listening to the show. We're all pretty, probably pretty, like, excited about the language itself. We are looking at what's happening were very involved, and we're paying attention to what's going on but for many, many people, just like how I was relating to objective C earlier saying it was just like a tool for me to get my job done. That's how people relate to Swift. And if it changes too quickly and you know, every month there would be like a completely new thing that could be really tiring for a lot of people. So I think, you know, taking to step back and saying, OK, this process is going to take a little bit longer, but it's going to yield a better result and it's going to have a more steady pace. I think that's that's probably good as well,
+<v John Sundell>talking about this here, people listening to the show, we're all probably pretty excited about the language itself. We are looking at what is happening, we're very involved, and we're paying attention to what's going on. But for many, many people, just like how I was relating to Objective-C earlier saying it was just a tool for me to get my job done, that's how people relate to Swift. And if it changes too quickly and every month there would be a completely new thing, that could be really tiring for a lot of people. So I think, taking a step back and saying, OK, this process is going to take a little bit longer, but it's going to yield a better result and it's going to have a more steady pace, I think that's probably good as well.
 
 01:00:51.513 --> 01:00:57.993
-<v Chris Lattner>right, and each change. It takes time to digest in a certain sense. And when a major new capability comes in,
+<v Chris Lattner>Right, and each change, it takes time to digest in a certain sense. And when a major new capability comes in,
 
 01:00:58.923 --> 01:01:06.083
-<v Chris Lattner>it takes time for the community to figure it out and applied and figure out what the, how it fits with everything else. And so taking time to do that is good.
+<v Chris Lattner>it takes time for the community to figure it out and apply it and figure out how it fits with everything else. And so taking time to do that is good.
 
 01:01:06.703 --> 01:01:36.092
-<v Chris Lattner>The number one thing I learned from Swift evolution is the power of having the right catalysts. Little community and so Swift evolution really pulled together a community of language geeks together to care about one specific aspect of the Swift project. And so I'm always on the lookout for what is the catalyst that allows, like Swift package ecosystem to take off, or that allows the Swift on server community to take off or get the machine learning community together, maybe and do cool things.
+<v Chris Lattner>The number one thing I learned from Swift evolution is the power of having the right catalysts in the community. And so Swift evolution really pulled together a community of language geeks together to care about one specific aspect of the Swift project. And so I'm always on the lookout for what is the catalyst that allows, like the Swift package ecosystem to take off, or that allows the Swift on server community to take off or get the machine learning community together maybe and do cool things.
 
 01:01:36.992 --> 01:01:48.852
-<v Chris Lattner>And how do we find those catalysts and allow the people to come together in the right forum and really build on their strength and get the energy But also get the talent, get the people working together in a collaborative way,
+<v Chris Lattner>And how do we find those catalysts that allow the people to come together in the right forum and really build on their strength and get the energy but also get the talent, get the people working together in a collaborative way.
 
 01:01:49.142 --> 01:01:49.822
-<v Garric Nahapetian>right? And then the
+<v Garric Nahapetian>Right? And then 
 
 01:01:50.472 --> 01:01:56.102
-<v Garric Nahapetian>well can't sustain that energy, you know, like so get people excited about service side Swift. But then how do we
+<v Garric Nahapetian>sustain that energy, so get people excited about server side Swift. But then how do we
 
 01:01:56.942 --> 01:02:02.502
-<v Garric Nahapetian>you keep that going? How do we keep having support people, for instance, Like John, how do we support people in the community?
+<v Garric Nahapetian>keep that going? How do we support people, for instance, like John? How do we support people in the community
 
 01:02:03.062 --> 01:02:06.302
-<v Garric Nahapetian>Help you continue to have that energy toe push forward.
+<v Garric Nahapetian>to continue to have that energy to push forward?
 
 01:02:07.092 --> 01:02:24.002
-<v John Sundell>Cool. So what do you say? Should we round off this episode by talking a little bit about how people can get involved? And, you know, if you've not been listening to this episode and you feel the sounds cool, how can I help, or how can I involve myself What can I do to make this
+<v John Sundell>Cool. So, what do you say? Should we round off this episode by talking a little bit about how people can get involved? If you've now been listening to this episode and you feel, this sounds cool, how can I help, or how can I involve myself, what can I do to make this
 
 01:02:24.532 --> 01:02:34.292
-<v John Sundell>podcast kind of at a nice thing and to keep it moving forward? So Garric, why don't you start off like What are some of the ways that people can contributes to the show?
+<v John Sundell>podcast kind of a nice thing and to keep it moving forward? So Garric, why don't you start off? What are some of the ways that people can contributes to the show?
 
 01:02:34.392 --> 01:02:55.502
-<v Garric Nahapetian>Yeah, so I mean, I was really inspired by the way Jesse Squires set up the Swift weekly brief. It's almost like it's really this automated open source newsletter where everything's hosted on Get Hub. The next issue's on Get Hub. It's all like in this marked down for Matt and you. You talk about the next issue with the community on there. You post
-
-01:02:55.992 --> 01:02:56.082
-<v (Unknown)>
+<v Garric Nahapetian>Yeah, I was really inspired by the way Jesse Squires set up the Swift Weekly Brief. It's really this automated open source newsletter where everything's hosted on GitHub. The next issue's on GitHub. It's all in markdown format. You talk about the next issue with the community on there. You post
 
 01:02:56.082 --> 01:03:01.402
-<v Garric Nahapetian>comments on on the getup issue and then, like you kind of just hit a button and it just, like,
-
-01:03:01.992 --> 01:03:02.042
-<v (Unknown)>
+<v Garric Nahapetian>comments on the GitHub issue and then, you hit a button and it 
 
 01:03:02.042 --> 01:03:07.702
-<v Garric Nahapetian>spits out thie issue. There's a lot more work to it. I'm sure, actually did it on issue
+<v Garric Nahapetian>spits out the issue. There's a lot more work to it, I'm sure. I actually did an issue,
 
 01:03:08.292 --> 01:03:09.672
-<v Garric Nahapetian>number on a forty something,
+<v Garric Nahapetian>number forty something,
 
 01:03:10.202 --> 01:03:24.107
-<v Garric Nahapetian>so there's a lot more work to that. But it was like, really cool, and I was very inspired by how Jesse had set that up. Now I don't know if we could get there with this podcast, but when we were talking about how to get the community involved, we thought, Why not somehow use get up?
+<v Garric Nahapetian>so there's a lot more work to it than that. But it was really cool, and I was very inspired by how Jesse had set that up. Now I don't know if we could get there with this podcast, but when we we're talking about how to get the community involved, we thought, why not somehow use GitHub?
 
 01:03:24.797 --> 01:03:54.007
-<v Garric Nahapetian>And so we have Ah, get up organization. It's called Swift community podcast S O It's get up, you know dot com slash Swift community about gas and there's a repo on there called Podcast. And then we will. I guess we'll do maybe just an issue. And then people can comment on there and get feedback on I guess what they think about the show and none of this is really set in stone were kind of We really want this to be a community effort. We're just sort of going to be setting up this initial scaffolding.
+<v Garric Nahapetian>So, we have a GitHub organization. It's called Swift Community Podcast. It's https://github.com/SwiftCommunityPodcast and there's a repo on there called podcast. We'll do an issue. And then people can comment on there and give feedback on what they think about the show. And none of this is really set in stone. We really want this to be a community effort. We're setting up this initial scaffolding.
 
 01:03:54.547 --> 01:04:05.657
-<v Garric Nahapetian>So, you know, we'll have an issue up there. Give us comments on you know what you think about the show. And then, I think also will have another issue for the next episode. Like suggestions on what the next episode should be.
+<v Garric Nahapetian>So, we'll have an issue up there. Give us comments on what you think about the show. And then, I think we will also have another issue for the next episode. Like suggestions on what the next episode should be.
 
 01:04:05.947 --> 01:04:28.007
-<v Chris Lattner>Yeah, I think that's what I think they should go to the God repo or the website that Swift community podcast out. Or and that would be a good jumping off point. You can look at the read me there, which will have all the details. I think the thing I want have says this is very much an experiment. Hopefully, if we're all successful five years from now, everybody looked back and we'll feel obvious, All right.
+<v Chris Lattner>Yeah, I think that's right. I think they should go to the GitHub repo or the website at https://www.swiftcommunitypodcast.org/. That would be a good jumping off point. You can look at the read me there, which will have all the details. I think the thing I want to emphasize is this is very much an experiment. Hopefully, if we're all successful five years from now, everybody will look back and it will feel obvious. 
 
 01:04:28.987 --> 01:04:38.067
-<v Chris Lattner>But right now where we are, we don't know. We don't know what this will be. We don't know who's out there that may might want to get involved, and we don't know exactly the best way to do it. Nobody's done this before.
+<v Chris Lattner>But right now where we are, we don't know. We don't know what this will be. We don't know who's out there that might want to get involved, and we don't know exactly the best way to do it. Nobody's done this before.
 
 01:04:38.597 --> 01:04:57.457
-<v Chris Lattner>That's okay. Like, if it doesn't work out, that's okay. No harm would have come from it, but I I tend to believe this could be huge. That could be. It could be a great way to get people involved that like that, want to do things and have amazing skills and can contribute in lots of different ways. So I'm excited to see what happens.
+<v Chris Lattner>That's okay. Like, if it doesn't work out, that's okay. No harm would have come from it, but I tend to believe this could be huge. It could be a great way to get people involved that want to do things and have amazing skills and can contribute in lots of different ways. So I'm excited to see what happens.
 
 01:04:57.697 --> 01:05:36.600
-<v John Sundell>Yeah, absolutely. And just to give some examples like what kind of skills were looking for, if you will. You know everything from actually being on the show, being a guest or hosting to show, if that's your thing, or even something like editing an episode or putting things together or editing apart Oven Episode if you don't have a lot of time you know, all of those things are kind of up for grabs, and you can help out with one or two episodes, and then that's it. If you don't, you know, I have more time or you want to move on something else. But everything is really kind of up for grabs. And there will be information about all of the stuff in the getup repositories. Well, kind of, you know what we're looking for, and you can kind of volunteer there to help out if you want to.
+<v John Sundell>Yeah, absolutely. And just to give some examples of what kind of skills we're looking for, if you will. Everything from actually being on the show, being a guest or hosting the show, if that's your thing, or even editing an episode or putting things together or editing a part of an episode if you don't have a lot of time. All of those things are of up for grabs, and you can help out with one or two episodes, and then that's it, if you don't have more time or you want to move on to something else. But everything is really kind of up for grabs. And there will be information about all of the stuff in the GitHub repository as well, what we're looking for, and you can volunteer there to help out if you want to.
 
 01:05:36.780 --> 01:05:44.250
-<v Chris Lattner>Another thing is to suggest topics and drag people in that you think would be really great on reach out to somebody who you think is
+<v Chris Lattner>Another thing is to suggest topics and drag people in that you think would be really great and reach out to somebody who you think is
 
 01:05:44.930 --> 01:05:51.830
-<v Chris Lattner>got an interesting talent or is working an interesting project and kind of anything goes so it's Let's work. Let's work this out.
+<v Chris Lattner>got an interesting talent or is working on an interesting project and kind of anything goes. So, let's work this out.
 
 01:05:52.790 --> 01:06:04.410
-<v John Sundell>All right. What do you say, guys? I think that's a great point to end to this first episode. I It's been a lot of fun to do this, and I'm really looking forward to seeing where the show goes with this this year and and beyond
+<v John Sundell>All right. What do you say, guys? I think that's a great point to end this first episode. It's been a lot of fun to do this, and I'm really looking forward to seeing where the show goes with this year and and beyond.
 
 01:06:04.560 --> 01:06:06.870
-<v Garric Nahapetian>me to Chris, Thanks for
+<v Garric Nahapetian>Me too, Chris. Thanks for
 
 01:06:07.380 --> 01:06:20.000
-<v Garric Nahapetian>kicking me in the butt to try to get me back on the air. And, John, thank you so much for taking the lead again. I really appreciate the work you're doing, and I I want to be able to just support you and other people like you
+<v Garric Nahapetian>kicking me in the butt to try to get me back on the air. And, John, thank you so much for taking the lead again. I really appreciate the work you're doing, and I want to be able to support you and other people like you
 
 01:06:20.720 --> 01:06:23.360
 <v Garric Nahapetian>to give back to the community that's already given me so much.
@@ -931,28 +925,25 @@ NOTE === Paragraphs above this point have been edited.
 <v John Sundell>Yeah, Supercool.
 
 01:06:24.500 --> 01:06:30.300
-<v Chris Lattner>Absolutely. And thank you to both of you. Because this is where I insert the name of I have no idea what I'm doing.
-
-01:06:30.690 --> 01:06:32.300
-<v (Unknown)>
+<v Chris Lattner>Absolutely. And thank you to both of you, because this is where I insert the meme of I have no idea what I'm doing.
 
 01:06:32.690 --> 01:06:36.710
-<v Chris Lattner>So I'm really excited that I'm also looking to learn much. Just say
+<v Chris Lattner>So I'm really excited that I'm also looking to learn much. 
 
 01:06:36.980 --> 01:06:39.610
-<v John Sundell>yeah, and the feeling is mutual.
+<v John Sundell>Yeah, and the feeling is mutual.
 
 01:06:40.290 --> 01:06:56.600
-<v John Sundell>When it comes to this, I do know a little bit what I'm doing, but with other things, Always always happy to learn new things and super excited to do this show with you and the rest of the community. So if people want to find us, where should they go? So for you, Garric, what's the best place to reach you?
+<v John Sundell>When it comes to this, I do know a little bit what I'm doing, but with other things, always happy to learn new things and super excited to do this show with you and the rest of the community. So if people want to find us, where should they go? So for you, Garric, what's the best place to reach you?
 
 01:06:56.690 --> 01:07:02.200
-<v Garric Nahapetian>Twitter G A R R I C n at Garric and on Twitter.
+<v Garric Nahapetian>Twitter. G A R R I C N @garricn on Twitter.
 
 01:07:02.590 --> 01:07:04.380
-<v John Sundell>Excellent. And what about you, Chris
+<v John Sundell>Excellent. And what about you, Chris?
 
 01:07:04.910 --> 01:07:09.240
-<v Chris Lattner>Twitter? See latner underscore l v m.
+<v Chris Lattner>Twitter? @clattner_llvm
 
 01:07:11.180 --> 01:07:11.500
 <v Chris Lattner>That's
@@ -961,7 +952,7 @@ NOTE === Paragraphs above this point have been edited.
 <v John Sundell>right on brand.
 
 01:07:13.340 --> 01:07:14.500
-<v Chris Lattner>And what about you, John
+<v Chris Lattner>And what about you, John?
 
 01:07:14.990 --> 01:07:26.240
-<v John Sundell>s? So you can find me also on Twitter. I am at John Sindel and you confined my weekly articles at Swift by Sundell dot com and my podcast at Swift Bison. A lot com slash podcast.
+<v John Sundell>So, you can find me also on Twitter. I am @johnsundell and you can find my weekly articles at https://www.swiftbysundell.com/ and my podcast at https://www.swiftbysundell.com/podcast
