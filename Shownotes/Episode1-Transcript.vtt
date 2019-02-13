@@ -257,129 +257,105 @@ current edit point.
 <v Chris Lattner>Apple has a really strong engineering team. And so there's a ton of people at the time, they're all writing Objective-C, that are highly opinionated about things, but also have a huge depth and background in building frameworks and apps and all these kinds of things. And so there were a lot of ideas on how to make Objective-C better. There were big white papers written by luminaries that had been working since the NeXT day on this kind of stuff. And so there was a tremendous internal community that drove that.
 
 00:23:22.475 --> 00:23:31.535
-<v Chris Lattner>At the time, it was, Bertrand and Dave and I talked about ideas and I started coding a prototype of the compiler.
-
-NOTE === Paragraphs above this point have been edited.
+<v Chris Lattner>At the time, Bertrand and Dave and I talked about ideas and I started coding a prototype of the compiler.
 
 00:23:32.785 --> 00:24:09.235
-<v Chris Lattner>But obviously, I could not build everything myself. And so what's happening is around April in twenty eleven. We discuss it with management and then got agreement pulling a few more people. This is when folks like Ted Kremen, AC and Doug Gregor and John McCall in a bunch of other exceptional engineers over time got pulled in. And, you know, looking back on that, it was it was really interesting, because this is the first time that other people were taking other other language experts and other design like this kind of expert. People were
+<v Chris Lattner>But obviously, I could not build everything myself. And so what ended up happening is around April 2011 we discussed it with management and then got agreement to pull in a few more people. This is when folks like Ted Kremenek and Doug Gregor and John McCall, and a bunch of other exceptional engineers over time, got pulled in. And looking back on that, it was really interesting because this was the first time that other language and design experts were
 
-00:24:09.925 --> 00:24:17.145
-<v Chris Lattner>taking a critical look at this, and they had a lot of really harsh feedback, and it wasn't intended is harsh. But it
-
-00:24:18.405 --> 00:24:30.245
-<v Chris Lattner>they were right. It was terrible on and and like, you know, the ability to have one of the world's experts on generics pulled into this is and have, ah, culture where
+00:24:09.925 --> 00:24:30.245
+<v Chris Lattner>taking a critical look at this. And they had a lot of really harsh feedback. And it wasn't intended as harsh. But they were right. It was terrible at the time. And the ability to have one of the world's experts on generics pulled into this and have a culture where
 
 00:24:31.082 --> 00:24:50.062
-<v Chris Lattner>you know, it's been a team that had built the Clinton compiler and have been working together for years on many different, really interesting projects. And so being able to draw on that that engineering talent and was critical to making everything happened. And you know that these are just a few of the people that helped drive and build that, But it was it was a big deal.
+<v Chris Lattner>the team that had built the Clang compiler and had been working together for years on many different, really interesting projects. And so being able to draw on that engineering talent was critical to making everything happen. And these are just a few of the people that helped drive and build that. But it was it was a big deal.
 
 00:24:50.222 --> 00:25:04.802
-<v John Sundell>Yeah, I can imagine what was the kind of state of the language at that point. Like, what did the kind of syntax look like? Like what part of the compiler infrastructure was there? Was it all kind of very much in the prototype face Or had you kind of gotten a little bit further along At that point,
+<v John Sundell>I can imagine. What was the kind of state of the language at that point? Like, what did the syntax look like? What part of the compiler infrastructure was there? Was it all very much in the prototype phase or had you gotten a little bit further along at that point?
 
 00:25:04.802 --> 00:25:06.512
-<v Chris Lattner>it was very much in the prototype phase,
+<v Chris Lattner>It was very much in the prototype phase.
 
 00:25:07.332 --> 00:25:12.492
-<v Chris Lattner>the so this is all public because the revision history's all public. But
-
-00:25:12.502 --> 00:25:13.892
-<v John Sundell>right, you guys get along
+<v Chris Lattner>This is all public because the revision history is all public.
 
 00:25:13.892 --> 00:25:18.202
-<v Chris Lattner>so you can get love. There's a change log, because not all the way back quite a ways back
+<v Chris Lattner>You can git log. There's a changelog that goes not all the way back, but quite a ways back.
 
 00:25:18.902 --> 00:25:28.402
-<v Chris Lattner>the So before Doug got involved, there was no generic system. So we wanted the genetic system that I don't have the expertise design it myself. And Doug is the guy
+<v Chris Lattner>So before Doug got involved, there was no generics system. We wanted the generics system, but I don't have the expertise to design it myself. And Doug is the guy.
 
 00:25:28.982 --> 00:25:37.002
-<v Chris Lattner>John. I remember very early on. He took over, making actually generate code instead of just being apart, sir. And so that was a major piece that he took on
+<v Chris Lattner>John, I remember very early on, took over making actually generate code instead of just being a parser. That was a major piece that he took on.
 
-00:25:37.552 --> 00:25:44.202
-<v Chris Lattner>there's there's tons of missing pieces, but there are also pieces that go all the way back. I think of our and funk go all the way back to the beginning.
-
-00:25:44.862 --> 00:25:48.112
-<v Chris Lattner>You know, some of the basic syntax ideas are very, very similar,
+00:25:37.552 --> 00:25:48.112
+<v Chris Lattner>There was tons of missing pieces, but there are also pieces that go all the way back. I think var and func go all the way back to the beginning. Some of the basic syntax ideas are very, very similar.
 
 00:25:48.992 --> 00:26:09.642
-<v Chris Lattner>So it was very much prototype on DH. But you know, a lot of the ideas, as as I explain to people when building anything off in the ideas, were head of the documentation and sometimes the documentations ahead of the code. Yeah, eso is very much like that. And the ideas they're so way ahead of the code right now. Incidentally,
+<v Chris Lattner>So it was very much a prototype. But a lot of the ideas, as I explain to people, when building a new thing often the ideas are ahead of the documentation and sometimes the documentation is ahead of the code. It was very much like that. And the ideas are so way ahead of the code right now, incidentally.
 
 00:26:10.672 --> 00:26:18.672
-<v Chris Lattner>so another another kind of, you know, different. Part of the community that was really important was a guy named Craig said Ri G.
+<v Chris Lattner>Another another different part of the community that was really important was a guy named Craig Federighi.
 
 00:26:20.002 --> 00:26:29.122
-<v Chris Lattner>Craig is, I think, well known in the Apple community. He is, Hey became involved in the project and sometime early twenty eleven.
+<v Chris Lattner>Craig is, I think, well known in the Apple community. He became involved in the project some time early 2011.
 
 00:26:29.842 --> 00:26:33.669
-<v Chris Lattner>That was right around when Beltran retired from Apple and Craig took over a show.
+<v Chris Lattner>That was right around when Bertrand retired from Apple and Craig took over his job.
 
 00:26:34.479 --> 00:26:55.899
-<v Chris Lattner>No, Craig is Craig's it a really, really interesting person, so he is super charismatic, both on stage, but also in person, in one on ones. But the thing that I think a lot of people don't understand is that Craig is just like, ridiculously smart and he is super deep on so many topics, and I didn't expect this. But he
+<v Chris Lattner>Now, Craig is a really, really interesting person. He is super charismatic, both on stage, but also in person and in one-on-ones. But the thing that I think a lot of people don't understand is that Craig is just ridiculously smart. And he is super deep on so many topics. And I didn't expect this,
 
 00:26:57.009 --> 00:27:18.689
-<v Chris Lattner>he's also really. He knows a lot about languages and former roles. He's worked with groovy and lots of other kinds of languages, and I think that I had not come in contact with, and he's not just, you know, the little guy who cares about strategy. But he also cares about a ton of things like closure, syntax, keywords, all that kind of stuff. And Craig really was a,
+<v Chris Lattner>but he knows a lot about languages. In former roles, he's worked with Groovy and lots of other kinds of languages and things that I had not come in contact with. And he's not just the high-level guy who cares about strategy. He also cares about a ton of things like closure syntax, keywords, all that kind of stuff. And Craig really was
 
 00:27:19.509 --> 00:27:46.619
-<v Chris Lattner>you know, he was the hard, hard driver and the advocate for making it really and making it relevant to objective C and carrying about objects, see development and carrying about the eyes and carrying what the FBI's importance with look like and in all all that kind of stuff. And Craig, in addition, giving great feedback, just kept and keeps an exceptionally high bar on the team in the project. And he really helped shape a lot of what Swift was today.
+<v Chris Lattner>the hard, hard driver and the advocate for making it real and making it relevant to Objective-C and caring about Objective-C development and caring about the APIs and caring about what the APIs imported into Swift look like, and all that kind of stuff. And Craig, in addition to giving great feedback, just kept and keeps an exceptionally high bar on the team and the project. And he really helped shape a lot of what Swift was today.
 
 00:27:46.809 --> 00:27:52.969
-<v Garric Nahapetian>It's pretty cool, too, because he believed was the one that kind of first announced it on stage. It dubbed up.
+<v Garric Nahapetian>It's pretty cool because he was the one that first announced it on stage at dub-dub.
 
 00:27:53.029 --> 00:27:53.449
-<v Chris Lattner>Yes,
+<v Chris Lattner>Yes.
 
 00:27:53.609 --> 00:27:55.229
-<v John Sundell>yeah, and then he brought you out right?
+<v John Sundell>And then he brought you out, right?
 
 00:27:56.169 --> 00:27:59.409
-<v John Sundell>That was the classic line the objective C without the C,
+<v John Sundell>That was the classic line: the "Objective-C without the C."
 
-00:27:59.669 --> 00:28:02.789
-<v Chris Lattner>which which which honestly have mixed feelings about, because that's
+00:27:59.669 --> 00:28:05.629
+<v Chris Lattner>Which honestly I have mixed feelings about, because that's really not what it's about.
 
 00:28:02.789 --> 00:28:05.629
-<v John Sundell>really not what it's about. Is it a good tagline?
+<v John Sundell>It's a good tagline.
 
 00:28:05.639 --> 00:28:07.939
 <v Chris Lattner>It was the right thing to say to the community at the time.
 
 00:28:08.329 --> 00:28:27.619
-<v John Sundell>Yeah. I mean, it was because I was actually in the audience there and I was watching the keynote. And that phrase like the objective C without the C it's kind of explained, is in a way because, you know, the story was, you know, we have all this kind of crufts or or legacy, if you will. That is kind of built because of
-
-00:28:27.809 --> 00:28:27.839
-<v (Unknown)>
+<v John Sundell>Yeah. I mean, it was. Because I was actually in the audience there and I was watching the keynote. And that phrase, "Objective-C without the C," it kind of explained it in a way. Because the story was, we have all this cruft or legacy, if you will, because of
 
 00:28:27.839 --> 00:28:47.178
-<v John Sundell>objective cease, you know, being a super set of C and now we want to please clean slate. So we still want you know, what makes objective C good. The objective part. Like what we've added on to see. We want to keep those, you know, the convention's thie. You know, the message passing all that, all that kind of good stuff. But do it in a more modern way.
+<v John Sundell>Objective-C being a superset of C. And now we want a clean slate. So we still want what makes Objective-C good, the "objective" part, what we've added on to C. We want to keep those, the API conventions, the message passing, all the good stuff. But do it in a more modern way.
 
-00:28:47.238 --> 00:28:52.618
-<v Chris Lattner>Yeah, well, absolutely. And but And so the reason it it is conflicting to me is that
-
-00:28:53.128 --> 00:29:26.998
-<v Chris Lattner>so, You know, from the beginning of the project. My, my goal was to build a full stack system. It was to look in all the existing systems out there, see what's good or bad about each of them, and then cherry pick the best ideas from systems wherever they come from. And the goal was really to build something that you could write firmware and or that you could do scripting, you know, the right you could write mobile, absent or sort of wraps or like low level systems code and and have it be great at all of those, not just some terrible compromise and so that that that positioning was absolutely the right thing to do, right? But
+00:28:47.238 --> 00:29:26.998
+<v Chris Lattner>Yeah, absolutely. The reason it is conflicting to me is that from the beginning of the project, my goal was to build a full-stack system. It was to look at all the existing systems out there, see what's good or bad about each of them, and then cherry-pick the best ideas from systems wherever they come from. And the goal was really to build something that you could write firmware in or that you could do scripting in, that could write mobile apps or server apps or low-level systems code, and have it be great at all of those, not just some terrible compromise. And so that positioning was absolutely the right thing to do.
 
 00:29:27.718 --> 00:29:35.298
-<v Chris Lattner>but, you know, it's, you know, hopefully, Swift will grow over time and kinds of what what is able to dio
+<v Chris Lattner>But hopefully, Swift will grow over time in kinds of what it is able to do.
 
 00:29:35.538 --> 00:29:44.938
-<v Garric Nahapetian>I was sitting at home watching. I wasn't at Dub Dub. I was still just in an outside observer, and when it was announced, I had no idea what it meant.
+<v Garric Nahapetian>I was sitting at home watching. I wasn't at dub-dub. I was still just an outside observer. And when it was announced, I had no idea what it meant.
 
-00:29:45.528 --> 00:29:48.138
-<v Garric Nahapetian>All I knew is that people were excited
-
-00:29:48.658 --> 00:29:54.628
-<v Garric Nahapetian>and people were also unsure about what it's like. They were unsure, I guess, or they were. Questioning
+00:29:45.528 --> 00:29:54.628
+<v Garric Nahapetian>All I knew is that people were excited. And people were also unsure about what it was like, I guess. Or they were questioning.
 
 00:29:54.848 --> 00:29:57.778
-<v John Sundell>was like excitement mixed with anxiety, write
+<v John Sundell>It was excitement mixed with anxiety, right?
 
-00:29:57.838 --> 00:30:04.308
-<v Garric Nahapetian>something and I just remember not knowing what it meant. All I really knew is that it was a new and shiny
+00:29:57.838 --> 00:30:32.178
+<v Garric Nahapetian>And I just remember not knowing what it meant. All I really knew is that it was a new and shiny. And I wanted to just look into it and learn about it. And so I remember trying to listen to every podcast I could get my hands on, or every article, to try to understand what it meant. Ultimately, what it meant for me, and I only discovered this maybe six months later, was that it was going to be more accessible for me. It was going to enable me to give myself another shot at making an iPhone app.
 
-00:30:05.028 --> 00:30:28.238
-<v Garric Nahapetian>and I wanted Teo like, just look into it and learnt about. And so I remember trying to listen to every podcast I could, like, get my hands on or every article to try to understand what it meant, ultimately what it meant for me, and I only discovered this maybe six months later was that it was going Tio, be more accessible for me. It was going to enable me to
-
-00:30:28.978 --> 00:30:32.178
-<v Garric Nahapetian>give myself another shot at making an iPhone app.
+NOTE === Paragraphs above this point have been edited.
 
 00:30:32.658 --> 00:30:36.918
 <v Chris Lattner>Well, and I think that's a perfect segue into the last group I won't talk about because,
