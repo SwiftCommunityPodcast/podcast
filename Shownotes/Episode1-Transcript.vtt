@@ -355,147 +355,89 @@ current edit point.
 00:29:57.838 --> 00:30:32.178
 <v Garric Nahapetian>And I just remember not knowing what it meant. All I really knew is that it was a new and shiny. And I wanted to just look into it and learn about it. And so I remember trying to listen to every podcast I could get my hands on, or every article, to try to understand what it meant. Ultimately, what it meant for me, and I only discovered this maybe six months later, was that it was going to be more accessible for me. It was going to enable me to give myself another shot at making an iPhone app.
 
-NOTE === Paragraphs above this point have been edited.
-
-00:30:32.658 --> 00:30:36.918
-<v Chris Lattner>Well, and I think that's a perfect segue into the last group I won't talk about because,
-
-00:30:38.211 --> 00:30:56.181
-<v Chris Lattner>you know, you look at what Swift is and sure it's a compiler. It's a language spec. It's a set of a P A, Is it Z ninety? But the thing that makes it real and I think the thing that reached so many people is the work done by the developer of Publication Group. So these are the tech writers at Apple that
-
-00:30:56.571 --> 00:30:56.811
-<v (Unknown)>
-
-00:30:56.811 --> 00:31:03.481
-<v Chris Lattner>wrote things such as the Swift programming language book and you know the success and the rapid
-
-00:31:04.101 --> 00:31:09.181
-<v Chris Lattner>The rapid adoption. Swift, I think, is a huge part directly related to
+00:30:32.658 --> 00:31:09.181
+<v Chris Lattner>That's a perfect segue into the last group I want to talk about. Because, you look at what Swift is and sure, it's a compiler, it's a language spec, it's a set of APIs, it's and IDE. But the thing that makes it real and the thing that reached so many people is the work done by the Developer Publication Group. These are the tech writers at Apple that wrote things such as the Swift Programming Language book. And the success and the rapid adoption of Swift is in huge part directly related to
 
 00:31:10.071 --> 00:31:18.041
-<v Chris Lattner>such high quality good documentation and a book being available on Day one. And it's continually maintained today, and it's it's amazing.
+<v Chris Lattner>such high quality good documentation and a book being available on day one. And it's continued to be maintained today, and it's amazing.
 
-00:31:18.571 --> 00:31:27.501
-<v Chris Lattner>And part of that was that we pulled in the decorators right into the design meetings. And so folks like Tim I. Stead and Brain Lanyon, Alex Martini
-
-00:31:28.361 --> 00:31:34.451
-<v Chris Lattner>spent a tremendous amount of time in weekly meetings where we were arguing about, you know, do we use
+00:31:18.571 --> 00:31:34.451
+<v Chris Lattner>And part of that was that we pulled in the tech writers right into the design meetings. Folks like Tim Isted and Brian Lanyon[?], Alex Martini spent a tremendous amount of time in weekly meetings where we were arguing about, "do we use
 
 00:31:35.271 --> 00:31:53.731
-<v Chris Lattner>dot versus colon weigh? Do you use this word versus that keyword or or you know, is it should we change funk to death? Or, you know, but also how the depths of the type system how do the co John algorithms work? And how do we get good performance and how to string work and all the different pieces go into it and
+<v Chris Lattner>dot versus colon?" Or "do we use this keyword versus that keyword?" Or "should we change func to def?" But also [about] the depths of the type system and how do the codegen algorithms work? And how do we get good performance? And how does String work? And all the different pieces that go into it.
 
 00:31:55.071 --> 00:31:59.921
-<v Chris Lattner>and I to me again in terms of you know, how how you make something happen. It's
+<v Chris Lattner>And to me, again, in terms of how you make something happen.
 
-00:31:59.921 --> 00:31:59.981
-<v (Unknown)>
-
-00:32:00.671 --> 00:32:05.481
-<v Chris Lattner>not only were they there, so they could absorb, but they contributed a ton and they were one of the
-
-00:32:05.871 --> 00:32:05.941
-<v (Unknown)>
-
-00:32:05.941 --> 00:32:11.711
-<v Chris Lattner>strongest advocates for, you know, if you can't explain something, it isn't good, right? Yeah. You know,
+00:32:00.671 --> 00:32:11.711
+<v Chris Lattner>Not only were they there so they could absorb, but they contributed a ton and they were one of the strongest advocates for, you know, if you can't explain something, it isn't good, right?
 
 00:32:12.381 --> 00:32:28.831
-<v Chris Lattner>I've seen so many, so many systems where you know, like you build a thing and then you try to explain it afterwards. And when you go to explain and it's it's really awkward and you're like, Wow, I have to kind of explain the workarounds for this thing. If you can kind of clothes that feedback loop it include the documentation include the
+<v Chris Lattner>I've seen so many systems where you build a thing and then you try to explain it afterwards. And when you go to explain it and it's really awkward and you're like, "wow, I have to explain the workarounds for this thing." If you can close that feedback loop and include the documentation, include the
 
 00:32:29.941 --> 00:32:34.551
-<v Chris Lattner>you know, explaining it to people part of this into the design process. You get something that's so much better.
+<v Chris Lattner>explaining-it-to-people part of this into the design process, you get something that's so much better.
 
 00:32:34.701 --> 00:33:34.386
-<v John Sundell>Yeah, absolutely. It's kind of like, you know, when you make a product or something, you kind of want to have that good elevator pitch or you want to have, like, the reason why you're doing it and, you know the same goes for a tech decisions. I think you know to your point where you know, if you're going to build something, whether that's an AP I language or whatever you're designing or framework, you know it needs toe. Have that, like, you know, easy way of explaining something easy way to get into it. And I completely agree that that the documentation and the book that came out and also the websites where you know you could go and you can get The language reference was extremely high quality and enabled people like myself who, you know, New Iowa's had been doing Iowa saps for a couple of years, and, you know, we're familiar with the big sea, and all the guys could kind of dive in and start, you know, understanding those new concepts that we weren't used to like generics, for example, or type inference and kind of understand those things in a very nice way. In a gradual way. We're kind of one thing was building on another thing,
+<v John Sundell>Absolutely. It's kind like, when you make a product or something, you want to have that good elevator pitch. Or you want to have the reason why you're doing it. And the same goes for tech decisions. To your point, if you're going to build something, whether that's an API, a language or whatever you're designing, or a framework, it needs to have that easy way of explaining something, easy way to get into it. And I completely agree that the documentation and the book that came out and also the websites, where you could go and get the language reference, was extremely high quality. And it enabled people like myself who knew iOS, had been doing iOS apps for a couple of years and were familiar with Objective-C and all the APIs, could dive in and start understanding those new concepts that we weren't used to. like generics, for example, or type inference. And understand those things in a very nice way, in a gradual way where one thing was building on another thing.
 
 00:33:34.676 --> 00:33:38.786
-<v Chris Lattner>right? And and this is what I mean. One of the reasons why I'm so impressed with your work, John, is that
+<v Chris Lattner>Right. And and this is one of the reasons why I'm so impressed with your work, John.
 
 00:33:39.326 --> 00:34:06.216
-<v Chris Lattner>I the way because I can sympathize with an individual person at a time, and I can figure out where they're coming from and figure out the right way to explain it to the one person. But taking something and explain it to a mass of people is just its own incredible design process that is so challenging. And I have a tremendous amount of respect for because I'm really bad at it. But it's just it's it's a superpower and not very many people have that.
+<v Chris Lattner>Because I can sympathize with an individual person at a time, and I can figure out where they're coming from and figure out the right way to explain it to the one person. But taking something and explaining it to a mass of people is just its own incredible design process that is so challenging and that I have a tremendous amount of respect for because I'm really bad at it. It's a superpower and not very many people have that.
 
 00:34:06.876 --> 00:34:39.966
-<v John Sundell>Yeah, it's something like like with everything it's I think it's good to start out, like if you want to learn the skill or like if you want to improve it, I think the way to do it. Usually it's like to start out simple. Like if you look at my first article that I wrote, it was incredibly simple. It, like just had a couple of paragraphs in a couple of of of coded samples. And, you know, I think also one key point that I kind of told myself from the beginning was, You know, I always want to use really live concrete examples that people can relate to and not use, like full on bar or ABC or something for variable names. But I think having some of those kind of
+<v John Sundell>Like with everything, I think it's good to start out, if you want to learn the skill or if you want to improve it, I think the way to do it usually is to start out simple. If you look at my first article that I wrote, it was incredibly simple. It just had a couple of paragraphs and a couple code samples. And also, one key point that told myself from the beginning was, I always want to use real live, concrete examples that people can relate to. And not use foo and bar or a, b, c for variable names.
 
 00:34:40.516 --> 00:34:57.718
-<v John Sundell>just like, just like how you brought in the writers like in the meetings and they were there from the beginning. I think setting some good kind of principles that you think well, you know, yield a good result. But then just starting out very, very simple and kind of learning on the job because you know, there's only one way to acquire most skills, and that's just to do it, right,
+<v John Sundell>Just like how you brought in the writers, in the meetings and they were there from the beginning, setting some good principles that you think yield a good result, but then just starting out very, very simple and learning on the job. Because there's only one way to acquire most skills, and that's just to do it, right?
 
 00:34:57.908 --> 00:35:33.938
-<v Chris Lattner>right? Absolutely. And so I mean, this this is this is the kind of thing where a lot of people say, Oh, Chris invented Swift and, well, it's I mean, there's a There's a truth to that. I've pushed it over many years in many different ways and kind of shepherd of the project. But Miss is the fact that there's hundreds of people involved in so many critical ways building that bugger building, the idee, building playgrounds, building educational content within a building like all this stuff, that building the community, aspects of it building like there's so many different pieces of this that that far transcend me and it very much is
+<v Chris Lattner>Absolutely. I mean, this is the kind of thing where a lot of people say, "oh, Chris invented Swift." And well, there's a truth to that, I have pushed it over many years in many different ways and kind of shepherded the project. But it misses the fact that there's hundreds of people involved in so many critical ways. Building the debugger, building the IDE, building Playgrounds, building educational content within it, building all this stuff, building the community aspect of it. There's so many different pieces of this that far transcend me and it very much is
 
 00:35:34.738 --> 00:35:47.238
-<v Chris Lattner>a community of people both inside Apple but outside Apple, that air all pushing together and in building things and contributing their own ways, and that that that I think, is why Swift is where it is. And that is why I see it growing.
+<v Chris Lattner>a community of people both inside Apple, but outside Apple, that are all pushing together and building things and contributing in their own ways. And that is why Swift is where it is. And that is why I see it growing.
 
 00:35:47.458 --> 00:35:53.838
-<v Garric Nahapetian>And that's why one of the reasons we wanna have this podcast is to bring some of those people to life.
-
-00:35:54.228 --> 00:35:54.838
-<v (Unknown)>
+<v Garric Nahapetian>And that's one of the reasons we want to have this podcast, to bring some of those people to light.
 
 00:35:54.928 --> 00:36:18.668
-<v Garric Nahapetian>You know, Obviously, everyone probably knows about John or some people might know about me or you are in. A lot of people know about you, Chris, but there are people who make just the same amount of impact. But people don't know about them. And so hopefully over time through this podcast, we can have them on the show are bring them toe light, whether they hopefully maybe one day, people that work inside of Apple or people who are working in the open source community
+<v Garric Nahapetian>Obviously, everyone probably knows about John or some people might know about me and a lot of people know about you, Chris. But there are people who make just the same amount of impact, but people don't know about them. And so hopefully over time through this podcast, we can have them on the show or bring them to light, hopefully maybe one day. People that work inside of Apple or people who are working in the open source community.
 
 00:36:20.338 --> 00:36:28.038
-<v Garric Nahapetian>and we can bring them on and let people know about them and just learn from them and share their stories to hopefully inspire and encourage other people.
+<v Garric Nahapetian>And we can bring them on and let people know about them and just learn from them and share their stories to hopefully inspire and encourage other people.
 
 00:36:28.278 --> 00:36:53.806
-<v John Sundell>Yeah, totally. So Garric you mentioned earlier that you were watching from home, you're watching the keynote at WWDC Use saw Swift being introduced. You started, you know, reading more about it and trying to, you know, to, you know, get yourself a second chance to kind of learn I was development. So where the kind of things go from there from you like, how did you kind of become a Swift developer in that sense? Like when? When was it that you first started, like really writing Swift code and using it
+<v John Sundell>Totally. So Garric, you mentioned earlier that you were watching from home, you were watching the keynote at WWDC, you saw Swift being introduced. You started reading more about it and trying to get yourself a second chance to learn iOS development. So where did things go from there for you? How did you become a Swift developer in that sense? When was it that you first started really writing Swift code and using it?
 
 00:36:53.966 --> 00:37:16.256
-<v Garric Nahapetian>Yes, so Swift is announced, and I'm just trying to understand what it meant. But at that time, I was, you know, still working as a lawyer, I think. And that summer I started maybe driving uber. And and then I had a had an app idea, and I was working on this app idea with some other developers and but all the while kind of like digesting all the dub dub DC videos. And I think maybe
+<v Garric Nahapetian>So Swift is announced, and I'm just trying to understand what it meant. But at that time, I was still working as a lawyer, I think. And that summer I started maybe driving Uber. And then I had an app idea, and I was working on this app idea with some other developers but all the while digesting all the WWDC videos. And I think maybe,
 
 00:37:16.786 --> 00:37:23.756
-<v Garric Nahapetian>I wasn't going to read that Swift book, you know, because I didn't really know that much about programming. In fact, I need nothing about programs. So that Swift book,
+<v Garric Nahapetian>I wasn't going to read that Swift book, because I didn't really know that much about programming. In fact, I knew nothing about programming. So that Swift book,
 
-00:37:24.296 --> 00:37:38.156
-<v Garric Nahapetian>like I could have, you know, read it because that that introduction part was actually very digestible. But as you pointed out, like A B and C and an array doesn't mean anything to me. If I don't know why, I would use an array. So I think what happened was
-
-00:37:39.146 --> 00:37:51.256
-<v Garric Nahapetian>it took, like, a few months for people like you, John, to digest the Swift book and produce content that's more, even more digestible. So building off the excellent work of the documentation writers at Apple
+00:37:24.296 --> 00:37:51.256
+<v Garric Nahapetian>I could have read it because that introduction part was actually very digestible. But as you pointed out, a, b and c in an array doesn't mean anything to me if I don't know why I would use an array. So I think what happened was, it took a few months for people like you, John, to digest the Swift book and produce content that's even more digestible. So building off the excellent work of the documentation writers at Apple
 
 00:37:51.846 --> 00:38:10.856
-<v Garric Nahapetian>and putting more digestible work out their content for people like me. Plus the, you know, Swift kind of gaining more momentum. And then me starting to feel like, Well, I can actually maybe do this myself. Swift is so much more accessible. It it just reads like English, human, really readable English. And so
+<v Garric Nahapetian>and putting more digestible work out there, content for people like me. Plus Swift gaining more momentum, and then me starting to feel like, "well, I can actually maybe do this myself." Swift is so much more accessible. It just reads like English, really human-readable English.
 
-00:38:11.446 --> 00:38:18.556
-<v Garric Nahapetian>around January, like the new year of two thousand fifteen, I decided like her, I'm going to give give it another shot. And so I started
+00:38:11.446 --> 00:38:43.156
+<v Garric Nahapetian>And so around January 2015, I decided I'm going to give it another shot. And so I started learning Swift, let's say an average of one hour a night I would just try to learn. I did a lot of Ray Wenderlich and whatever documentation, articles, editorials I could get my hands on. But ultimately what led me to become a bigger part of the community was feeling isolated and feeling alone,
 
-00:38:19.246 --> 00:38:43.156
-<v Garric Nahapetian>learning Swift, let's say an average of one hour a night that was just like, you know, try to learn it did a lot of like Ray Wonderlic and and whatever document you know, documentation or articles, editorials I could get my hands on, but ultimately what led me to, you know, be kind of become a maur, a bigger part of the community. I was feeling isolated and like feeling alone,
+00:38:43.716 --> 00:39:04.684
+<v Garric Nahapetian>that I was the only person on Earth that was in my situation. That was doing one thing and wanted to do another thing. And I wanted to make an app and I wanted to learn Swift. And so I had too much coffee one morning, I was with my wife at her office, and I've been thinking about creating a meetup, and I just had too much coffee that morning and I just did it. I didn't think too much about it. I was just like, "I'm going to create a meetup."
 
-00:38:43.716 --> 00:38:51.816
-<v Garric Nahapetian>that I was like the only person on earth that was in my situation. That was like doing one thing and wanted to do another thing. And I wanted to, like, make a nap and I wanted to
-
-00:38:52.074 --> 00:38:52.094
-<v (Unknown)>
-
-00:38:52.094 --> 00:39:04.684
-<v Garric Nahapetian>learned Swift and so I had too much coffee. One morning I was with my wife at her office, and I've been thinking about creating a meet up, and I just had too much coffee that morning and I just did it. You know, I didn't think too much about it, just like I'm going to create a meet up.
-
-00:39:05.434 --> 00:39:06.474
-<v Garric Nahapetian>And that was learned Swift,
-
-00:39:07.374 --> 00:39:08.584
-<v Garric Nahapetian>and it really just took off
-
-00:39:09.174 --> 00:39:11.994
-<v Garric Nahapetian>because there was so much excitement around Swift
-
-00:39:13.114 --> 00:39:19.884
-<v Garric Nahapetian>because of that community, you know, and just all the excitement around it. And it really took off. And there were more people like me.
+00:39:05.434 --> 00:39:19.884
+<v Garric Nahapetian>And that was Learn Swift L.A. And it really just took off because there was so much excitement around Swift. Because of that community, you know, and just all the excitement around it. So really took off. And there were more people like me.
 
 00:39:20.674 --> 00:39:37.284
-<v Garric Nahapetian>And so I started teaching them, and they were teaching me, and it really allowed me Tio just kind of become a leader in L. A. And if you gave me a lot member ofthe line, John, you know, we're talking about finding energy and creating inspiration and all that, and that was like a really big part of that.
+<v Garric Nahapetian>And so I started teaching them, and they were teaching me, and it really allowed me to become a leader in L.A. And I remember offline, John, you and I were talking about finding energy and creating inspiration and all that, and that was a really big part of that.
 
-00:39:37.984 --> 00:39:43.334
-<v Garric Nahapetian>This meet up produced so much positive inspiration and energy for me personally
-
-00:39:43.974 --> 00:39:43.994
-<v (Unknown)>
-
-00:39:43.994 --> 00:39:54.794
-<v Garric Nahapetian>allowed. It pushed me that. That's what allowed me to shoot so far so fast and then wake up two years later and I'm in Iowa's engineer tender, you know, it was a big part of that that community aspect of the media.
-
-NOTE === Paragraphs below this point have been edited.
+00:39:37.984 --> 00:39:54.794
+<v Garric Nahapetian>This meet up produced so much positive inspiration and energy for me personally. It pushed me. That's what allowed me to shoot so far so fast and then wake up two years later and I'm an iOS engineer at Tinder. It was a big part, that community aspect of the meetup.
 
 00:39:55.214 --> 00:40:03.164
 <v Chris Lattner>And what about you, John? What was it like being in the audience and having this very big bomb dropped on you all at once without expecting it.
