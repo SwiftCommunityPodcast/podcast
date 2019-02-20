@@ -358,7 +358,7 @@ Thank you!
 <v Chris Lattner>such high quality good documentation and a book being available on day one. And it's continued to be maintained today, and it's amazing.
 
 00:31:18.571 --> 00:31:34.451
-<v Chris Lattner>And part of that was that we pulled the tech writers right into the design meetings. Folks like Tim Isted and Brian Lanyon[?], Alex Martini spent a tremendous amount of time in weekly meetings where we were arguing about, "do we use
+<v Chris Lattner>And part of that was that we pulled the tech writers right into the design meetings. Folks like Tim Isted and Brian Lanier, Alex Martini spent a tremendous amount of time in weekly meetings where we were arguing about, "do we use
 
 00:31:35.271 --> 00:31:53.731
 <v Chris Lattner>dot versus colon?" Or "do we use this keyword versus that keyword?" Or "should we change func to def?" But also [about] the depths of the type system and how do the codegen algorithms work? And how do we get good performance? And how does String work? And all the different pieces that go into it.
