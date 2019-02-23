@@ -12,6 +12,9 @@ Welcome to the Swift Community Podcast — a podcast for the Swift community, by
 
 Want to contribute to the Swift Community Podcast? We’d love your help and support. This show will be run just like an open source project — and you’re more than welcome to contribute. Check out [the show’s GitHub repository](https://github.com/SwiftCommunityPodcast/podcast) for more information.
 
+## Transcript
+Thanks to [Ole Begemann](https://github.com/ole) for creating [this transcript](https://github.com/SwiftCommunityPodcast/podcast/blob/master/Shownotes/Episode1-Transcript.vtt) and [getting it merged](https://github.com/SwiftCommunityPodcast/podcast/issues/44#43)!
+
 ## Links
 
 - [SwiftCoders](https://swiftcoders.org)
