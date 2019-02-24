@@ -6,7 +6,7 @@ Welcome, we're glad you're here! The Swift Community Podcast focuses on the peop
 
 ### 🤝 Contributing 
 
-Swift is a language for everyone...from beginner to experienced programmers and everyone in between. In that same spirit, we welcome contributions to the podcast from people of any experience level. No contribution is too small!
+Swift is a language for everyone... from beginner to experienced programmers and everyone in between. In that same spirit, we welcome contributions to the podcast from people of any experience level. No contribution is too small!
 
 This is by no means a complete list, but here are a few ways to contribute to the project:
 

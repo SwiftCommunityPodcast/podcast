@@ -6,5 +6,8 @@ This page contains links to the original audio source files used to make the Swi
 - [Episode 1 (GarageBand file on Dropbox)](https://www.dropbox.com/s/lgn2um7wxg05bkh/SwiftCommunityPodcast-Episode1.zip?dl=0)
 
 ## Music:
-- [Melody 1 (WAV file on Dropbox)](https://www.dropbox.com/s/o1zfvcc1a57hzxh/podcastIntroSong.mp3?dl=0)
-- [Melody 2](Melody%202.zip)
+- [Melody 1 by @ercillagorka (WAV file on Dropbox)](https://www.dropbox.com/s/o1zfvcc1a57hzxh/podcastIntroSong.mp3?dl=0)
+- [Melody 2 by @marcusrossel](Melody%202.zip)
+- [Melody 3 by @renatoDutraSilva](Melody%203.zip)
+- [Melody 4 by @renatoDutraSilva](Melody%204.zip)
+- [Melody 5 by @renatoDutraSilva](Melody%205.zip)
