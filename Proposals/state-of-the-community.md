@@ -5,29 +5,30 @@ Episode Proposal Template
 * Proposal: [PR#n]([link to PR])
 * Authors: [Matt Dias](@mdiasdev)
 * Review Manager: [Name]([github profile])
-* Status: [Proposed]//[Proposed, Pre-production, Production, Post-production, Published](link to episode if published)
+* Status: [Proposed]()
 
 ## Introduction
 
-Brief description of episode topic and format
+There has been an interesting shift in the community. Where people used to gather around iOS or macOS as topics, everyone seems to have instead moved to all gather around Swift. I think it would be interesting to hear from a group of community builders and members about the state of the community, what it means to them, and how others can help keep up the spirit of building together.
 
 ## Motivation
 
-Brief description of your motivation behind this episode
+To discuss the state of the community, how it has changed, how it should change, and help others get involved.
 
 ## Proposed contribution
 
-Brief description of how you intend to contribute to this episode and help make it a reality
+I can represent a community leader (I help organize a Meetup). Otherwise, I'm happy to help reach out to potential hosts.
 
 ## Source compatibility
 
-Brief description of how this episode fits with the overall theme of the show
+This podcast is for the community by the community. As such, I think it's important to regularly take a health check and reevaluate the state of things to seek out areas of improvement -- a retro of sorts.
 
 ## Alternatives considered
 
-Brief description of how the purpose of this proposed episode is not already served by existing content and why a podcast episode it the best format for it
+I think the existence of the podcast is a nod to the state of the community (in that is thriving). However, I don't think I've heard representatives from the community discuss the community itself in an attempt to motivate others to get involved.
 
 ## Roles
+TBD
 
 - Lead Host:
 - Co-hosts:
