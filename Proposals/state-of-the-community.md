@@ -1,5 +1,3 @@
-Episode Proposal Template
-
 # State of The Community
 
 * Proposal: [PR#n]([link to PR])
