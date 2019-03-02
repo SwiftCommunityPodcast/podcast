@@ -1,7 +1,7 @@
 # State of The Community
 
 * Proposal: [PR#n]([link to PR])
-* Authors: [Matt Dias](@mdiasdev)
+* Authors: [Matt Dias](https://twitter.com/mdiasdev)
 * Review Manager: [Garric Nahapetian](https://github.com/garricn)
 * Status: [Proposed]()
 
@@ -28,7 +28,7 @@ I think the existence of the podcast is a nod to the state of the community (in 
 ## Roles
 TBD
 
-- Lead Host:
+- Lead Host: [Matt Dias](https://twitter.com/mdiasdev)
 - Co-hosts:
 - Editor:
 - Publisher: [Garric Nahapetian](https://github.com/garricn)
