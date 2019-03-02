@@ -2,7 +2,7 @@
 
 * Proposal: [PR#n]([link to PR])
 * Authors: [Matt Dias](@mdiasdev)
-* Review Manager: [Name]([github profile])
+* Review Manager: [Garric Nahapetian](https://github.com/garricn)
 * Status: [Proposed]()
 
 ## Introduction
@@ -31,6 +31,6 @@ TBD
 - Lead Host:
 - Co-hosts:
 - Editor:
-- Publisher:
+- Publisher: [Garric Nahapetian](https://github.com/garricn)
 - Marketer:
 - Community Follow up handler
