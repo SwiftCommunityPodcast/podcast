@@ -12,6 +12,9 @@ Welcome to the Swift Community Podcast — a podcast for the Swift community, by
 
 Want to contribute to the Swift Community Podcast? We’d love your help and support. This show will be run just like an open source project — and you’re more than welcome to contribute. Check out [the show’s GitHub repository](https://github.com/SwiftCommunityPodcast/podcast) for more information.
 
+## Transcript
+[Full transcript](https://github.com/SwiftCommunityPodcast/podcast/blob/master/Shownotes/Episode1-Transcript.vtt) (in [WebVTT](https://en.wikipedia.org/wiki/WebVTT) format)
+
 ## Links
 
 - [SwiftCoders](https://swiftcoders.org)
