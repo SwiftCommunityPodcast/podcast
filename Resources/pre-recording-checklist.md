@@ -19,7 +19,7 @@
 - Ask each host to turn their electronics on airplane and or slient mode and the computer they are using to record on do not disturb
 - Ensure that any phone or cellular device including Apple Watches are either on airplace mode or away from microphones
 - Remind each host that Its just a conversation, no need to apologize
-- Remind each host to try to not use no curse words
+- Remind each host to not use curse words
 
 ## Hit Record
 - Check everyones inputs one more time to ensure correctness
