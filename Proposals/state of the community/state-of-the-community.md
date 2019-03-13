@@ -1,6 +1,6 @@
 # State of The Community
 
-* Proposal: [PR#n]([link to PR])
+* Proposal: [PR#56](https://github.com/SwiftCommunityPodcast/podcast/pull/56)
 * Authors: [Matt Dias](https://twitter.com/mdiasdev)
 * Review Manager: [Garric Nahapetian](https://github.com/garricn)
 * Status: [Proposed]()
