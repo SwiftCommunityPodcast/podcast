@@ -7,6 +7,10 @@
 ## Intro
  - introduce the podcast
  - introduce the hosts
+   - John Sundell (representing content creators)
+   - Bas Thomas (representing conference speakers)
+   - Barbie Vanaki (representing community members)
+   - Matt Dias (representing community leader)
  - introduce the topic
 
 ## Podcast Follow up

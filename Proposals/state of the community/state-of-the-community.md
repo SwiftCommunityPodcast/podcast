@@ -26,10 +26,8 @@ This podcast is for the community by the community. As such, I think it's import
 I think the existence of the podcast is a nod to the state of the community (in that is thriving). However, I don't think I've heard representatives from the community discuss the community itself in an attempt to motivate others to get involved.
 
 ## Roles
-TBD
-
 - Lead Host: [Matt Dias](https://twitter.com/mdiasdev)
-- Co-hosts:
+- Co-hosts: @BasThomas , @JohnSundell, @bvki
 - Editor:
 - Publisher: [Garric Nahapetian](https://github.com/garricn)
 - Marketer:
