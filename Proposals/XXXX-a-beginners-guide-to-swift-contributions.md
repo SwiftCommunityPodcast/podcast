@@ -41,7 +41,7 @@ This episode fits with the overall theme of the podcast in the following ways:
 
 - Co-hosts: Suyash Srijan (By suggestion from Robert Clegg)
 
-- Editor: open
+- Editor: [Andrew Litteken](https://github.com//AndrewLitteken)
 
 - Publisher: open
 
