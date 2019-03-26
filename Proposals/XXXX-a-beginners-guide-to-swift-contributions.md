@@ -37,9 +37,9 @@ This episode fits with the overall theme of the podcast in the following ways:
 
 - Producers: Andrew Litteken, Garric Nahapetian
 
-- Lead Host: Open (I am willing to try this, I'm still a beginner podcaster though)
+- Lead Host: Andrew Litteken
 
-- Co-hosts: Suyash Srijan (By suggestion from Robert Clegg)
+- Co-hosts: Chris Lattner, Suyash Srijan (By suggestion from Robert Clegg)
 
 - Editor: [Andrew Litteken](https://github.com//AndrewLitteken)
 
