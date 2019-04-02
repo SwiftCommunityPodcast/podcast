@@ -13,11 +13,11 @@ Anyone is welcome to fill any and all roles and or build a team to fill each rol
 
 ## Pre-Production
 
-We all love listening to podcasts, but before we hit the record button, there's a decent amount of work that goes into the podcast before you're ready to hit record. That work is called pre-production and it includes mostly episode topic ideation, reaching out to potential co-hosts/guests, and scheduling.
+We all love listening to podcasts but there is a decent amount of work that goes into the podcast before you're ready to hit record. That work is called pre-production and it includes mostly episode topic ideation, reaching out to potential co-hosts/guests, and scheduling.
 
 ## Production
 
-You've set the date to record your episode and today is the day! Whether the episode includes one person or more, someone should take the lead today as the lead-host. The lead host is responsible for doing the intro and outro and making sure the episode stays on track. Someone also needs to manage the recording process (We use TryCa.st) and that person can be the lead host as well or someone else.
+You've set the date to record your episode and today is the day! Whether the episode includes one person or more, someone should take on the role of lead host. The lead host is responsible for doing the intro and outro and making sure the episode stays on track. Someone also needs to manage the recording process (We use TryCa.st) and that person can be the lead host as well or someone else.
 
 ## Post-Production
 
