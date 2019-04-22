@@ -3,7 +3,7 @@
 * Proposal: [PR#56](https://github.com/SwiftCommunityPodcast/podcast/pull/56)
 * Authors: [Matt Dias](https://twitter.com/mdiasdev)
 * Review Manager: [Garric Nahapetian](https://github.com/garricn)
-* Status: [Proposed]()
+* Status: **Accepted**
 
 ## Introduction
 
@@ -28,7 +28,7 @@ I think the existence of the podcast is a nod to the state of the community (in 
 ## Roles
 - Lead Host: [Matt Dias](https://twitter.com/mdiasdev)
 - Co-hosts: @BasThomas , @JohnSundell, @bvki
-- Editor:
+- Editor: @JohnSundell
 - Publisher: [Garric Nahapetian](https://github.com/garricn)
 - Marketer:
 - Community Follow up handler
