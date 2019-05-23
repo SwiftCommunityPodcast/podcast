@@ -16,7 +16,7 @@ There is a lot of talk about contributing to Swift. But how can you actually sta
 
 ## Motivation
 
-The Swift Community Podcast is an experiment and is in its infancy and one of the biggest challenges is how to effectively scale the project through adequate community engagement. A codeless open source community may present challenges that are distinc from code centric ones and so Bas may have some valuable insight into this given his experience with shepherding the Swift Weekly Brief.
+Since this podcast is about engaging with the commmunity and growing the community as well, this episode is supposed to emphasize the more technical aspect of the compiler development community where the previous episode emphasized the surrounding community that uses Swift.
 
 ## Proposed contribution
 
