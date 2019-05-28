@@ -5,8 +5,8 @@ Andrew Litteken, Chris Lattner and Suyash Srijan sit down to talk about the Swif
 ## Hosted by
 
 - [Andrew Litteken](https://github.com/AndrewLitteken)
-- [Suyash Srijan](https://github.com/theblixguy)
 - [Chris Lattner](https://twitter.com/clattner_llvm)
+- [Suyash Srijan](https://github.com/theblixguy)
 
 ## Host Links
 - [Andrew's Twitter](https://twitter.com/AndrewLitteken)
