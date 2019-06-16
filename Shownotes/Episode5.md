@@ -17,7 +17,7 @@ Andrew Litteken, Chris Lattner and Suyash Srijan sit down to talk about the Swif
 
 - [Clang](https://clang.llvm.org)
 - [LLVM](http://llvm.org)
-- [Grammars](https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+- [Grammars](https://en.wikipedia.org/wiki/Syntax_(programming_languages))
 - [Parse Tree](https://en.wikipedia.org/wiki/Parse_tree)
 - [Name Binding](https://en.wikipedia.org/wiki/Name_binding)
 - [Type System/Checking](https://en.wikipedia.org/wiki/Type_system)
