@@ -11,3 +11,7 @@ This page contains links to the original audio source files used to make the Swi
 - [Melody 3 by @renatoDutraSilva](Melody%203.zip)
 - [Melody 4 by @renatoDutraSilva](Melody%204.zip)
 - [Melody 5 by @renatoDutraSilva](Melody%205.zip)
+- [Melody 6 by @c0rv0s](Melody%206.zip)
+- [Melody 7 by @c0rv0s](Melody%207.zip)
+- [Melody 8 by @c0rv0s](Melody%208.zip)
+- [Melody 9 by @c0rv0s](Melody%209.zip)
